@@ -1,0 +1,973 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>johnfung&#39;s Blog</title>
+  <subtitle>从事项目管理,java开发</subtitle>
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="http://www.pmjohnfung.com/"/>
+  <updated>2017-02-22T13:49:24.000Z</updated>
+  <id>http://www.pmjohnfung.com/</id>
+  
+  <author>
+    <name>johnfung</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>互联网项目管理体会（一）</title>
+    <link href="http://www.pmjohnfung.com/categories/%E9%A1%B9%E7%9B%AE%E7%AE%A1%E7%90%86/project-manager-experience-1/"/>
+    <id>http://www.pmjohnfung.com/categories/项目管理/project-manager-experience-1/</id>
+    <published>2017-02-22T09:17:30.000Z</published>
+    <updated>2017-02-22T13:49:24.000Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="需求的控制"><a href="#需求的控制" class="headerlink" title="需求的控制"></a>需求的控制</h1><hr>
+<h2 id="重要性"><a href="#重要性" class="headerlink" title="重要性"></a>重要性</h2><p>项目因素种种，我认为需求的影响力应该占项目因素的60%及以上，如果一个项目能够控制好需求，项目也就成功了一半以上；</p>
+<p>项目是为创造独特的产品、服务或成果而进行的一次性努力；其中一个关键点是：产品、服务或成果，我们需要在项目实施之前有明确的产品目标或成果，如果在项目开展过程中不断的去修改产品，最直接的影响是项目的工期，也可能会导致项目的失败，所以如何去控制需求，如果更好的实现需求是需要项目经理重点考虑的内容；</p>
+<h2 id="需求控制方法"><a href="#需求控制方法" class="headerlink" title="需求控制方法"></a>需求控制方法</h2><ol>
+<li><p>产品经理或产品质量的管控</p>
+<p> 项目的需求可能来自于多个角色，但是最后的入口肯定只有一个，那就是产品经理，产品经理控制着需求的变更与否，如果能够遇到一个好的产品经理，项目经理的工作将轻松很多，但是很多时候是没有那么完美的事情，这时就需要项目经理发挥对需求的管控，在项目开始之初就需要重点关注需求的内容，需具备需求的识别和判断力，不为别的，只为能够更好的屏蔽项目潜在的风险，使项目按既定的目标完成。具体做法可每次PRD产生时作为项目经理认真阅读，真正清楚需求的价值、需求的合理性、需求的时效性，及时指正PRD中的不足，真正做到每次PRD都是有价值的，资源未做无用功，需求可阶段性乃至长期存活，而不是上线一周就被迫下线；</p>
+<p> 我这项目管理过程中遇到的一类问题是需求有明确的目标、PRD的设计也相对合理，但是未分析需求的风险，产品的产出未与当前的政策形势关联，最后导致做了一半的项目因为需要根据外在政策因素而重新修改PRD；结果导致项目的延期；其实这个问题在项目开始之前就可以被发现，可是并未如此，假如项目经理能够更多的了解所负责方向的政策导向的话是不是就可减轻需求变更的风险呢，作为我个人感觉，这个答案是肯定的，我们是对项目结果负责的，虽然我了解到一些公司项目经理不对结果负责，but 我认为我们应该对自己要求高一些。</p>
+<p> 我还遇到过一个情景，那就是刚毕业的产品经理或未从事过当前行业的产品经理，这种应该是项目经理最头痛的事情了，因为多数情况下输出的成功并不能达到要求，那作为项目经理如何做呢？向他们领导抱怨？还是随遇而安？no,抱怨不能根本上解决问题，现多数互联网公司都是缺有经验的PM，随遇而安也只能让项目增加很多小插曲，直至项目失败。我认为针对当前的当务之急那就是将即将看着的PRD去完善，协调经验丰富的PM对当前PM进行授人以渔的经验，以及项目经理对PM的学习指引，面对长期工作的开展就是需要项目经理去组织分享会，有针对性的去分享，虽然项目经理不是最专业的，但是项目经理识别有价值资源是最专业的，对症下药，邀请更加专业的PM进行培训。还有一个办法即简化PRD，逐步完善，也能将风险控制在可控范围内。</p>
+</li>
+<li><p>平衡产品、工期、质量</p>
+<p> 互联网项目的管理特点如用一个字来概括，我认为应该是“快”，快就势必会导致不完美的PRD、不富裕的工期、不杠杠的质量，就会遇到范围、时间、成本、质量如何权衡的问题，这就需要产品经理能够区分出当前是完美的PRD重要还是快速上线重要，如PRD能够清晰的反应这点那项目经理会更容易的去管理项目，是重点控制时间还是控制范围更重要；</p>
+</li>
+</ol>
+<h1 id="项目节奏的控制"><a href="#项目节奏的控制" class="headerlink" title="项目节奏的控制"></a>项目节奏的控制</h1><h1 id="项目风险的控制"><a href="#项目风险的控制" class="headerlink" title="项目风险的控制"></a>项目风险的控制</h1><h1 id="项目资源的控制"><a href="#项目资源的控制" class="headerlink" title="项目资源的控制"></a>项目资源的控制</h1>]]></content>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;需求的控制&quot;&gt;&lt;a href=&quot;#需求的控制&quot; class=&quot;headerlink&quot; title=&quot;需求的控制&quot;&gt;&lt;/a&gt;需求的控制&lt;/h1&gt;&lt;hr&gt;
+&lt;h2 id=&quot;重要性&quot;&gt;&lt;a href=&quot;#重要性&quot; class=&quot;headerlink&quot; title=&quot;重要
+    
+    </summary>
+    
+      <category term="项目管理" scheme="http://www.pmjohnfung.com/categories/%E9%A1%B9%E7%9B%AE%E7%AE%A1%E7%90%86/"/>
+    
+    
+      <category term="项目管理" scheme="http://www.pmjohnfung.com/tags/%E9%A1%B9%E7%9B%AE%E7%AE%A1%E7%90%86/"/>
+    
+      <category term="互联网" scheme="http://www.pmjohnfung.com/tags/%E4%BA%92%E8%81%94%E7%BD%91/"/>
+    
+      <category term="经验" scheme="http://www.pmjohnfung.com/tags/%E7%BB%8F%E9%AA%8C/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>密等性设计</title>
+    <link href="http://www.pmjohnfung.com/categories/Architecture/idempotent/"/>
+    <id>http://www.pmjohnfung.com/categories/Architecture/idempotent/</id>
+    <published>2017-02-03T04:10:36.000Z</published>
+    <updated>2017-02-03T07:00:40.000Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="定义"><a href="#定义" class="headerlink" title="定义"></a>定义</h1><h2 id="数学定义"><a href="#数学定义" class="headerlink" title="数学定义"></a>数学定义</h2><blockquote>
+<p>在数学里，幂等有两种主要的定义：</p>
+<ul>
+<li><p>在某二元运算下，幂等元素是指被自己重复运算(或对于函数是为复合)的结果等于它自己的元素。例如，乘法下唯一两个幂等实数为0和1。 即 s *s = s</p>
+</li>
+<li><p>某一元运算为幂等的时，其作用在任一元素两次后会和其作用一次的结果相同。例如，高斯符号便是幂等的，即f(f(x)) = f(x)。 </p>
+</li>
+</ul>
+</blockquote>
+<h2 id="HTTP定义"><a href="#HTTP定义" class="headerlink" title="HTTP定义"></a>HTTP定义</h2><p>在HTTP/1.1规范中幂等性的定义是：</p>
+<blockquote>
+<p>A request method is considered “idempotent” if the intended effect onthe server of multiple identical requests with that method is the same as the effect for a single such request. Of the request methods defined by this specification, PUT, DELETE, and safe request methods are idempotent.</p>
+</blockquote>
+<p>HTTP的幂等性指的是一次和多次请求某一个资源应该具有相同的副作用。如通过PUT接口将数据的Status置为1，无论是第一次执行还是多次执行，获取到的结果应该是相同的，即执行完成之后Status =1。</p>
+<h1 id="实际业务密等"><a href="#实际业务密等" class="headerlink" title="实际业务密等"></a>实际业务密等</h1><p>订单支付的过程，需要做密等操作，否则会重复扣款；</p>
+<p>1.订单系统负责状态更新，支付系统负责付款</p>
+<p>参数只有支付用户号（accountid）、支付金额(amount)；</p>
+<p>如遇网络问题，在支付扣款成功但是无法接受到返回，则可能多重复下单并且支付扣款，造成用户重复支付；</p>
+<p>2.支持密等，解决重复下单的问题</p>
+<p>参数增加订单号（orderid）</p>
+<p>确保订单的唯一性，在支付时校验订单状态，如未支付则发起支付，如已支付或支付中则返回当前结果。</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;定义&quot;&gt;&lt;a href=&quot;#定义&quot; class=&quot;headerlink&quot; title=&quot;定义&quot;&gt;&lt;/a&gt;定义&lt;/h1&gt;&lt;h2 id=&quot;数学定义&quot;&gt;&lt;a href=&quot;#数学定义&quot; class=&quot;headerlink&quot; title=&quot;数学定义&quot;&gt;&lt;/a&gt;数学定义&lt;/h
+    
+    </summary>
+    
+      <category term="Architecture" scheme="http://www.pmjohnfung.com/categories/Architecture/"/>
+    
+    
+      <category term="密等性" scheme="http://www.pmjohnfung.com/tags/%E5%AF%86%E7%AD%89%E6%80%A7/"/>
+    
+      <category term="分布式" scheme="http://www.pmjohnfung.com/tags/%E5%88%86%E5%B8%83%E5%BC%8F/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>新的一年开始了</title>
+    <link href="http://www.pmjohnfung.com/categories/%E7%94%9F%E6%B4%BB/new-year-go/"/>
+    <id>http://www.pmjohnfung.com/categories/生活/new-year-go/</id>
+    <published>2017-02-03T03:13:50.000Z</published>
+    <updated>2017-02-03T03:21:02.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>年已悄然走过，</p>
+<p>迎来了工作的第一天，</p>
+<p>迎来了新的机遇与挑战，</p>
+<p>投入到新的“战斗中”，</p>
+<p>2017，定义主题“超越自己”，</p>
+<p>2017，加油！</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;年已悄然走过，&lt;/p&gt;
+&lt;p&gt;迎来了工作的第一天，&lt;/p&gt;
+&lt;p&gt;迎来了新的机遇与挑战，&lt;/p&gt;
+&lt;p&gt;投入到新的“战斗中”，&lt;/p&gt;
+&lt;p&gt;2017，定义主题“超越自己”，&lt;/p&gt;
+&lt;p&gt;2017，加油！&lt;/p&gt;
+
+    
+    </summary>
+    
+      <category term="生活" scheme="http://www.pmjohnfung.com/categories/%E7%94%9F%E6%B4%BB/"/>
+    
+    
+      <category term="新年" scheme="http://www.pmjohnfung.com/tags/%E6%96%B0%E5%B9%B4/"/>
+    
+      <category term="新气象" scheme="http://www.pmjohnfung.com/tags/%E6%96%B0%E6%B0%94%E8%B1%A1/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>IDEA快捷键</title>
+    <link href="http://www.pmjohnfung.com/categories/java/idea-key/"/>
+    <id>http://www.pmjohnfung.com/categories/java/idea-key/</id>
+    <published>2017-01-19T02:45:27.000Z</published>
+    <updated>2017-01-19T02:47:24.000Z</updated>
+    
+    <content type="html"><![CDATA[<figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div></pre></td><td class="code"><pre><div class="line">⌃Space 基本的代码补全（补全任何类、方法、变量）</div><div class="line">⌃⇧Space 智能代码补全（过滤器方法列表和变量的预期类型）</div><div class="line">⌘⇧↩ 自动结束代码，行末自动添加分号</div><div class="line">⌘P 显示方法的参数信息</div><div class="line">⌃J, Mid. button click 快速查看文档</div><div class="line">⇧F1 查看外部文档（在某些代码上会触发打开浏览器显示相关文档）</div><div class="line">⌘+鼠标放在代码上 显示代码简要信息</div><div class="line">⌘F1 在错误或警告处显示具体描述信息</div><div class="line">⌘N, ⌃↩, ⌃N 生成代码（getter、setter、构造函数、hashCode/equals,toString）</div><div class="line">⌃O 覆盖方法（重写父类方法）</div><div class="line">⌃I 实现方法（实现接口中的方法）</div><div class="line">⌘⌥T 包围代码（使用<span class="keyword">if</span>..<span class="keyword">else</span>, <span class="keyword">try</span>..<span class="keyword">catch</span>, <span class="keyword">for</span>, <span class="keyword">synchronized</span>等包围选中的代码）</div><div class="line">⌘/ 注释/取消注释与行注释</div><div class="line">⌘⌥/ 注释/取消注释与块注释</div><div class="line">⌥↑ 连续选中代码块</div><div class="line">⌥↓ 减少当前选中的代码块</div><div class="line">⌃⇧Q 显示上下文信息</div><div class="line">⌥↩ 显示意向动作和快速修复代码</div><div class="line">⌘⌥L 格式化代码</div><div class="line">⌃⌥O 优化<span class="keyword">import</span></div><div class="line">⌃⌥I 自动缩进线</div><div class="line">⇥ / ⇧⇥ 缩进代码 / 反缩进代码</div><div class="line">⌘X 剪切当前行或选定的块到剪贴板</div><div class="line">⌘C 复制当前行或选定的块到剪贴板</div><div class="line">⌘V 从剪贴板粘贴</div><div class="line">⌘⇧V 从最近的缓冲区粘贴</div><div class="line">⌘D 复制当前行或选定的块</div><div class="line">⌘⌫ 删除当前行或选定的块的行</div><div class="line">⌃⇧J 智能的将代码拼接成一行</div><div class="line">⌘↩ 智能的拆分拼接的行</div><div class="line">⇧↩ 开始新的一行</div><div class="line">⌘⇧U 大小写切换</div><div class="line">⌘⇧] / ⌘⇧[ 选择直到代码块结束/开始</div><div class="line">⌥⌦ 删除到单词的末尾（⌦键为Fn+Delete）</div><div class="line">⌥⌫ 删除到单词的开头</div><div class="line">⌘+ / ⌘- 展开 / 折叠代码块</div><div class="line">⌘⇧+ 展开所以代码块</div><div class="line">⌘⇧- 折叠所有代码块</div><div class="line">⌘W 关闭活动的编辑器选项卡</div></pre></td></tr></table></figure>]]></content>
+    
+    <summary type="html">
+    
+      &lt;figure class=&quot;highlight java&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;1&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;2&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;3&lt;/div
+    
+    </summary>
+    
+      <category term="java" scheme="http://www.pmjohnfung.com/categories/java/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>防火墙操作</title>
+    <link href="http://www.pmjohnfung.com/categories/linux/linux-firewall/"/>
+    <id>http://www.pmjohnfung.com/categories/linux/linux-firewall/</id>
+    <published>2017-01-11T04:07:33.000Z</published>
+    <updated>2017-01-11T04:14:44.000Z</updated>
+    
+    <content type="html"><![CDATA[<ol>
+<li>在/etc/sysconfig/iptables里添加</li>
+</ol>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">vi /etc/sysconfig/iptables</div></pre></td></tr></table></figure>
+<p>添加一条配置规则，如要想开放8080的端口，如下所示：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">-A RH-Firewall-1-INPUT -m state –state NEW -m tcp -p tcp –dport 8080 –j ACCEPT</div></pre></td></tr></table></figure>
+<ol>
+<li>重启iptables</li>
+</ol>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">#/etc/init.d/iptables restart</div></pre></td></tr></table></figure>
+<ol>
+<li>看下状态</li>
+</ol>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"># /etc/init.d/iptables status</div></pre></td></tr></table></figure>
+<ol>
+<li>关闭防火墙</li>
+</ol>
+<ul>
+<li>重启后永久性生效：</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">开启：chkconfig iptables on</div><div class="line">关闭：chkconfig iptables off</div></pre></td></tr></table></figure>
+<ul>
+<li>即时生效，重启后失效（即重启后防火墙自动开启）：</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">开启：service iptables start</div><div class="line">关闭：service iptables stop</div></pre></td></tr></table></figure>]]></content>
+    
+    <summary type="html">
+    
+      &lt;ol&gt;
+&lt;li&gt;在/etc/sysconfig/iptables里添加&lt;/li&gt;
+&lt;/ol&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;1&lt;/div&gt;
+    
+    </summary>
+    
+      <category term="linux" scheme="http://www.pmjohnfung.com/categories/linux/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>5E 模型</title>
+    <link href="http://www.pmjohnfung.com/categories/%E9%A1%B9%E7%9B%AE%E7%AE%A1%E7%90%86/5E-model/"/>
+    <id>http://www.pmjohnfung.com/categories/项目管理/5E-model/</id>
+    <published>2017-01-10T11:38:35.000Z</published>
+    <updated>2017-01-11T04:26:29.000Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="5E模型"><a href="#5E模型" class="headerlink" title="5E模型"></a>5E模型</h1><ul>
+<li>Envision（高瞻远瞩）</li>
+<li>Engage（全情投入）</li>
+<li>Energize（鼓舞士气）</li>
+<li>Enable（授人以渔）</li>
+<li>Execute（卓越执行）</li>
+</ul>
+<h1 id="Envision（高瞻远瞩）"><a href="#Envision（高瞻远瞩）" class="headerlink" title="Envision（高瞻远瞩）"></a>Envision（高瞻远瞩）</h1><p>在项目管理角度讲需要设定明确的项目目标，启动会让项目成员对目标达成一致的理解；</p>
+<h1 id="Engage（全情投入）"><a href="#Engage（全情投入）" class="headerlink" title="Engage（全情投入）"></a>Engage（全情投入）</h1><p>即团队合作，使团队按照既定的目标进行，帮助团队成员完成既定的KPI、绩效增长点或能力增长点；</p>
+<h1 id="Energize（鼓舞士气）"><a href="#Energize（鼓舞士气）" class="headerlink" title="Energize（鼓舞士气）"></a>Energize（鼓舞士气）</h1><p>鼓舞团队的热情和士气，使团队始终保持在高昂的工作状态；多表扬，少批评，鼓励为主；</p>
+<h1 id="Enable（授人以渔）"><a href="#Enable（授人以渔）" class="headerlink" title="Enable（授人以渔）"></a>Enable（授人以渔）</h1><p>构建团队整体的能力，培训与教授，重在授人以渔；</p>
+<h1 id="Execute（卓越执行）"><a href="#Execute（卓越执行）" class="headerlink" title="Execute（卓越执行）"></a>Execute（卓越执行）</h1><p>要率先垂范，亲身投入完美执行的推动，结果导向。</p>
+<ol>
+<li>项目启动会</li>
+<li>项目例会（1周一次或2周一次，根据项目区别对待）</li>
+<li>计划，必须有buffer时间</li>
+<li>沟通，需与每个项目组成员去沟通，了解每个人的诉求；</li>
+</ol>
+<p>认同的一点：级别压人属于最低的项目管理模式，如何协调比自己级别高的人员才是一门学问；</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;5E模型&quot;&gt;&lt;a href=&quot;#5E模型&quot; class=&quot;headerlink&quot; title=&quot;5E模型&quot;&gt;&lt;/a&gt;5E模型&lt;/h1&gt;&lt;ul&gt;
+&lt;li&gt;Envision（高瞻远瞩）&lt;/li&gt;
+&lt;li&gt;Engage（全情投入）&lt;/li&gt;
+&lt;li&gt;Energize（鼓
+    
+    </summary>
+    
+      <category term="项目管理" scheme="http://www.pmjohnfung.com/categories/%E9%A1%B9%E7%9B%AE%E7%AE%A1%E7%90%86/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>考研科目</title>
+    <link href="http://www.pmjohnfung.com/categories/%E8%80%83%E7%A0%94/kaoyan-course/"/>
+    <id>http://www.pmjohnfung.com/categories/考研/kaoyan-course/</id>
+    <published>2017-01-10T02:12:19.000Z</published>
+    <updated>2017-01-13T02:57:28.000Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="考试科目"><a href="#考试科目" class="headerlink" title="考试科目"></a>考试科目</h1><p>一月联考考试科目：该形式招生在职研究生专业较少，其中有MBA、MEM、MPA等专业，考生需要先参加初试和复试考试，考试通过以后才能入学参加课程学习，因此其考试难度相对较大。初试考试科目有英语二和综合(其中数学是75分，逻辑推理60分，语文50分)。至少175才能进入复试</p>
+<h1 id="时间安排"><a href="#时间安排" class="headerlink" title="时间安排"></a>时间安排</h1><ul>
+<li>提前一批面试：8月份</li>
+<li>提前二批面试：10月份</li>
+<li>报名：10月份</li>
+<li>初试：12月份</li>
+<li>复试：次年3月份（面试、政治考试、体检）</li>
+</ul>
+<h1 id="参考书"><a href="#参考书" class="headerlink" title="参考书"></a>参考书</h1><h2 id="数学"><a href="#数学" class="headerlink" title="数学"></a>数学</h2><p>机工《数学分册》</p>
+<p>机工《数学精点》</p>
+<p>陈剑《考前冲刺》</p>
+<p>《真题》</p>
+<p>老吕的《数学母题800练》</p>
+<p>陈剑《高分指南》，把整本书搞懂，里面的题做三遍</p>
+<h2 id="逻辑"><a href="#逻辑" class="headerlink" title="逻辑"></a>逻辑</h2><p>《海滨逻辑》系列</p>
+<p>老吕</p>
+<h2 id="写作"><a href="#写作" class="headerlink" title="写作"></a>写作</h2><p>机工《写作分册》</p>
+<p>王诚的论证有效性分析和论说文真题</p>
+<p>老吕</p>
+<h2 id="英语"><a href="#英语" class="headerlink" title="英语"></a>英语</h2><p>王江涛的词汇书</p>
+<p>老蒋《高分阅读80篇》</p>
+<p>《十天搞定考研词汇》</p>
+<p>《蒋军虎》系列</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;考试科目&quot;&gt;&lt;a href=&quot;#考试科目&quot; class=&quot;headerlink&quot; title=&quot;考试科目&quot;&gt;&lt;/a&gt;考试科目&lt;/h1&gt;&lt;p&gt;一月联考考试科目：该形式招生在职研究生专业较少，其中有MBA、MEM、MPA等专业，考生需要先参加初试和复试考试，考试通过以
+    
+    </summary>
+    
+      <category term="考研" scheme="http://www.pmjohnfung.com/categories/%E8%80%83%E7%A0%94/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>支付系统架构</title>
+    <link href="http://www.pmjohnfung.com/categories/%E6%94%AF%E4%BB%98%E4%B8%9A%E5%8A%A1/pay-arc/"/>
+    <id>http://www.pmjohnfung.com/categories/支付业务/pay-arc/</id>
+    <published>2017-01-05T14:03:18.000Z</published>
+    <updated>2017-01-05T14:30:10.000Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="支付系统架构"><a href="#支付系统架构" class="headerlink" title="支付系统架构"></a>支付系统架构</h1><ul>
+<li><strong>账户系统</strong>：账户账务系统，一切支付结算业务的基础，一个账号可对应多个账户。包含账户性质、是否激活、账户状态、账户类型等信息。</li>
+<li><strong>记账系统</strong>：记录每笔支付结算相关的资金往来。</li>
+<li><strong>对账系统</strong>：包含内部业务对账与外部渠道对账，后文有详述。</li>
+<li><strong>风控系统</strong>：对风险事件的监控与决策。包含政策风控、基础风控、交易风控等。</li>
+<li><strong>支付系统</strong>：对接入款渠道，处理支付业务，充值本质也是支付业务。</li>
+<li><strong>结算系统</strong>：对接出款渠道，处理结算业务，典型的有提现业务。</li>
+<li><strong>分润系统</strong>：对涉及结算的业务进行清分轧差，与结算系统组成清算系统。</li>
+<li><strong>路由系统</strong>：根据预先设定的规则，只能选择最优入款、出款渠道，降低成本，提高用户体验。</li>
+</ul>
+<h1 id="清结算（结算、分润）"><a href="#清结算（结算、分润）" class="headerlink" title="清结算（结算、分润）"></a>清结算（结算、分润）</h1><p>清结算系统对应业务典型的有提现和转账</p>
+<p>何谓提现？我们先看下业务场景：</p>
+<p>买家在淘宝上购买了商家的商品，并通过支付宝支付完成，买家收到货后确认付款，支付宝将货款结算到商家的支付宝账户，一段时间后商家将货款提现到自己的银行卡。</p>
+<p>提现：用户主动发起的，将虚拟账户资金结算到本人银行资金账户，并伴随资金流由平台客户备付金账户向用户银行资金账户划拨的过程。</p>
+<p>如何实现结算业务？</p>
+<p>从合作方来说，有银行、银联、第三方支付公司。 主要还是以银行为主，在成本（甚至可以免费）、时效性上都比较有优势；银联的话有些差异化的产品，后面细说；采用第三方支付主要是支付服务是它，出款打包给他也方便，但是很多支付公司不提供此项服务。</p>
+<p>从发起平台来说， 有企业网银、银企直联、代付接口。如果处理用户的提现申请需要用企业网银，那么有点low，这个需要财务人工处理，一般规模很小的业务量可以考虑；银企直联是很多银行提供给互联网公司的平台系统，里面有多个产品的集成，甚至有上百个接口。代付接口是很多第三方支付公司提供的，就如同提供的支付接口一样。</p>
+<p>从包装产品来说，有单笔代发、批量代发、自动转账、非自动转账、 实时转账等，这些都是银行或第三方支付包装出来的产品。</p>
+<p>从底层系统来说，有行内清算系统、央行大额支付系统、小额支付系统、超级网银、银联转账系统。下面细说。</p>
+<p>限于篇幅，底层系统之间的区别见下图：</p>
+<p><img src="../img/提现通道.png" alt=""></p>
+<h1 id="对账系统"><a href="#对账系统" class="headerlink" title="对账系统"></a>对账系统</h1><p>对账其实是对一定周期内的交易进行双方确认的过程，一般都是在第二天第三方支付公司对前一日交易进行清分，生成对账单供电商平台下载，并将应结算款结算给电商平台。</p>
+<p>所以对账有以下作用：</p>
+<p>1、电商平台通过对账单与自身系统订单进行比对，确认是否存在异常订单；</p>
+<p>2、电商平台作为结算金额的计算依据 。</p>
+<p>对账一方面对信息流，一方面对资金流，信息流对账主要是确认双方订单金额、状态等是否一致，如果一致，则根据对账单计算出应结算款，与第三方实际结算款进行资金流对账。</p>
+<p>对账流程：</p>
+<p>1、下载（获取）对账单，用来与系统内账单进行比对</p>
+<p>2、上传对账单（可能需要先对对账单命名以及内部数据简单处理）</p>
+<p>3、对账单解析，以为可能接多个渠道，每个渠道提供的对账单格式不完全统一，所以需要解析成对账系统标准的格式，比如需要哪几列对应的数据，格式等样子</p>
+<p>4、获取系统账单，并与对账单进行匹配</p>
+<p>5、输出结果，一般正常是平账，异常结果如下</p>
+<p>6、差错处理，一般有以下几种异常结果</p>
+<p>A、多账：即对账单中存在但系统账单中无的账单，一般是因为调单或重订单2次支付造成</p>
+<p>B、短帐：即对账单中不存在但系统账单有的账单，这种概率极低。如有，那找对方算账</p>
+<p>C、金额不一致：这种比较特殊，即对账单和系统账单都存在对应的订单号，但金额不一致。这种概率极低。</p>
+<h1 id="记账系统"><a href="#记账系统" class="headerlink" title="记账系统"></a>记账系统</h1><p>要搞懂记账系统，首先要了解会计基础中的复式记账及会计科目。这里不过多叙述，大家可以找本会计基础的书或者网上搜索下。以下介绍下简单的记账过程，以充值为例：</p>
+<p>（银行还没结算资金给第三方支付公司）</p>
+<p>借：应收款-XX银行XX账户 100元</p>
+<p>贷：客户资金-XX用户XX账户 100元</p>
+<p>（第二天银行将这笔钱结算给第三方支付公司了）</p>
+<p>借：银行存款-XX银行XX账户 100元</p>
+<p>贷：应收款-XX银行XX账户 100元</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;支付系统架构&quot;&gt;&lt;a href=&quot;#支付系统架构&quot; class=&quot;headerlink&quot; title=&quot;支付系统架构&quot;&gt;&lt;/a&gt;支付系统架构&lt;/h1&gt;&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;账户系统&lt;/strong&gt;：账户账务系统，一切支付结算业务的基础，一个账号可对应
+    
+    </summary>
+    
+      <category term="支付业务" scheme="http://www.pmjohnfung.com/categories/%E6%94%AF%E4%BB%98%E4%B8%9A%E5%8A%A1/"/>
+    
+    
+      <category term="支付" scheme="http://www.pmjohnfung.com/tags/%E6%94%AF%E4%BB%98/"/>
+    
+      <category term="业务" scheme="http://www.pmjohnfung.com/tags/%E4%B8%9A%E5%8A%A1/"/>
+    
+      <category term="账户" scheme="http://www.pmjohnfung.com/tags/%E8%B4%A6%E6%88%B7/"/>
+    
+      <category term="架构" scheme="http://www.pmjohnfung.com/tags/%E6%9E%B6%E6%9E%84/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>java接口意义</title>
+    <link href="http://www.pmjohnfung.com/categories/java/java%E6%8E%A5%E5%8F%A3%E6%84%8F%E4%B9%89/"/>
+    <id>http://www.pmjohnfung.com/categories/java/java接口意义/</id>
+    <published>2017-01-03T12:18:46.000Z</published>
+    <updated>2017-01-11T05:03:58.000Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="规范性"><a href="#规范性" class="headerlink" title="规范性"></a>规范性</h1><p>所谓的规范性，当然规范java类的，为了避免类在设计上的不一致，很常见的，假如我们定义了一个类要实现【Comparator】接口，这个大家应该比较熟悉的吧，一个作用于比较的接口，实现这个接口，就必须去覆写它的compare(比较用来排序的两个参数)和equals(指示某个其他对象是否“等于”此 Comparator)方法,所以这样就形成了一种规范，要求以实现某个接口的时候，必须具备接口原来所具有的功能，这在大型开发中显的尤为重要</p>
+<h1 id="易于扩展、维护"><a href="#易于扩展、维护" class="headerlink" title="易于扩展、维护"></a>易于扩展、维护</h1><p> 比如你要做一个画板程序，其中里面有一个面板类，主要负责绘画功能，然后你就这样定义了这个类，可是在不久将来，你突然发现这个类满足不了你了，然后你又要重新设计这个类，更糟糕是你可能要放弃这个类，那么其他地方可能有引用他，这样修改起来很麻烦，如果你一开始定义一个接口，把绘制功能放在接口里，然后定义类时实现这个接口，然后你只要用这个接口去引用实现它的类就行了，以后要换的话只不过是引用另一个类而已，这样就达到维护、拓展的方便性。</p>
+<h1 id="安全"><a href="#安全" class="headerlink" title="安全"></a>安全</h1><p>一个接口它只返回你想要的结果，而不提供程序实现的细节，对外皆是透明不可见，这样就比较的安全一些，严密些</p>
+<p>   其实用到接口肯定是有好处的啦，所以，如果实在是向我开始怎么都理解不了的话， 建议多开发，多敲敲，敲的多了，自然就明白了！望有不足之处，大虾门勿喷哈，要多给指点指点！   </p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;规范性&quot;&gt;&lt;a href=&quot;#规范性&quot; class=&quot;headerlink&quot; title=&quot;规范性&quot;&gt;&lt;/a&gt;规范性&lt;/h1&gt;&lt;p&gt;所谓的规范性，当然规范java类的，为了避免类在设计上的不一致，很常见的，假如我们定义了一个类要实现【Comparator】接口，这
+    
+    </summary>
+    
+      <category term="java" scheme="http://www.pmjohnfung.com/categories/java/"/>
+    
+    
+      <category term="java" scheme="http://www.pmjohnfung.com/tags/java/"/>
+    
+      <category term="基础" scheme="http://www.pmjohnfung.com/tags/%E5%9F%BA%E7%A1%80/"/>
+    
+      <category term="interface" scheme="http://www.pmjohnfung.com/tags/interface/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>2017年计划</title>
+    <link href="http://www.pmjohnfung.com/categories/%E7%94%9F%E6%B4%BB/2017plan/"/>
+    <id>http://www.pmjohnfung.com/categories/生活/2017plan/</id>
+    <published>2017-01-02T14:57:46.000Z</published>
+    <updated>2017-03-16T09:10:45.000Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="2017年三大目标"><a href="#2017年三大目标" class="headerlink" title="2017年三大目标"></a>2017年三大目标</h1><ul>
+<li>挑战（个人）：完成在职研究生的考试内容的学习，目标：取得A线成绩；</li>
+<li>成长（工作）：纵向、深入跟进项目、提升业务、技术方面的能力，目标：能够完全主控大项目节奏；</li>
+<li>重拾（爱好）：技术知识重新抓起，目标：可独立完成核心编码；</li>
+</ul>
+<h1 id="实现目标规划"><a href="#实现目标规划" class="headerlink" title="实现目标规划"></a>实现目标规划</h1><h2 id="挑战（计划中）"><a href="#挑战（计划中）" class="headerlink" title="挑战（计划中）"></a>挑战（计划中）</h2><p>1.制定学习计划（明天完善清楚大的里程碑内容1.10）</p>
+<h2 id="成长（持续完善）"><a href="#成长（持续完善）" class="headerlink" title="成长（持续完善）"></a>成长（持续完善）</h2><p>1.每天坚持一篇文章，主要描述业务、技术相关内容，提升自己的理解；</p>
+<p>2.至少阅读一份PRD文档，且能够读明白；</p>
+<p>3.每个项目均需列出WBS；</p>
+<p>4.项目的推进过程需提前到idea阶段；积极推动从PRD产出到落地的整个过程；</p>
+<p>5.记录每个项目中重点遇到的问题；</p>
+<p>6.利用经验挑战全新的工作，梳理现有项目开展方式，学习公司业务，找痛点，针对痛点实际解决问题；</p>
+<h2 id="重拾"><a href="#重拾" class="headerlink" title="重拾"></a>重拾</h2><p>1.每天至少一小时技术学习时间；</p>
+<p>2.了解主流框架及使用；</p>
+<p>3.完成自己的一个作品（还未确认）；</p>
+<h1 id="重大里程碑（持续更新）"><a href="#重大里程碑（持续更新）" class="headerlink" title="重大里程碑（持续更新）"></a>重大里程碑（持续更新）</h1><table>
+<thead>
+<tr>
+<th>日期</th>
+<th>事件</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2017-01-09</td>
+<td>2017年个人目标idea规划</td>
+</tr>
+<tr>
+<td>2017-03-01</td>
+<td>已工作，想寻找好的发展机会</td>
+</tr>
+</tbody>
+</table>
+<h1 id="日常作息"><a href="#日常作息" class="headerlink" title="日常作息"></a>日常作息</h1><p>1:00-8:00 晚上休息时间</p>
+<p>8:00-9:30 起床、吃饭、路上时间</p>
+<p>9:30-12:00 上班时间</p>
+<p>12:00-13:00 中饭时间</p>
+<p>13:00-14:00 午休时间</p>
+<p>14:00-20:00 上班时间</p>
+<p>20:00-21:00 晚餐、路上时间</p>
+<p>21:00-1:00 学习时间</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;2017年三大目标&quot;&gt;&lt;a href=&quot;#2017年三大目标&quot; class=&quot;headerlink&quot; title=&quot;2017年三大目标&quot;&gt;&lt;/a&gt;2017年三大目标&lt;/h1&gt;&lt;ul&gt;
+&lt;li&gt;挑战（个人）：完成在职研究生的考试内容的学习，目标：取得A线成绩；&lt;/l
+    
+    </summary>
+    
+      <category term="生活" scheme="http://www.pmjohnfung.com/categories/%E7%94%9F%E6%B4%BB/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Java基础</title>
+    <link href="http://www.pmjohnfung.com/categories/java/javabase/"/>
+    <id>http://www.pmjohnfung.com/categories/java/javabase/</id>
+    <published>2016-12-31T06:52:15.000Z</published>
+    <updated>2017-01-11T05:04:09.000Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="String类为什么是final的"><a href="#String类为什么是final的" class="headerlink" title="String类为什么是final的"></a>String类为什么是final的</h1><hr>
+<h2 id="final-类"><a href="#final-类" class="headerlink" title="final 类"></a>final 类</h2><ul>
+<li>final 关键字含义</li>
+</ul>
+<p>凡是对成员变量或者本地变量(在方法中的或者代码块中的变量称为本地变量)声明为final的都叫作final变量。final变量经常和static关键字一起使用，作为常量。<br>final 变量是只读的</p>
+<ul>
+<li>什么是final变量</li>
+</ul>
+<p>final也可以声明方法。方法前面加上final关键字，代表这个方法不可以被子类的方法重写。如果你认为一个方法的功能已经足够完整了，子类中不需要改变的话，你可以声明此方法为final。final方法比非final方法要快，因为在编译的时候已经静态绑定了，不需要在运行时再动态绑定。</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">public</span> <span class="keyword">final</span> <span class="keyword">static</span> Sting str = <span class="string">"lo"</span> ; </div><div class="line">str = <span class="keyword">new</span> String(<span class="string">"wo"</span>);</div></pre></td></tr></table></figure>
+<ul>
+<li>什么是final方法</li>
+</ul>
+<p>final也可以声明方法。方法前面加上final关键字，代表这个方法不可以被子类的方法重写。如果你认为一个方法的功能已经足够完整了，子类中不需要改变的话，你可以声明此方法为final。final方法比非final方法要快，因为在编译的时候已经静态绑定了，不需要在运行时再动态绑定。下面是final方法的例子</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div></pre></td><td class="code"><pre><div class="line"></div><div class="line"><span class="class"><span class="keyword">class</span> <span class="title">PersonalLoan</span></span>&#123;</div><div class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">final</span> String <span class="title">getName</span><span class="params">()</span></span>&#123;</div><div class="line">        <span class="keyword">return</span> <span class="string">"personal loan"</span>;</div><div class="line">    &#125;</div><div class="line">&#125;</div><div class="line"> </div><div class="line"><span class="class"><span class="keyword">class</span> <span class="title">CheapPersonalLoan</span> <span class="keyword">extends</span> <span class="title">PersonalLoan</span></span>&#123;</div><div class="line">    <span class="meta">@Override</span></div><div class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">final</span> String <span class="title">getName</span><span class="params">()</span></span>&#123;</div><div class="line">        <span class="keyword">return</span> <span class="string">"cheap personal loan"</span>; <span class="comment">//compilation error: overridden method is final</span></div><div class="line">    &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<ul>
+<li>什么是final类</li>
+</ul>
+<p>使用final来修饰的类叫作final类。final类通常功能是完整的，它们不能被继承。Java中有许多类是final的，譬如String, Interger以及其他包装类。</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line"></div><div class="line"><span class="keyword">final</span> <span class="class"><span class="keyword">class</span> <span class="title">PersonalLoan</span></span>&#123;</div><div class="line"> </div><div class="line">    &#125;</div><div class="line"> </div><div class="line">    <span class="class"><span class="keyword">class</span> <span class="title">CheapPersonalLoan</span> <span class="keyword">extends</span> <span class="title">PersonalLoan</span></span>&#123;  <span class="comment">//compilation error: cannot inherit from final class</span></div><div class="line"> </div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<h2 id="final-关键字的优点"><a href="#final-关键字的优点" class="headerlink" title="final 关键字的优点"></a>final 关键字的优点</h2><p>下面总结了一些使用final关键字的好处</p>
+<ul>
+<li>final关键字提高了性能。JVM和Java应用都会缓存final变量。</li>
+<li>final变量可以安全的在多线程环境下进行共享，而不需要额外的同步开销。</li>
+<li>使用final关键字，JVM会对方法、变量及类进行优化。</li>
+</ul>
+<h2 id="其他重要知识点"><a href="#其他重要知识点" class="headerlink" title="其他重要知识点"></a>其他重要知识点</h2><ul>
+<li>final关键字可以用于成员变量、本地变量、方法以及类。</li>
+<li>final成员变量必须在声明的时候初始化或者在构造器中初始化，否则就会报编译错误。</li>
+<li>你不能够对final变量再次赋值。</li>
+<li>本地变量必须在声明时赋值。</li>
+<li>在匿名类中所有变量都必须是final变量。</li>
+<li>final方法不能被重写。</li>
+<li>final类不能被继承。</li>
+<li>final关键字不同于finally关键字，后者用于异常处理。</li>
+<li>final关键字容易与finalize()方法搞混，后者是在Object类中定义的方法，是在垃圾回收之前被JVM调用的方法。</li>
+<li>接口中声明的所有变量本身是final的。</li>
+<li>final和abstract这两个关键字是反相关的，final类就不可能是abstract的。</li>
+<li>final方法在编译阶段绑定，称为静态绑定(static binding)。</li>
+<li>没有在声明时初始化final变量的称为空白final变量(blank final variable)，它们必须在构造器中初始化，或者调用this()初始化。不这么做的话，编译器会报错“final变量(变量名)需要进行初始化”。</li>
+<li>将类、方法、变量声明为final能够提高性能，这样JVM就有机会进行估计，然后优化。</li>
+<li>按照Java代码惯例，final变量就是常量，而且通常常量名要大写：</li>
+</ul>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;String类为什么是final的&quot;&gt;&lt;a href=&quot;#String类为什么是final的&quot; class=&quot;headerlink&quot; title=&quot;String类为什么是final的&quot;&gt;&lt;/a&gt;String类为什么是final的&lt;/h1&gt;&lt;hr&gt;
+&lt;h2 id=&quot;
+    
+    </summary>
+    
+      <category term="java" scheme="http://www.pmjohnfung.com/categories/java/"/>
+    
+    
+      <category term="java" scheme="http://www.pmjohnfung.com/tags/java/"/>
+    
+      <category term="基础" scheme="http://www.pmjohnfung.com/tags/%E5%9F%BA%E7%A1%80/"/>
+    
+      <category term="String" scheme="http://www.pmjohnfung.com/tags/String/"/>
+    
+      <category term="final" scheme="http://www.pmjohnfung.com/tags/final/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>支付账务相关知识（一）</title>
+    <link href="http://www.pmjohnfung.com/categories/%E6%94%AF%E4%BB%98%E4%B8%9A%E5%8A%A1/pay-core-account/"/>
+    <id>http://www.pmjohnfung.com/categories/支付业务/pay-core-account/</id>
+    <published>2016-12-30T05:33:40.000Z</published>
+    <updated>2017-01-03T06:09:36.000Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="会计科目"><a href="#会计科目" class="headerlink" title="会计科目"></a>会计科目</h1><p>会计科目通常会分为很多类，假设我们现在只建设最简单的支付系统，那么至少我们需要熟知以下三个科目大类：</p>
+<p><strong>资产类科目</strong>：通常余额反映在借方，银行存款、固定资产等通常记录在资产类科目下。</p>
+<p><strong>负债类科目</strong>：通常余额反映在贷方，客户负债，应付款等通常记录在负债类科目下。</p>
+<p><strong>共同类科目</strong>：根据实际业务不同，具体的科目余额既可以反映在借方也可以在贷方，通常来说待清算款项会记录在共同类科目中。</p>
+<blockquote>
+<p>例如在资产类科目下，我们设立一个一级科目叫做银行存款（科目号110），在银行存款科目下设置二级科目叫做工商银行存款（科目号 110 01），在工商银行存款科目下设置三级科目叫做工商银行XX支行银行账户（科目号为 11001 01）。大家注意看括弧里的黑体字，下级科目号=上级科目号+自己本身独立分配的科目号，这样就能很轻松地通过一个下级科目号推断出其上级科目。</p>
+</blockquote>
+<p>另外顺带一提，假如一个会计科目不存在子科目，那么我们就认为其是底层科目，所有反应实际业务活动的账务必须记录在底层科目中。</p>
+<h1 id="资金平衡关系："><a href="#资金平衡关系：" class="headerlink" title="资金平衡关系："></a>资金平衡关系：</h1><p>学过会计恒等式的同学都知道，资产=负债+所有者权益。对我们上述假定的支付系统而言，由于没有所有者权益，所以恒等式变更为资产+共同类借方余额=负债+共同类贷方余额。整体而言，无论什么业务状况下，我们必须保证系统内所有借方余额正好等于贷方余额，否则系统可以判定为有BUG。</p>
+<p><strong>记账规则</strong> ：</p>
+<p>既然设置了科目用来进行账务的记录，那么接下来咱们就必须明确在不同业务活动中我们如何记账。<br>在会计学中，我们至少用一组会计分录来进行账务变动的记录（因为要保持账务的平衡，有借必有贷，借贷必相等）。</p>
+<p>例如：</p>
+<p>有个支付宝用户通过网银向自己的支付宝账户充值100元，交易完成后支付宝内部账务可能会这样记录（以一级科目为例）：</p>
+<p>借：401 待清算充值款  100元</p>
+<p>贷：201 客户负债账户  100元</p>
+<p>tips:由于网银收单获取的资金，银行通常是T+1日结算给支付宝，所以这笔钱还没落地到支付宝的银行账户，故记录在待清算充值科目中。</p>
+<p>日终时，银行发来对账文件，确认该笔交易，对账成功，支付宝系统会进行以下记账：</p>
+<p>借：110 银行存款  100元</p>
+<p>贷：401 待清算充值款 100元</p>
+<p>大家可以看到，支付宝系统在确认对账成功，银行资金入账后，将原本的待清算账户中借方的100元挪动到了银行存款中。</p>
+<p>在实际业务过程中，记账的规则不会如此简单，会在一个业务过程中同时发生好几笔会计分录变动，例如：</p>
+<p>用户小明（系统代号001）向商户小红（系统代号002）购买商品，使用支付宝账户支付，价格100元，支付宝向小红收取手续费1元。交易完成后支付宝会进行如下记账：</p>
+<p>借：201 001 小明支付宝账户  100元</p>
+<p>贷：201 002 小红支付宝账户 100元</p>
+<p>借：201 002 小红支付宝账户 1元</p>
+<p>贷：401 001 支付宝收益账户 1元</p>
+<p>这组记账，对支付系统来说，是一个不可分割的事物。要不然同时成功，要不然同时失败，绝对不会出现前一组分录记账成功，后一组失败的情况。那么这样的针对具体业务情况的记账逻辑，我们就称之为记账规则。</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;会计科目&quot;&gt;&lt;a href=&quot;#会计科目&quot; class=&quot;headerlink&quot; title=&quot;会计科目&quot;&gt;&lt;/a&gt;会计科目&lt;/h1&gt;&lt;p&gt;会计科目通常会分为很多类，假设我们现在只建设最简单的支付系统，那么至少我们需要熟知以下三个科目大类：&lt;/p&gt;
+&lt;p&gt;&lt;str
+    
+    </summary>
+    
+      <category term="支付业务" scheme="http://www.pmjohnfung.com/categories/%E6%94%AF%E4%BB%98%E4%B8%9A%E5%8A%A1/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>2015总结及2016年展望</title>
+    <link href="http://www.pmjohnfung.com/categories/%E7%94%9F%E6%B4%BB/2015-summary/"/>
+    <id>http://www.pmjohnfung.com/categories/生活/2015-summary/</id>
+    <published>2016-01-04T05:06:13.000Z</published>
+    <updated>2017-01-11T05:11:55.000Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="2015年逝去的青春"><a href="#2015年逝去的青春" class="headerlink" title="2015年逝去的青春"></a>2015年逝去的青春</h1><ul>
+<li>成功完成北斗项目的申报工作，并作为主要人员参与其中；</li>
+<li>成功管理北斗平台的开发工作，增加自己的管理经验，增加与上级多部门的沟通协调经验；</li>
+<li>担任大项目的计划管理、版本管理、风险管理工作对自己的大项目管理经验有了明显的提高；</li>
+<li>成功的步入婚姻的殿堂，拥有了稳定的家庭；</li>
+<li>一直坚持阅读，包括管理类、技术类和心理类书籍10余本；</li>
+<li>坚持做自己喜欢的岗位，坚持做自己喜欢的事情，非工作时间研究下java的热门技术；</li>
+<li>坚持参加项目管理的培训与交流，与培训班的朋友们一起交流项目管理过程中的得失、经验；</li>
+<li>坚持了1个月的健身没有能够继续坚持是个遗憾，2016年需要弥补这个遗憾；</li>
+<li>部门领导的频繁更换导致了情绪的不同程度波动，造成了团队工作氛围下降，个人情绪低落，后来即时调整，对个人的职业生涯是个很好的锻炼；</li>
+<li>2015年我应该可以担任更具有挑战性的工作，我没有主动承担，2016年必须要有所突破；</li>
+<li>2015年没有能够带家人出去旅游，2016年需要注意；</li>
+</ul>
+<h1 id="2016年规划"><a href="#2016年规划" class="headerlink" title="2016年规划"></a>2016年规划</h1><ul>
+<li>完善项目管理体系的经验整理；</li>
+<li>培养大项目管理的经验，承接更大或重要的项目；</li>
+<li>继续坚持阅读精品书籍10本以上；</li>
+<li>坚持锻炼；</li>
+<li>带家人一起旅行；</li>
+<li>拥抱互联网思维；</li>
+<li>坚持自己感兴趣的事情；</li>
+<li>减轻爱人的生活负担</li>
+</ul>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;2015年逝去的青春&quot;&gt;&lt;a href=&quot;#2015年逝去的青春&quot; class=&quot;headerlink&quot; title=&quot;2015年逝去的青春&quot;&gt;&lt;/a&gt;2015年逝去的青春&lt;/h1&gt;&lt;ul&gt;
+&lt;li&gt;成功完成北斗项目的申报工作，并作为主要人员参与其中；&lt;/li&gt;
+
+    
+    </summary>
+    
+      <category term="生活" scheme="http://www.pmjohnfung.com/categories/%E7%94%9F%E6%B4%BB/"/>
+    
+    
+      <category term="2015" scheme="http://www.pmjohnfung.com/tags/2015/"/>
+    
+      <category term="总结" scheme="http://www.pmjohnfung.com/tags/%E6%80%BB%E7%BB%93/"/>
+    
+      <category term="规划" scheme="http://www.pmjohnfung.com/tags/%E8%A7%84%E5%88%92/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>java 回调机制</title>
+    <link href="http://www.pmjohnfung.com/categories/java/java-callback/"/>
+    <id>http://www.pmjohnfung.com/categories/java/java-callback/</id>
+    <published>2015-07-22T04:58:39.000Z</published>
+    <updated>2017-01-11T05:03:02.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>模块之间总是存在这一定的接口，从调用方式上看，可以分为三类：同步调用、回调和异步调用。同步调用是一种阻塞式调用，也是我们在写程序中经常使用的；回调是一种双向的调用模式，也就是说，被调用的接口被调用时也会调用对方的接口，这句话可能有点绕，等文章后面举例说明；异步调用是一种类似消息或事件的机制，解决了同步阻塞的问题，举例来讲：A通知B后，他们各走各的路，互不影响，不用像同步调用那样，A通知B后，非得等到B走完后，A才继续走。回调是异步的基本，因此下面着重说回调机制。</p>
+<p><img src="/img/java-callback.png" alt=""></p>
+<p>我们暂且不讨论回调的一些名词和运行机制，首先说为什么会存在回调这样一种调用？同步和异步机制的出现不必多说，大家心知肚明，那回调机制为什么会出现呢？在我们现实生活中，有如下这样场景：有一位老板很忙，他没有时间盯着员工干活，然后他告诉自己的雇员，干完当前这些事情后，告诉他干活的结果。这个例子其实是一个回调+异步的例子，再举一个例子，A程序员写了一段程序a，其中预留了回调函数接口，并封装好了该程序，程序员B让a调用自己的程序b中的一个方法，于是，他通过a中的接口回调自己b中的方法，到这里你可能似懂非懂了，后面会继续说明回调的出现原因。接下来我们把上面例子变成代码，看到网上很多人最后搞混了异步和回调，因此例子中不加入异步调用。（注意：回调可不是解决什么调用时间过长问题，那是异步！）</p>
+<p>首先创建一个回调接口，让老板得告知干完活如何找到他的方式：留下老板办公室地址：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">package</span> net.easyway.test;  </div><div class="line">  </div><div class="line"><span class="comment">/** </span></div><div class="line"> * 此接口为联系的方式，不论是电话号码还是联系地址，作为 </div><div class="line"> * 老板都必须要实现此接口 </div><div class="line"> * <span class="doctag">@author</span> Administrator </div><div class="line"> * </div><div class="line"> */  </div><div class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">interface</span> <span class="title">CallBackInterface</span> </span>&#123;  </div><div class="line">  </div><div class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">execute</span><span class="params">()</span></span>;  </div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p>创建回调对象，就是老板本人，因为员工干完活后要给他打电话，因此老板必须实现回调接口，不然员工去哪里找老板？</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">package</span> net.easyway.test;  </div><div class="line">  </div><div class="line"><span class="comment">/** </span></div><div class="line"> * 老板是作为上层应用身份出现的，下层应用（员工）是不知道 </div><div class="line"> * 有哪些方法，因此他想被下层应用（员工）调用必须实现此接口 </div><div class="line"> * <span class="doctag">@author</span> Administrator </div><div class="line"> * </div><div class="line"> */  </div><div class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Boss</span> <span class="keyword">implements</span> <span class="title">CallBackInterface</span> </span>&#123;  </div><div class="line">      </div><div class="line">    <span class="meta">@Override</span>  </div><div class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">execute</span><span class="params">()</span> </span>&#123;  </div><div class="line">        System.out.println(<span class="string">"收到了！！"</span> + System.currentTimeMillis());  </div><div class="line">          </div><div class="line">    &#125;  </div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p>创建控制类，也就是员工对象，他必须持有老板的地址（回调接口），即使老板换了一茬又一茬，办公室不变，总能找到对应的老板。</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">package</span> net.easyway.test;  </div><div class="line">  </div><div class="line"><span class="comment">/** </span></div><div class="line"> * 员工类，必须要记住，这是一个底层类，底层是不了解上层服务的 </div><div class="line"> * <span class="doctag">@author</span> Administrator </div><div class="line"> * </div><div class="line"> */  </div><div class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Employee</span> </span>&#123;  </div><div class="line">  </div><div class="line">    <span class="keyword">private</span> CallBackInterface callBack = <span class="keyword">null</span>;  </div><div class="line">      </div><div class="line">    <span class="comment">//告诉老板的联系方式，也就是注册  </span></div><div class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">setCallBack</span><span class="params">(CallBackInterface callBack)</span></span>&#123;  </div><div class="line">        <span class="keyword">this</span>.callBack = callBack;  </div><div class="line">    &#125;  </div><div class="line">      </div><div class="line">    <span class="comment">//工人干活  </span></div><div class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">doSome</span><span class="params">()</span></span>&#123;  </div><div class="line">        <span class="comment">//1.开始干活了  </span></div><div class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>;i&lt;<span class="number">10</span>;i++)&#123;  </div><div class="line">            System.out.println(<span class="string">"第【"</span> + i + <span class="string">"】事情干完了！"</span>);  </div><div class="line">        &#125;  </div><div class="line">          </div><div class="line">        <span class="comment">//2.告诉老板干完了  </span></div><div class="line">        callBack.execute();  </div><div class="line">    &#125;  </div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p>测试类代码：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">package</span> net.easyway.test;  </div><div class="line">  </div><div class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Client</span> </span>&#123;  </div><div class="line">  </div><div class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;  </div><div class="line">          </div><div class="line">          </div><div class="line">        Employee emp = <span class="keyword">new</span> Employee();  </div><div class="line">          </div><div class="line">        <span class="comment">//将回调对象（上层对象）传入，注册  </span></div><div class="line">        emp.setCallBack(<span class="keyword">new</span> Boss());  </div><div class="line">          </div><div class="line">        <span class="comment">//开启控制器对象运行  </span></div><div class="line">        emp.doSome();  </div><div class="line">    &#125;  </div><div class="line">  </div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p>上面这个例子，大家可以和程序员A和程序员B的那个例子结合对照下。</p>
+<p>看了上面的例子，有的人可能认为，这不是面向接口的编程吗？怎么会是回调，你再好好想想，咱们面向接口的编程的调用关系？在三层中，当业务层调用数据层时，是不需要把业务层自身传递到数据层的，并且这是一种上层调用下层的关系，比如我们在用框架的时候，一般直接调用框架提供的API就可以了，但回调不同，当框架不能满足需求，我们想让框架来调用自己的类方法，怎么做呢？总不至于去修改框架吧。许多优秀的框架提几乎都供了相关的接口，我们只需要实现相关接口，即可完成了注册，然后在合适的时候让框架来调用我们自己的类，还记不记得我们在使用Struts时，当我们编写Action时，就需要继承Action类，然后实现execute()方法，在execute()方法中写咱们自己的业务逻辑代码，完成对用户请求的处理。由此可以猜测，框架和容器中会提供大量的回调接口，以满足个性化的定制。</p>
+<p>不知道上面这个例子懂了没有？我们现在可以想象Filter和Interceptor的区别了，这两者其中最大的一个区别是Filter是基于回调函数，需要容器的支持，没有容器是无法回调doFilter()方法，而Interceptor是基于Java的反射机制的，和容器无关。那到此是否又将反射和回调搞混了呢？请见我讲Java动态代理的博客《以此之长，补彼之短—-AOP(代理模式)》。</p>
+<p>总之，要明确的一点是，首先要搞清回调函数出现的原因，也就是适用场景，才能搞清楚回调机制，不然事倍功半。</p>
+<p>最后，再举一例，为了使我们写的函数接近完美，就把一部分功能外包给别人，让别人个性化定制，至于别人怎么实现不管，我唯一要做的就是定义好相关接口，这一设计允许了底层代码调用高层定义的子程序，增强程序灵活性，和反射有着异曲同工之妙，我觉得这才是回调的真正原因，以上是我个人一些理解，望讨论！</p>
+<p>转自：<a href="http://blog.csdn.net/pi9nc/article/details/23169357" target="_blank" rel="external">http://blog.csdn.net/pi9nc/article/details/23169357</a></p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;模块之间总是存在这一定的接口，从调用方式上看，可以分为三类：同步调用、回调和异步调用。同步调用是一种阻塞式调用，也是我们在写程序中经常使用的；回调是一种双向的调用模式，也就是说，被调用的接口被调用时也会调用对方的接口，这句话可能有点绕，等文章后面举例说明；异步调用是一种类似
+    
+    </summary>
+    
+      <category term="java" scheme="http://www.pmjohnfung.com/categories/java/"/>
+    
+    
+      <category term="java" scheme="http://www.pmjohnfung.com/tags/java/"/>
+    
+      <category term="回调" scheme="http://www.pmjohnfung.com/tags/%E5%9B%9E%E8%B0%83/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>优秀项目经理需具备的素质</title>
+    <link href="http://www.pmjohnfung.com/categories/%E9%A1%B9%E7%9B%AE%E7%AE%A1%E7%90%86/pm-2/"/>
+    <id>http://www.pmjohnfung.com/categories/项目管理/pm-2/</id>
+    <published>2015-07-15T04:55:44.000Z</published>
+    <updated>2017-02-03T09:47:15.000Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="目标驱动，系统思维，风险意识，数据量化"><a href="#目标驱动，系统思维，风险意识，数据量化" class="headerlink" title="目标驱动，系统思维，风险意识，数据量化"></a>目标驱动，系统思维，风险意识，数据量化</h1><p>凡事预则立，不预则废。如果你不知道要到哪里？给你一张地图也没有用。目标驱动首先要有最基本的计划管理和时间管理能力。对于一个项目，我们过程中做的所有工作都是为了要达到项目目标，因此在项目各个阶段所有活动都需要考虑对达成目标的影响，当发现偏差后及时纠正。目标驱动让我们从无目的的事后应急变成了有计划有目的的事前预测。目标驱动不是要抛弃过程，项目的成功涉及到过程，人和方法工具技术。为了达到项目目标，我们要根据项目的实际情况采取一系列项目原来已经总结的最佳实践形成一套过程，高效的过程和积极心态的人是保证项目目标达成的关键。因此作为项目经理要时刻问自己，项目的目标是什么？项目当前状态和我达成目标的差距是什么？我如何解决和应对。</p>
+<p>项目的成功受到多方面的因素的影响，而且各个因素之间还存在正反作用力。系统思维就是要让我们能够清楚的认识到影响项目目标和成功的各个要素，以及它们之间存在的关系。形成一种适合项目的动态系统模型，通过这个动态模型去平衡项目各方干系人的利益，平衡项目四要素之间的关系，平衡项目的短期和长期的利益。项目经理的一个重要能力就是平衡，没有最优解，只有满意解，懂得了平衡就知道当项目出现变更和调整的时候如何更好的应对。从单要素最优的单向思维过渡到关注整个系统的全局思维模式上。</p>
+<p>风险意识简单来讲就是项目在执行过程中可能发生的各种问题我都事先预见到了而采取了适当的缓解措施，这样才能够真正的让项目能够按照预先制定的计划和目标进行。再简单点就是如果风险管理做得好，项目是不应该失败的。君子安而不忘危，存而不忘亡，治而不忘乱。风险管理的重点正是在于要形成风险意识，要能够通过历史经验的积累，能够把项目的关键风险识别出来，使项目能够从事后的救火转变到事前的防备，使项目能够在前面紧张后面轻松。</p>
+<p>要谈及量化管理首先应该要培训用数据说话的分析思维。在软件项目管理中我们做度量的目的，就是要收集和分析各种历史数据，通过对数据的分析来知道项目真正的效率，同时为后续项目提供各种估算参数数据。以数据说话让我们从全凭主观经验臆断转变到对事物的客观数据分析上。只有能够收集数据，分析数据我们才可能持续改进。有了数据意识后就是要有统计和量化管理方面的意识，利用统计学的思维和量化管理手段不仅仅是让我们的过程稳定和受控制，能够去发现项目执行过程中特殊原因引起的波动，针对特殊波动进行根源分析并采取纠正行动；还能够让我们能够根据预测模型更加准确的预测项目能够达成目标的程度和概率。</p>
+<h1 id="软技能"><a href="#软技能" class="headerlink" title="软技能"></a>软技能</h1><h2 id="沟通能力"><a href="#沟通能力" class="headerlink" title="沟通能力"></a>沟通能力</h2><p>沟通能力指通过语言表达，使干系人能够清楚的理解需要表达内容，理解干系人的表达内容，通过有效的沟通达到目标的实现；</p>
+<h2 id="领导能力"><a href="#领导能力" class="headerlink" title="领导能力"></a>领导能力</h2><h2 id="影响能力"><a href="#影响能力" class="headerlink" title="影响能力"></a>影响能力</h2><h2 id="号召能力"><a href="#号召能力" class="headerlink" title="号召能力"></a>号召能力</h2><h2 id="协调能力"><a href="#协调能力" class="headerlink" title="协调能力"></a>协调能力</h2><h2 id="管理能力"><a href="#管理能力" class="headerlink" title="管理能力"></a>管理能力</h2><h2 id="组织能力"><a href="#组织能力" class="headerlink" title="组织能力"></a>组织能力</h2><h2 id="决策能力"><a href="#决策能力" class="headerlink" title="决策能力"></a>决策能力</h2>]]></content>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;目标驱动，系统思维，风险意识，数据量化&quot;&gt;&lt;a href=&quot;#目标驱动，系统思维，风险意识，数据量化&quot; class=&quot;headerlink&quot; title=&quot;目标驱动，系统思维，风险意识，数据量化&quot;&gt;&lt;/a&gt;目标驱动，系统思维，风险意识，数据量化&lt;/h1&gt;&lt;p&gt;凡事
+    
+    </summary>
+    
+      <category term="项目管理" scheme="http://www.pmjohnfung.com/categories/%E9%A1%B9%E7%9B%AE%E7%AE%A1%E7%90%86/"/>
+    
+    
+      <category term="优秀" scheme="http://www.pmjohnfung.com/tags/%E4%BC%98%E7%A7%80/"/>
+    
+      <category term="项目管理" scheme="http://www.pmjohnfung.com/tags/%E9%A1%B9%E7%9B%AE%E7%AE%A1%E7%90%86/"/>
+    
+      <category term="素质" scheme="http://www.pmjohnfung.com/tags/%E7%B4%A0%E8%B4%A8/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>项目管理内容感触</title>
+    <link href="http://www.pmjohnfung.com/categories/%E9%A1%B9%E7%9B%AE%E7%AE%A1%E7%90%86/pm-1/"/>
+    <id>http://www.pmjohnfung.com/categories/项目管理/pm-1/</id>
+    <published>2015-07-14T04:52:48.000Z</published>
+    <updated>2017-01-11T04:54:14.000Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="系统化思维"><a href="#系统化思维" class="headerlink" title="系统化思维"></a>系统化思维</h1><p>项目开始前需要将项目的整个过程思考以便，包括我们要做什么，打算怎么做，分几个步骤或阶段来做，一共涉及多少的工作，工作如何拆分，分配到人后如何监控项目风险，如何进行沟通等等，都需要系统化的思维来考虑问题。</p>
+<h1 id="关键点思维"><a href="#关键点思维" class="headerlink" title="关键点思维"></a>关键点思维</h1><p>在系统化思维的思考下，完成项目整体的考虑，然后需要通过关键点思维重点考虑那些工作是重点关注的、那些工作会有风险、然后开展项目工作，一步一步按照进度来。</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;系统化思维&quot;&gt;&lt;a href=&quot;#系统化思维&quot; class=&quot;headerlink&quot; title=&quot;系统化思维&quot;&gt;&lt;/a&gt;系统化思维&lt;/h1&gt;&lt;p&gt;项目开始前需要将项目的整个过程思考以便，包括我们要做什么，打算怎么做，分几个步骤或阶段来做，一共涉及多少的工作，工作
+    
+    </summary>
+    
+      <category term="项目管理" scheme="http://www.pmjohnfung.com/categories/%E9%A1%B9%E7%9B%AE%E7%AE%A1%E7%90%86/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>pmbok 知识框架</title>
+    <link href="http://www.pmjohnfung.com/categories/%E9%A1%B9%E7%9B%AE%E7%AE%A1%E7%90%86/pmbok/"/>
+    <id>http://www.pmjohnfung.com/categories/项目管理/pmbok/</id>
+    <published>2015-07-13T04:35:25.000Z</published>
+    <updated>2017-01-11T04:53:00.000Z</updated>
+    
+    <content type="html"><![CDATA[<p><img src="/img/pmbok.jpeg" alt=""></p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;img src=&quot;/img/pmbok.jpeg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+
+    
+    </summary>
+    
+      <category term="项目管理" scheme="http://www.pmjohnfung.com/categories/%E9%A1%B9%E7%9B%AE%E7%AE%A1%E7%90%86/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>软件开发需要重点关注</title>
+    <link href="http://www.pmjohnfung.com/categories/%E9%A1%B9%E7%9B%AE%E7%AE%A1%E7%90%86/pm-import/"/>
+    <id>http://www.pmjohnfung.com/categories/项目管理/pm-import/</id>
+    <published>2015-07-13T04:32:08.000Z</published>
+    <updated>2017-01-11T04:33:59.000Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="产品规划："><a href="#产品规划：" class="headerlink" title="产品规划："></a>产品规划：</h1><p>需要明确产品建设的目的和目标，做好产品的设计、需求、需求管理，做好需求跟踪矩阵、确认需求、进行严格的配置管理。</p>
+<h1 id="团队建设："><a href="#团队建设：" class="headerlink" title="团队建设："></a>团队建设：</h1><p>需要建设一组分工明确、拥有有效的激励、奖惩、团队文化建设的方法，需要团队的leader具有较强的领导力，团队成员有强烈的参与感。</p>
+<h1 id="技术使用："><a href="#技术使用：" class="headerlink" title="技术使用："></a>技术使用：</h1><p>在产品的建设过程中，技术选择是实现产品的重要过程，根据不同产品的特点选择适合自己产品本身的技术路线、架构、框架至关重要，在开发过程中的技术攻关也是项目建设过程中的难点与风险。</p>
+<h1 id="专业管理："><a href="#专业管理：" class="headerlink" title="专业管理："></a>专业管理：</h1><p>项目管理串联了产品建设整个过程中的相关团队、相关工作，项目管理更多的从项目的整体管理、计划管理、质量管理、风险管理、人力资源管理、范围管理、干系人管理、采购管理、成本管理、沟通管理等十个知识领域进行管理，确保项目的不断成功的交付使用。<br>作为从事项目管理的我，重点做好项目经理的角色，发挥自身的优势，推动项目的开展、团队的建设，同时也参与到产品建设、技术使用过程的相关工作，为项目管理过程的顺畅衔接提供基础。</p>
+<p><strong>以PMP的理论做基础，以专业的精神做后盾，成功交付每一个经手的项目，荣幸！自豪！</strong></p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;产品规划：&quot;&gt;&lt;a href=&quot;#产品规划：&quot; class=&quot;headerlink&quot; title=&quot;产品规划：&quot;&gt;&lt;/a&gt;产品规划：&lt;/h1&gt;&lt;p&gt;需要明确产品建设的目的和目标，做好产品的设计、需求、需求管理，做好需求跟踪矩阵、确认需求、进行严格的配置管理。&lt;/p
+    
+    </summary>
+    
+      <category term="项目管理" scheme="http://www.pmjohnfung.com/categories/%E9%A1%B9%E7%9B%AE%E7%AE%A1%E7%90%86/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>cmmi 介绍</title>
+    <link href="http://www.pmjohnfung.com/categories/%E9%A1%B9%E7%9B%AE%E7%AE%A1%E7%90%86/cmmi/"/>
+    <id>http://www.pmjohnfung.com/categories/项目管理/cmmi/</id>
+    <published>2015-07-11T04:16:13.000Z</published>
+    <updated>2017-01-11T04:34:39.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>CMM是指“能力成熟度模型”，其英文全称为Capability Maturity Model for Software，英文缩写为SW-CMM，简称CMM。它是对于软件组织在定义、实施、度量、控制和改善其软件过程的实践中各个发展阶段的描述。CMM的核心是把软件开发视为一个过程，并根据这一原则对软件开发和维护进行过程监控和研究，以使其更加科学化、标准化、使企业能够更好地实现商业目标。</p>
+<p>CMM是一种用于评价软件承包能力并帮助其改善软件质量的方法，侧重于软件开发过程的管理及工程能力的提高与评估。CMM分为五个等级：一级为初始级，二级为可重复级，三级为已定义级，四级为已管理级，五级为优化级。</p>
+<p>CMM是由美国卡内基梅隆大学软件工程研究所1987年研制成功的，是目前国际上最流行最实用的软件生产过程标准和软件企业成熟度等级认证标准。目前，我国已有软件企业通过了CMM标准认证 。</p>
+<p>SW-CMM(Capability Maturity Model For Software 软件生产能力成熟度模型,以下简称”CMM”),是87年由美国卡内基梅隆大学软件工程研究所（CMU SEI）研究出的一种一种用于评价软件承包商能力并帮助改善软件质量的方法，其目的是帮助软件企业对软件工程过程进行管理和改进，增强开发与改进能力，从而能按时地、不超预算地开发出高质量的软件。</p>
+<p>其所依据的想法是：只要集中精力持续努力去建立有效的软件工程过程的基础结构，不断进行管理的实践和过程的改进，就可以克服软件生产中的困难。CMM它是目前国际上最流行、最实用的一种软件生产过程标准，已经得到了众多国家以及国际软件产业界的认可，成为当今企业从事规模软件生产不可缺少的一项内容。</p>
+<p>　　CMM目前通用流行的版本是1．1（Version1．1）。《按照软件工程研究所（SEI）的原来计划，CMM的改进版版本2．0（V2．0）是要在1997年的11月完成的。但是，美国国防部办公室要求软件工程研究所（SEI）延迟发放公布CMM版本2．0，直至他们完成另一个更为紧迫的项目-CMMI。</p>
+<p>CMMI(Capability Maturity Model Integration能力成熟度模型集成)，是美国国防部的一个设想。他们希望把所有现存的与将被发展出来的各种能力成熟度模型，集成到一个框架中去。这个框架用于解决两个问题：第一，软件获取办法的改革；第二，从集成产品与过程发展的角度出发,建立一种包含健全的系统开发原则的过程改进。</p>
+<p>　　CMM为 软件企业的过程能力提供了一个阶梯式的改进框架，它基于过去所有软件工程过程改进的成果，吸取了以往软件工程的经验教训，提供了一个基于过程改进的框架； 它指明了一个软件组织在软件开发方面需要管理哪些主要工作、这些工作之间的关系、以及以怎样的先后次序，一步一步的做好这些工作而使软件组织走向成熟。</p>
+<h1 id="CMM的诞生"><a href="#CMM的诞生" class="headerlink" title="CMM的诞生"></a>CMM的诞生</h1><p>　　信息时代，软件质量的重要性越来越为人们所认识。软件是产品、是装备、是工具，其质量使得顾客满意，是产品市场开拓、事业得以发展的关键。而软件工程领域在1992年至1997年取得了前所未有的进展,其成果超过软件工程领域过去15年来的成就总和。<br>　　<br>    软件管理工 程引起广泛注意源于20世纪70年代中期。当时美国国防部曾立题专门研究软件项目做不好的原因，发现70%的项目是因为管理不善而引起，而并不是因为技术 实力不够，进而得出一个结论，即管理是影响软件研发项目全局的因素，而技术只影响局部。到了20世纪90年代中期，软件管理工程不善的问题仍然存在，大约 只有10%的项目能够在预定的费用和进度下交付。软件项目失败的主要原因有：需求定义不明确；缺乏一个好的软件开发过程；没有一个统一领导的产品研发小组；子合同管理不严格；没有经常注意改善软件过程；对软件构架很不重视；软件界面定义不善且缺乏合适的控制；软件升级暴露了硬件的缺点；关心创新而不关心费用和风险；军用标准太少且不够完善等等。在关系到软件项目成功与否的众多因素中，软件度量、工作量估计、项目规划、进展控制、需求变化和风险管理等都是与工程管理直接相关的因素。由此可见，软件管理工程的意义至关重要。<br>　　<br>　　软件管理工程和其它工程管理相比有其特殊性。首先，软件是知识产品，进度和质量都难以度量，生产效率也难以保证。其次，软件系统复杂程度也是超乎想象的。因为软件复杂和难以度量，软件管理工程的发展还很不成熟。<br>　　<br>　　软件管理工程的发展，在经历了从70年代开始以结构化分析与设计、结构化评审、结构化程序设计以及结构化测试为特征的结构化生产时代，到90年代中期，以CMM模型的成熟模型和日益为市场接受为标志，已经进入以过程成熟模型CMM、个体软件过程PSP和群组软件过程TSP为标志的以过程为中心的时代，而软件发展第三个时代，及软件工业化生产时代，从90年代中期软件过程技术的成熟和面向对象技术、构件技术的发展为基础，已经渐露端倪，估计到2005年，可以实现真正的软件工业化生产，这个趋势应该引起软件企业界和有关部门的高度重视，及早采取措施，跟上世界软件发展的脚步。软件生产转向以改善软件过程为中心，是世界各国软件产业或迟或早都要走的道路。<br>　　<br>　　软件过程改善是当前软件管理工程的核心问题。50多年来计算事业的发展使人们认识到要高效率、高质量和低成本地开发软件，必须改善软件生产过程。软件管理工程走过了一条从70年代开始以结构化分析与设计、结构化评审、结构化程序设计以及结构化测试到90年代中期以过程成熟模型CMM、个体软件过程PSP和群组软件过程TSP为标志的以过程为中心向着软件过程技术的成熟和面向对象技术、构件技术的发展为基础的真正软件工业化生产的道路。软件生产转向以改善软件过程为中心，是世界各国软件产业或迟或早都要走的道路。软件工业已经或正在经历着”软件过程的成熟化”，并向”软件的工业化”渐进过渡。规范的软件过程是软件工业化的必要条件。<br>　　<br>　　软件过程研究的是如何将人员、技术和工具等组织起来，通过有效的管理手段，提高软件生产的效率，保证软件产品的质量。由此诞生了软件过程的三个流派：CMU-SEI的CMM/PSP/TSP；ISO 9000质量标准体系；ISO/IEC 15504（SPICE）。<br>　　<br>　　CMM/PSP/TSP 即软件能力成熟度模型/ 个体软件过程/群组软件过程，是1987年美国 Carnegie Mellon 大学软件工程研究所(CMU/SEI)以W.S.Humphrey为首的研究组发表的研究成果”承制方软件工程能力的评估方法”；SO 9000质量标准体系是在70年代由欧洲首先采用的，其后在美国和世界其他地区也迅速地发展起来。目前，欧洲联合会积极促进软件质量的制度化，提出了如下 ISO9000软件标准系列：ISO9001、ISO9000-3、ISO9004-2、ISO9004-4、ISO9002；ISO/IEC 15504（SPICE）是1991年国际标准化组织采纳了一项动议，开展调查研究，按照CMU-SEI的基本思路，产生的技术报告ISO/IEC 15504–信息技术软件过程评估<br>　　<br>　　目前，学术界和工业界公认美国 Carnegie Mellon 大学软件工程研究所(CMU/SEI) 以W.S.Humphrey为首主持研究与开发的软件能力成熟度模型CMM是当前最好的软件过程，已成为业界事实上的软件过程的工业标准。</p>
+<h1 id="CMM的发展"><a href="#CMM的发展" class="headerlink" title="CMM的发展"></a>CMM的发展</h1><p>　　<br>　　1987年美国 Carnegie Mellon 大学软件工程研究所(CMU/SEI)以W.S.Humphrey为首的研究组发表了CMM/PSP/TSP 技术，为软件管理工程开辟了一条新的途经。<br>　　<br>　　CMM框 架用5个不断进化的层次来评定软件生产的历史与现状：其中初始层是混沌的过程，可重复层是经过训练的软件过程，定义层是标准一致的软件过程，管理层是可预 测的软件过程，优化层是能持续改善的软件过程。任何单位所实施的软件过程，都可能在某一方面比较成熟，在另一方面不够成熟，但总体上必然属于这5个层次中 的某一个层次。而在某个层次内部，也有成熟程度的区别。在CMM框 架的不同层次中，需要解决带有不同层次特征的软件过程问题。因此，一个软件开发单位首先需要了解自己正处于哪一个层次，然后才能够对症下药地针对该层次的 特殊要求解决相关问题，这样才能收到事半功倍的软件过程改善效果。任何软件开发单位在致力于软件过程改善时，只能由所处的层次向紧邻的上一层次进化。而且 在由某一成熟层次向上一更成熟层次进化时，在原有层次中的那些已经具备的能力还必须得到保持与发扬。<br>　　<br>　　软件产品质量在很大程度上取决于构筑软件时所使用的软件开发和维护过程的质量。软件过程是人员密集和设计密集的作业过程：若缺乏有素训练，就难以建立起支持实现成功是软件过程的基础，改进工作亦将难以取得成效。CMM描述的这个框架正是勾列出从无定规的混沌过程向训练有素的成熟过程演进的途径。<br>　　<br>　　CMM包 括两部分”软件能力成熟度模型”和”能力成熟度模型的关键惯例”。”软件能力成熟度模型”主要是描述此模型的结构，并且给出该模型的基本构件的定义。”能力成熟度模型的关键惯例”详细描述了每个”关键过程方面”涉及的”关键惯例”。这里”关键过程方面”是指一组相关联的活动；每个软件能力成熟度等级包含若 干个对该成熟度等级至关重要的过程方面，它们的实施对达到该成熟度等级的目标起到保证作用。这些过程域就称为该成熟度等级的关键过程域， 反之有非关键过程域是指对达到相应软件成熟度等级的目标不起关键作用。归纳为：互相关联的若干软件实践活动和有关基础设施的一个集合。而”关键惯例”是指 使关键过程方面得以有效实现和制度化的作用最大的基础设施和活动,对关键过程的实践起关键作用的方针、规程、措施、活动以及相关基础设施的建立。关键实践 一般只描述”做什么”而不强制规定”如何做”。各个关键惯例按每个关键过程方面的5个”公共特性”（对执行该过程的承诺，执行该过程的能力，该过程中要执 行的活动，对该过程执行情况的度量和分析，及证实所执行的活动符合该过程）归类，逐一详细描述。当作到了某个关键过程的的全部关键惯例就认为实现了该关键过程，实现了某成熟度级及其以低级所含的全部关键过程就认为达到到了了该级。<br>　　<br>　　上面提到了CMM把软件开发组织的能力成熟度分为5个的等级。除了第1级外，其他每一级由几个关键过程方面组成。每一个关键过程方面都由上述5种公共特性予以表征。CMM给 每个关键过程了一些具体目标。按每个公共特性归类的关键惯例是按该关键过程的具体目标选择和确定的。如果恰当地处理了某个关键过程涉及的全部关键惯例，这 个关键过程的各项目标就达到了，也就表明该关键过程实现了。这种成熟度分级的优点在于，这些级别明确而清楚地反映了过程改进活动的轻重缓急和先后顺序。</p>
+<table>
+<thead>
+<tr>
+<th>能力等级</th>
+<th>特点</th>
+<th>关键过程</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>第一级</td>
+<td>基本级</td>
+<td>软件过程是混乱无序的,对过程几乎没有定义,成功依靠的是个人的才能和经验,管理方式属于反应式</td>
+</tr>
+<tr>
+<td>第二级</td>
+<td>重复级</td>
+<td>建立了基本的项目管理来跟踪进度.费用和功能特征,制定了必要的项目管理,能够利用以前类似的项目应用取得成功    需求管理,项目计划,项目跟踪和监控,软件子合同管理,软件配置管理,软件质量保障</td>
+</tr>
+<tr>
+<td>第三级</td>
+<td>确定级</td>
+<td>已经将软件管理和过程文档化,标准化,同时综合成该组织的标准软件过程,所有的软件开发都使用该标准软件过程组织过程定义,组织过程焦点,培训大纲,软机集成管理,软件产品工程,组织协调,专家审评</td>
+</tr>
+<tr>
+<td>第四级</td>
+<td>管理级</td>
+<td>收集软件过程和产品质量的详细度量,对软件过程和产品质量有定量的理解和控制定量的软件过程管理和产品质量管理</td>
+</tr>
+<tr>
+<td>第五级</td>
+<td>优化级</td>
+<td>软件过程的量化反馈和新的思想和技术促进过程的不断改进缺陷预防,过程变更管理和技术变更管理</td>
+</tr>
+</tbody>
+</table>
+<p>　　<br>对于CMM的作用归纳两个主要方面: 科学地评价软件开发单位的软件能力成熟等级; 帮助软件开发单位进行自检，了解自己的强项和弱项，从而不断完善和改进单位的软件开发过程，确保软件质量，提高软件开发能效率。</p>
+<p>由于CMM并未提供有关实现CMM关键过程域所需的具体知识和技能，因此，美国 Carnegie Mellon 大学软件工程研究所(CMU/SEI) 以W.S.Humphrey为首主持研究与开发了个体软件过程PSP（Personal software process）和群组软件过程TSP(Team Software Process)，形成CMM/PSP/TSP体系。</p>
+<p>PSP 个体软件过程（Personal Software Process）是由美国Carnegie Mellon大学软件工程研究所(CMU/SEI)的Watts s. Humphrey领导开发的，于1995年它的推出，在软件工程界引起了极大的轰动，可以说是由定向软件工程走向定量软件工程的一个标志。PSP是一种可 用于控制、管理和改进个人工作方式的自我改善过程，是一个包括软件开发表格、指南和规程的结构化框架。 PSP为基于个体和小型群组软件过程的优化提供了具体而有效的途径，例如如何制订计划，如何控制质量，如何与其他人相互协作等等。在软件设计阶段， PSP的着眼点在于软件缺陷的预防，其具体办法是强化设计结束准则，而不是设计方法的选择。PSP保障软件产品质量的一个重要途径是提高设计质量。</p>
+<p>　　PSP能够说明个体软件过程的原则；帮助软件工程师作出准确的计划；确定软件工程师为改善产品质量要采取的步骤；建立度量个体软件过程改善的基准；确定过程的改变对软件工程师能力的影响。</p>
+<p>　　TSP　 群组软件过程TSP(Team Software Process)指导项目组中的成员如何有效地规划和管理所面临的项目开发任务，并且告诉管理人员如何指导软件开发队伍。始终以最佳状态来完成工作。 TSP实施集体管理与自己管理自己相结合的原则，最终目的在于指导开发人员如何在最少的时间内，以预定的费用生产出高质量的软件产品，所采用的方法是对群 组开发过程的定义、度量和改进。</p>
+<p>　　TSP致力于开发高质量的产品，建立、管理和授权项目小组，并且指导他们如何在满足计划费用的前提下，在承诺的期限范围内，不断生产并交付高质量的产品。</p>
+<p>　　CMM是过程改善的第一步，它提供了评价组织的能力、识别优先改善需求和追踪改善进展的管理方式。企业只有开始CMM改善后，才能接受需要规划的事实，认识到质量的重要性，才能注重对员工经常进行培训,合理分配项目人员,并且建立起有效的项目小组。然而，它实现的成功与否与组织内部有关人员的积极参加和创造性活动密不可分。</p>
+<p>　　PSP能够指导软件工程师如何保证自己的工作质量，估计和规划自身的工作，度量和追踪个人的表现，管理自身的软件过程和产品质量。经过PSP学习和实践的正规训练，软件工程师们能够在他们参与的项目工作之中充分运用PSP，从而有助于CMM目标的实现。</p>
+<p>　　TSP结合了CMM的管理方法和PSP的工程技能，通过告诉软件工程师如何将个体过程结合进小组软件过程，并将后者与　组织进而整个管理系统相联系；通过告诉管理层如何支持和授权项目小组，坚持高质量的工作，并且依据数据进行项　目的管理，向组织展示如何应用CMM的原则和PSP的技能去生产高质量的产品。</p>
+<p>　　总之，单纯实施CMM，永远不能真正做到能力成熟度的升级，只有将实施CMM与实施PSP和TSP有机地结合起来，才能发挥最大的效力。因此，软件过程框架应该是CMM/PSP/TSP的有机集成。</p>
+<h1 id="实施CMM的必要性"><a href="#实施CMM的必要性" class="headerlink" title="实施CMM的必要性"></a>实施CMM的必要性</h1><p>　 　<br>　 　软件开发的风险之所以大，是由于软件过程能力低，其中最关键的问题在于软件开发组织不能很好地管理其软件过程，从而使一些好的开发方法和技术起不到预期 的作用。而且项目的成功也是通过工作组的杰出努力，所以仅仅建立在可得到特定人员上的成功不能为全组织的生产和质量的长期提高打下基础，必须在建立有效的 软件如管理工程实践和管理实践的基础设施方面，坚持不懈地努力，才能不断改进，才能持续地成功。</p>
+<p>　 　软件质量是一模糊的、捉摸不定的概念。我们常常听说：某某软件好用, 某某软件不好用；某某某软件功能全、结构合理, 某某某软件功能单一、操作困难……这些模模糊糊的语言不能算作是软件质量评价，更不能算作是软件质量科学的定量的评价。软件质量，乃至于任何产品质量，都 是一个很复杂的事物性质和行为。产品质量，包括软件质量，是人们实践产物的属性和行为，是可以认识，可以科学地描述的。可以通过一些方法和人类活动，来改 进质量。</p>
+<p>　　实施CMM是改进软件质量的有效方法:控制软件生产过程、提高软件生产者组织性和软件生产者个人能力的有效合理的方法软件工程和很多研究领域及实际问题有关，主要相关领域和因素有：需求工程(RE：REQUIREMENTS ENGINEERING)。理论上，需求工程是应用已被证明的原理、技术和工具，帮助系统分析人员理解问题或描述产品的外在行为。软件复用(SR：SOFTWARE REUSE)。定义为利用工程知识或方法，由一已存在的系统，来建造一新系统。这种技术，可改进软件产品质量和生产率。还有软件检查、软件计量、软件可靠性、软件可维修性、软件工具评估和选择等。</p>
+<h1 id="CMM在中国的现状"><a href="#CMM在中国的现状" class="headerlink" title="CMM在中国的现状"></a>CMM在中国的现状</h1><p>　 　中国生产力促进协会、北航SEI、中科院研究SEI等科研机构已于近几年在北京、上海、广州和深圳等地先后举办过多次报告会和研讨会，组织过课程学习和 应用实验，开展了软件过程方面的研究与开发工作，并发表了多篇的研究成果和学术论文，在软件质量保障平台支撑环境也取得了一定的成果。</p>
+<p>　　近两年来，CMM在我国获得了各界越来越多关注，业界有过多次关于CMM的讨论，2000年6月国务院颁发的《鼓励软件产业和集成电路产业发展的若干政策》对中国软件企业申请CMM认证给予了积极的支持和推动作用,第17条规定”对软件出口型企业CMM认证费用予以适当支持。”2000年中国村电脑节上还有CMM专题论坛，吸引了众多业内人士。鼎新、东大阿尔派、联想、方正、金蝶、用友、浪潮、创智、华为、东大阿尔派等大型集团或企业等都从1997—2000年起批企业都在进行研究、实验或实施预评估。其中鼎新公司从1997年着手进行CMM认证工作。1999年7月通过第三方认证机构的CMM2认证。东大阿尔派公司于2000年10月通过第三方认证机构的CMM2认证。2001年1月，联想软件经过英国路透集团的严格评估，顺利通过CMM2认证。2001年6月26日，沈阳东软软件股份有限公司（原沈阳东大阿尔派软件股份有限公司）正式通过了CMM3级认证，成为中国首家通过CMM3级的软件企业。</p>
+<p>　　总体上讲，国内对软件过程理论的讨论与实践正在展开，目标是使软件的质量管理和控制达到国际先进水平，中国的软件产业获得可持续发展的能力。专家分析，在未来两三年内，国内软件业势必将出现实施CMM的高潮。从这一趋势看，中国的软件企业已经开始走上标准化、规范化、国际化的发展道路，中国软件业已经面临一个整体突破的时代。</p>
+<p>　　但是我们应该看到目前国内对软件管理工程存在的最大问题是认识不足。管理实际上是一把手工程，需要高层管理人员的足够重视。而且软件过程的重大修改也必须由高层管理部门启动，这是软件过程改善能否进行到底的关键。此外，软件过程的改善还有待于全体有关人员的积极参与。</p>
+<p>　 　除了要认识到过程改善工作是一把手工程这个关键因素外，还应认识到软件过程成熟度的升级本身就是一个过程，且有一个生命周期。过程改善工作需要循序渐 进，不能一蹴而就，需要持续改善，不能停滞不前；需要联系实际，不能照本宣科；需要适应变革，不能凝固不变。一个有效的途径是自顶向下的课程培训，即从高 层主管依次普及到下面的工程师。</p>
+<h1 id="CMM体系结构"><a href="#CMM体系结构" class="headerlink" title="CMM体系结构"></a>CMM体系结构</h1><p>一个企业软件能力类似于一个人在一个特定领域的能力，是逐步获得和增长的。如果一个人在其领域的发展过程中能得到一个很好的指南，那么他或她就会不断达到 一个个设定的目标，并变得成熟起来，否则可能会盲目发展，离自己的目标越来越远，甚至南辕北辙。一个企业的软件能力发展也同样需要一个良好的指南，SW-CMM正是这样一个指南，它以几十年产品质量概念和软件工业的经验及教训为基础，为企业软件能力不断走向成熟提供了有效的步骤和框架。</p>
+<h2 id="框架"><a href="#框架" class="headerlink" title="框架"></a>框架</h2><p>SW-CMM为软件企业的过程能力提供了一个阶梯式的进化框架，阶梯共有五级。第一级实际上是一个起点，任何准备按CMM体系进化的企业都自然处于这个起点上，并通过这个起点向第二级迈进。除第一级外，每一级都设定了一组目标，如果达到了这组目标，则表明达到了这个成熟级别，可以向下一个级别迈进。CMM体系不主张跨越级别的进化，因为从第二级起，每一个低的级别实现均是高的级别实现的基础。</p>
+<ol>
+<li>初始级</li>
+</ol>
+<p>初始级的软件过程是未加定义的随意过程，项目的执行是随意甚至是混乱的。也许，有些企业制定了一些软件工程规范，但若这些规范未能覆盖基本的关键过程要求，且执行没有政策、资源等方面的保证时，那么它仍然被视为初始级。</p>
+<ol>
+<li>可重复级</li>
+</ol>
+<p>根据多年的经验和教训，人们总结出软件开发的首要问题不是技术问题而是管理问题。因此，第二级的焦点集中在软件管理过程上。一个可管理的过程则是一个可重复的过程，一个可重复的过程则能逐渐进化和成熟。第二级的管理过程包括了需求管理、项目管理、质量管理、配置管理和子合同管理五个方面。其中项目管理分为计划过程和跟踪与监控过程两个过程。通过实施这些过程，从管理角度可以看到一个按计划执行的且阶段可控的软件开发过程。</p>
+<ol>
+<li>定义级</li>
+</ol>
+<p>在第二级仅定义了管理的基本过程，而没有定义执行的步骤标准。在第三级则要求制定企业范围的工程化标准，而且无论是管理还是工程开发都需要一套文档化的标 准，并将这些标准集成到企业软件开发标准过程中去。所有开发的项目需根据这个标准过程，剪裁出与项目适宜的过程，并执行这些过程。过程的剪裁不是随意的， 在使用前需经过企业有关人员的批准。</p>
+<ol>
+<li>管理级</li>
+</ol>
+<p>第四级的管理是量化的管理。所有过程需建立相应的度量方式，所有产品的质量(包括工作产品和提交给用户的产品)需有明确的度量指标。这些度量应是详尽的，且可用于理解和控制软件过程和产品。量化控制将使软件开发真正变成为一种工业生产活动。</p>
+<ol>
+<li>优化级</li>
+</ol>
+<p>第五级的目标是达到一个持续改善的境界。所谓持续改善是指可根据过程执行的反馈信息来改善下一步的执行过程，即优化执行步骤。如果一个企业达到了这一级，那么表明该企业能够根据实际的项目性质、技术等因素，不断调整软件生产过程以求达到最佳。</p>
+<h2 id="结构"><a href="#结构" class="headerlink" title="结构"></a>结构</h2><p>除第一级外，SW-CMM的每一级是按完全相同的结构构成的。每一级包含了实现这一级目标的若干关键过程域(KPA)，每个KPA进一步包含若干关键实施活动(KP)，无论哪个KPA，它们的实施活动都统一按五个公共属性进行组织，即每一个KPA都包含五类KP。</p>
+<ul>
+<li>目标</li>
+</ul>
+<p>每一个KPA都确定了一组目标。若这组目标在每一个项目都能实现，则说明企业满足了该KPA的要求。若满足了一个级别的所有KPA要求，则表明达到了这个级别所要求的能力。</p>
+<ul>
+<li><p>实施保证<br>实施保证是企业为了建立和实施相应KPA所必须采取的活动，这些活动主要包括制定企业范围的政策和高层管理的责任。</p>
+</li>
+<li><p>实施能力<br>实施能力是企业实施KPA的前提条件。企业必须采取措施，在满足了这些条件后，才有可能执行KPA的执行活动。实施能力一般包括资源保证、人员培训等内容。</p>
+</li>
+<li><p>执行活动<br>执行过程描述了执行KPA所需求的必要角色和步骤。在五个公共属性中，执行活动是唯一与项目执行相关的属性，其余四个属性则涉及企业CMM能力基础设施的建立。执行活动一般包括计划、执行的任务、任务执行的跟踪等。</p>
+</li>
+<li><p>度量分析<br>度量分析描述了过程的度量和度量分析要求。典型的度量和度量分析的要求是确定执行活动的状态和执行活动的有效性。</p>
+</li>
+<li><p>实施验证<br>实施验证是验证执行活动是否与所建立的过程一致。实施验证涉及到管理方面的评审和审计以及质量保证活动。</p>
+</li>
+</ul>
+<p>在实施CMM时，可以根据企业软件过程存在问题的不同程度确定实现KPA的次序，然后按所确定次序逐步建立、实施相应过程。在执行某一个KPA时，对其目标组也可采用逐步满足的方式。过程进化和逐步走向成熟是CMM体系的宗旨。</p>
+<h1 id="CMM实施的思考"><a href="#CMM实施的思考" class="headerlink" title="CMM实施的思考"></a>CMM实施的思考</h1><p>　　<br>　　上面重点介绍了CMM,但是提醒注意的是，并不是实施了CMM，软件项目的质量就能有所保障。CMM是一种资质认证，它可以证明一个软件企业对整个软件开发过程的控制能力。按照CMM的思想进行管理与通过CMM认证并不能划等号。CMM认证并不仅仅是在评估软件企业的生产能力，整个评估过程同时还在帮助企业完善已经按照CMM建立的科学工作流程，发现企业在软件质量、生产进度以及成本控制等方面可能存在的问题，并且及时予以纠正。认证的过程是纠正企业偏差的过程，一定不能把CMM认证当作一种考试、一种文凭，而是要看成一项有利于企业今后发展的投资，借此来改变中国软件业长久以来形成的积弊。<br>　　<br>　　实施CMM对软件企业的发展起着至关重要的作用，CMM过程本身就是对软件企业发展历程的一个完整而准确的描述，企业通过实施CMM，可以更好地规范软件生产和管理流程，使企业组织规范化。企业通过CMM不是为了满足其他公司的要求，而是为了让企业更好地发展，为企业进一步扩大规模打下坚实的基础。如果企业只是为了获得一纸证书而通过CMM，那么就已经本末倒置了，对企业的长久发展反而有害。试想如果企业的态度不够端正，即使通过CMM认证，企业又怎么能够保证它在以后的操作过程当中继续坚持CMM规范呢？CMM只是一个让企业更好发展的规范，不应该成为企业炒作自己的工具，企业需要的是优化自己的管理、提高产品的质量，而非一张CMM证书。<br>　　<br>　　CMM不是万能的，它的成功与否，与一个组织内部有关人员的积极参与和创造性活动是密不可分的，而且CMM并未提供实现有关子过程域所需要的具体知识和技能。在国内要想取得过程改进成功，必须做好以下的几点:软件过程改进必须有高级主管的支持与委托，并积极地管理过程改进的进展;中层管理的积极支持;责任分明，过程改进小组的威望高;基层的支持与参与极端重要;利用定量的可观察数据，尽快使过程改进成果可见，从而激励参与者的兴趣;将实施CMM与实施PSP和TSP有机地结合起来;为企业的商业利益服务，并要求同时相符的企业文化变革。<br>　　<br>　　应该看到,过程改善工作必然具有一切过程所具有的固有特征，即需要循序渐进，不能一蹴而就需要持续改善，不能停滞不前；需要联系实际，不能照本宣读需要适应变革，不能凝固不变。将CMM／PSP／TSP引人软件企业最有效的途径首先要对单位主管和主要开发人员进行系统的培训。另外一个有效的途径是自顶向下的课程培训，即从高层主管依次普及到下面的工程师。培训包括最基本的软件工程和CMM培训知识；专业领域知识等方面的培训；软件过程方面的培训。不过强调一点，我们必须根据自身的实际制定可行的方案。不深入研究就照搬别的企业的模式是很难起到提高软件产品质量水平的真正目的的。<br>　　<br>　　CMM模型划分为5个级别，共计18个关键过程域，52个目标，300多个关键实践。每一个CMM等级的评估周期（从准备到完成）约需12-30个月。此期间应抽调企业中有管理能力、组织能力和软件开发能力的骨干人员,成立专门的CMM实施领导小组或专门的机构。同时设立软件工程过程组、软件工程组、系统工程组、系统测试组、需求管理组、软件项目计划组、软件项目跟踪与监督、软件配置管理组、软件质量保证组、培训组。各个小组完成自己的任务同时协调其他小组的工作。然后制定和完善软件过程, 按照CMM规范评估这个过程。CMM正式评估由CMU/SEI授权的主任评估师领导一个评审小组进行，评估过程包括员工培训、问卷调查和统计、文档审查、数据分析、与企业的高层领导讨论和撰写评估报告等，评估结束时由主任评估师签字生效。此后最关键的就是根据评估结果改进软件过程,使CMM评估对于软件过程改进所应具有的作用得到最好的发挥。<br>　　<br>　　现在国内软件产业的发展可以说已经具有一定规模了，但除了北大方正、东大阿尔派、用友等大企业外，做软件工程项目更多的是一些规模在数十人左右的中小企业, 目前处于CMM的初级阶段，没有基础和经验。也许有人会问，像这样一些人力物力资源匮乏的企业，如何进行软件开发项目的管理呢？我建议这些中小企业可以以CMM为框架，先从PSP做起，然后在些基础上逐渐过渡到TSP，以保证CMM/PSP/TSP确实在企业中生根开花。总之，我们必须从软件过程、过程工程的角度来看待CMM的发展，从经济学的观点来分析这个过程的价值。我相信在实施CMM/PSP/TSP的过程中，只要坚持改善软件工程的管理，并在实践中注意总结适合自身的经验，一定能取得很好的效果。</p>
+<h1 id="CMM认证标准"><a href="#CMM认证标准" class="headerlink" title="ＣＭＭ认证标准"></a>ＣＭＭ认证标准</h1><p>　　</p>
+<h2 id="CMM-简介"><a href="#CMM-简介" class="headerlink" title="CMM 简介"></a>CMM 简介</h2><p>　　<br>　　CMM是什么？<br>　　<br>　　CMM是由美国卡内基－梅隆大学的软件工程研究所（SEI）开发的软件成熟度模型，共分为5级（5级为最高级别）<br>　　<br>　　CMM是一个动态的过程，组织可根据不同级别的要求，循序渐进，不断改进。<br>　　<br>　　CMM是能力成熟度模型（Capability Maturity Model）的缩写，是一种用于评价软件承包能力并帮助其改善软件质量的方法，也就是评估软件能力与成熟度的一套标准，它侧重于软件开发过程的管理及工程能力的提高与评估。<br>　　<br>　　CMM标准共分五个等级，从第一级到第五级分别为：初始级、可重复级、定义级、管理级和优化级，从低到高，软件开发生产的计划精度越来越高，每单位工程的生产周期越来越短，每单位工程的成本也越来越低。<br>　　<br>　　CMM证书主要用于出口美国的软件组织。<br>　　<br>　　CMM是一种管理方法<br>　　<br>　　CMM是一组公众可用的描述成熟软件组织特征的准则。组织能运用这些准则去改进开发和维护软件的过程，以及政府或商业组织用于评价与某具体公司签订软件项目合同时的风险。CMM将软件开发视为一个过程，提供了一种以有条不紊的和一致的方法改进软件产品的管理和开发的概念性结构。组织软件开发过程是由初始到成熟的一个渐进的过程，CMM分为5级，由低到高分别是：初始级、可重复级、妥善定义级、定量管理级、和持续优化级。软件组织在执行CMM的过程中，软件过程能力将持续改进，组织将由几乎无管理、完全依赖个人努力的取得成功，逐渐走向规范化管理，能利用来自过程的以及来自先导性创新思想和新技术的定量和反馈信息，持续改进的过程取得成功。<br>　　<br>　　美国软件业发达很重要的一个原因就是：无论规模大小，绝大多数组织都按照规范化的工作方法管理软件循环过程，始终把最终用户放在软件产品供应优化和质量控制的中心，把达到认证标准放在很重要的位置上。</p>
+<h2 id="软件组织为什么要做CMM"><a href="#软件组织为什么要做CMM" class="headerlink" title="软件组织为什么要做CMM"></a>软件组织为什么要做CMM</h2><p>　　<br>　　WTO入世在即，中国软件组织何去何从？如何面对挑战？是在国内固步自封，还是勇敢的创出去，进军国际市场。中国的软件组织大多数仍然处于一种手工作坊式运营阶段，质量和效率观念都不强，在技术和产品本身与国际市场接轨方面更是一片空白。这些对软件组织而言，是一个致命的弱点。软件产业的规则就是技术及其标准，全球软件产业处于一个非常开放的价值链中，因此如果你落后了这些技术和标准，就可能被抛出游戏中。另外，软件组织是一个技术密集型组织，获取竞争力的关键就在于提高开发应用效率，降低成本，同时提高产品的质量，这方面是CMM的强项。</p>
+<h2 id="CMM与ISO9000的关系"><a href="#CMM与ISO9000的关系" class="headerlink" title="CMM与ISO9000的关系"></a>CMM与ISO9000的关系</h2><p>　　<br>　　ISO9000和CMM既有区别又相互联系。<br>　　<br>　　ISO9000和CMM是国际上通用的软件质量评估和管理方法。二者有很多相似之处，它们的实施可以改变软件组织开发不规范、文档不齐、维护跟不上、质量漏洞多等弊病。尽管ISO 9001标准的一些要求在CMM中不存在，而CMM的一些要求在ISO 9001标准中也不存在，两者之间的关系非常密切。<br>　　<br>　　两者的最大相似之处在于两者都强调对每一个重要的过程应形成文件，包括指导书和说明，并检查交货质量水平，同时也都强调强调持续改进。取得ISO 9001认证对于取得CMM的等级证书是有益的，反之，取得CMM等级证书，对于取得ISO 9001认证也是有帮助的。</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;CMM是指“能力成熟度模型”，其英文全称为Capability Maturity Model for Software，英文缩写为SW-CMM，简称CMM。它是对于软件组织在定义、实施、度量、控制和改善其软件过程的实践中各个发展阶段的描述。CMM的核心是把软件开发视为一个过
+    
+    </summary>
+    
+      <category term="项目管理" scheme="http://www.pmjohnfung.com/categories/%E9%A1%B9%E7%9B%AE%E7%AE%A1%E7%90%86/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>java集合框架学习1</title>
+    <link href="http://www.pmjohnfung.com/categories/java/java-Collections-1/"/>
+    <id>http://www.pmjohnfung.com/categories/java/java-Collections-1/</id>
+    <published>2015-05-16T11:33:27.000Z</published>
+    <updated>2017-01-11T05:03:46.000Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="关于集合的两道面试题"><a href="#关于集合的两道面试题" class="headerlink" title="关于集合的两道面试题"></a>关于集合的两道面试题</h1><ul>
+<li>创建一个不可变的的集合</li>
+</ul>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</div><div class="line">    set =<span class="keyword">new</span> HashSet();</div><div class="line">    set.add(<span class="string">"Java"</span>);</div><div class="line">    set.add(<span class="string">"JEE"</span>);</div><div class="line">    set.add(<span class="string">"Spring"</span>);</div><div class="line">    set.add(<span class="string">"Hibernate"</span>);</div><div class="line">    set = Collections.unmodifiableSet(set);</div><div class="line">    set.add(<span class="string">"Ajax"</span>);<span class="comment">//not allowed.</span></div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p>可以看到，创建不可变集合主要是调用了Collections的unmodifiableSet()方法，而Collections类通过装饰模式实现了对一般集合的封装。</p>
+<ul>
+<li>去除List集合中的重复元素，且保持原有的顺序</li>
+</ul>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String args[])</span> </span>&#123; </div><div class="line">    List list=<span class="keyword">new</span> ArrayList(); </div><div class="line">    list.add(<span class="string">"A"</span>); </div><div class="line">    list.add(<span class="string">"B"</span>); </div><div class="line">    list.add(<span class="string">"C"</span>); </div><div class="line">    list.add(<span class="string">"A"</span>);<span class="comment">// List中允许元素重复 </span></div><div class="line">    <span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>;i&amp;lt;list.size();i++) </div><div class="line">        System.out.print(<span class="string">" "</span>+list.get(i));<span class="comment">// A B C A // 去除重复的元素且保持原有元素的顺序</span></div><div class="line">    List list2=<span class="keyword">new</span> testD().function(list); </div><div class="line">    <span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>;i&amp;lt;list2.size();i++)  </div><div class="line">        System.out.print(<span class="string">" "</span>+list2.get(i));<span class="comment">// A B C </span></div><div class="line">&#125; </div><div class="line"><span class="function"><span class="keyword">public</span> List <span class="title">function</span> <span class="params">(List list)</span> </span>&#123; </div><div class="line">    <span class="keyword">return</span> <span class="keyword">new</span> ArrayList(<span class="keyword">new</span> LinkedHashSet(list)); </div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p>上面的代码代码通过把原有列表传入一个LinkedHashSet来去除重复的元素。在这个情况里，LinkedHashSet可以保持元素原来的顺序。如果这个顺序是不需要的话，那么上面的LinkedHashSet可以用HashSet来替换。</p>
+<h1 id="集合框架类图及集合对比"><a href="#集合框架类图及集合对比" class="headerlink" title="集合框架类图及集合对比"></a>集合框架类图及集合对比</h1><p>其实如上的两道题目并不难，只是没有对集合了解的更深。下面就来大概的看一下集合吧。集合的继承类如下所示。</p>
+<p><img src="/img/collections.png" alt=""></p>
+<p>如上的集合可以归纳为三大类，即List、Set和Map。同时还有一些辅助的工具类，像Collections、Arrays等方便了集合的操作，各个集合的比较情况如下图。</p>
+<p><img src="/img/collections2.png" alt=""></p>
+<p>其实对于集合的操作，无外乎就是</p>
+<ul>
+<li>增加：向一个集合中添加一个元素、将一个集合中的所有元素插入到当前集合中</li>
+<li>删除：删除指定的一个元素、删除集合中所有的元素</li>
+<li>修改：修改指定的一个元素</li>
+<li>查找：查当前集合的大小、查找两个集合中的共同元素等</li>
+<li>其它：如将一个集合中的元素转换为数组表示形式、判断一个集合是否为空等</li>
+</ul>
+<h1 id="Iterable、Iterator、Collection接口"><a href="#Iterable、Iterator、Collection接口" class="headerlink" title="Iterable、Iterator、Collection接口"></a>Iterable、Iterator、Collection接口</h1><p>从Java集合框架图可以看出，所有的类都直接或间接继承了Iterable接口，源代码如下：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">package</span> java.lang; </div><div class="line"><span class="keyword">import</span> java.util.Iterator; </div><div class="line"><span class="comment">/** * </span></div><div class="line">    Implementing this interface allows an object to be </div><div class="line">    the target of * the "foreach" statement. </div><div class="line">    */ </div><div class="line">    <span class="keyword">public</span> interfacen Iterable &#123; </div><div class="line">        <span class="function">Iterator <span class="title">iterator</span><span class="params">()</span></span>; <span class="comment">// 返回一个在一组 T 类型的元</span></div><div class="line">                             <span class="comment">//素上进行迭代的迭代器 </span></div><div class="line">    &#125;</div></pre></td></tr></table></figure>
+<p>Iterable接口在java.lang包下，其中定义了一个获取Iterator的实例方法。</p>
+<p>Iterator类的源代码如下：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">interface</span> <span class="title">Iterator</span> </span>&#123; </div><div class="line">        <span class="function"><span class="keyword">boolean</span> <span class="title">hasNext</span><span class="params">()</span></span>; <span class="comment">// 是否含有下一个元素 </span></div><div class="line">        <span class="function">E <span class="title">next</span><span class="params">()</span></span>; <span class="comment">// 获取集合的下一个元素 </span></div><div class="line">        <span class="function"><span class="keyword">void</span> <span class="title">remove</span><span class="params">()</span></span>; <span class="comment">// 从集合中移除当前元素 </span></div><div class="line">    &#125;</div></pre></td></tr></table></figure>
+<p>Iterator模式是用于遍历集合类的标准访问方法。它可以把访问逻辑从不同类型的集合类中抽象出来，从而避免向客户端暴露出集合的内部结构。例如，如果没有使用Iterator，遍历一个数组的方法是使用索引：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>; i&lt;集合的大小;i++)</div><div class="line">    &#123; <span class="comment">// 省略操作代码</span></div><div class="line">    &#125;</div></pre></td></tr></table></figure>
+<p>当访问一个链表（LinkedList）时又必须使用while循环：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">while</span>((e=e.next())!=<span class="keyword">null</span>) &#123; <span class="comment">// 省略操作代码</span></div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p>以上两种方法遍历办法都必须事先知道集合的内部存储结构，访问代码和集合本身是紧耦合，无法将访问逻辑从集合类中分离出来，每一种集合对应一种遍历方法，客户端代码无法复用。 而且如果以后需要把ArrayList更换为LinkedList，则原来的客户端代码必须要进行重写。 为解决以上问题，Iterator模式总是用同一种逻辑来遍历集合：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">for</span>(Iterator it = c.iterater();it.hasNext(); ) </div><div class="line">    &#123; </div><div class="line">        <span class="comment">// ... </span></div><div class="line">    &#125;</div></pre></td></tr></table></figure>
+<p>设计的巧妙之处在于客户端自身不维护遍历集合的”指针”,所有的内部状态（如当前元素位置，是否有下一个元素）都由Iterator来维护，而这个Iterator由集合类通过工厂方法生成，因此，它知道如何遍历整个集合。值得提醒的是，这个工厂方法就是我们前面提到的iterator()方法，因为所有的类都继承了Iterable接口，所以他的实现类必须要实现iterator()方法。</p>
+<p>以后如果要访问集合时，就可以通过控制Iterator，向它发送”向前”，”向后”，”取当前元素”的命令，来间接遍历整个集合。</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">testSet</span> </span>&#123;  </div><div class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String args[])</span> </span>&#123;  </div><div class="line">        <span class="comment">// HashSet&lt;String&gt; ct = new HashSet&lt;&gt;();</span></div><div class="line">        <span class="comment">// Set&lt;String&gt; ct=new HashSet&lt;&gt;();</span></div><div class="line">        <span class="comment">// List&lt;String&gt; ct=new ArrayList&lt;&gt;();</span></div><div class="line">        List&lt;String&gt; ct=<span class="keyword">new</span> LinkedList&lt;&gt;();  </div><div class="line">        ct.add(<span class="string">"abc"</span>);  </div><div class="line">        ct.add(<span class="string">"def"</span>);  </div><div class="line"></div><div class="line">        <span class="keyword">for</span>(Iterator&lt;String&gt; myitr = ct.iterator();myitr.hasNext();)&#123;  </div><div class="line">            System.out.println(myitr.next());  </div><div class="line">        &#125;  </div><div class="line"></div><div class="line">        Iterator&lt;String&gt; iter = ct.iterator();  </div><div class="line">        <span class="keyword">while</span> (iter.hasNext()) &#123;  </div><div class="line">            System.out.println(iter.next());  </div><div class="line">        &#125;  </div><div class="line"></div><div class="line">        <span class="keyword">for</span> (String str : ct) &#123;  </div><div class="line">            System.out.println(str);  </div><div class="line">        &#125;  </div><div class="line">    &#125;  </div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p>使用了3种方法进行集合的遍历，输出的结果都是一致的，如下：</p>
+<p>abc def abc def abc def</p>
+<p>每一种集合类返回的Iterator具体类型可能不同，Array可能返回ArrayIterator，Set可能返回SetIterator，Tree可能返回TreeIterator，但是它们都实现了Iterator接口，因此，客户端不关心到底是哪种Iterator，它只需要获得这个Iterator接口即可，这就是面向对象所带来的好处。</p>
+<p>继续看Collection接口，源代码如下：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">interface</span> <span class="title">Collection</span>&lt;<span class="title">E</span>&gt; <span class="keyword">extends</span> <span class="title">Iterable</span>&lt;<span class="title">E</span>&gt; </span>&#123;  </div><div class="line">        <span class="comment">// 查找操作</span></div><div class="line">        <span class="function"><span class="keyword">int</span> <span class="title">size</span><span class="params">()</span>    </span>;  </div><div class="line">        <span class="function">Iterator&lt;E&gt; <span class="title">iterator</span><span class="params">()</span></span>;  </div><div class="line"></div><div class="line">        <span class="comment">// 判断</span></div><div class="line">        <span class="function"><span class="keyword">boolean</span> <span class="title">isEmpty</span><span class="params">()</span></span>;  </div><div class="line">        <span class="function"><span class="keyword">boolean</span> <span class="title">contains</span><span class="params">(Object o)</span></span>;  </div><div class="line">        <span class="function"><span class="keyword">boolean</span> <span class="title">containsAll</span><span class="params">(Collection&lt;?&gt; c)</span></span>;  </div><div class="line"></div><div class="line">        <span class="comment">// 增加操作</span></div><div class="line">        <span class="function"><span class="keyword">boolean</span> <span class="title">add</span><span class="params">(E e)</span></span>;  </div><div class="line">        <span class="function"><span class="keyword">boolean</span> <span class="title">addAll</span><span class="params">(Collection&lt;? extends E&gt; c)</span></span>;  </div><div class="line"></div><div class="line">        <span class="comment">// 删除操作</span></div><div class="line">        <span class="function"><span class="keyword">boolean</span> <span class="title">remove</span><span class="params">(Object o)</span></span>;  </div><div class="line">        <span class="function"><span class="keyword">boolean</span> <span class="title">removeAll</span><span class="params">(Collection&lt;?&gt; c)</span></span>;<span class="comment">// Removes all of this collection's elements that                 are also contained in the specified collection (optional operation).</span></div><div class="line">        <span class="function"><span class="keyword">boolean</span> <span class="title">retainAll</span><span class="params">(Collection&lt;?&gt; c)</span></span>;<span class="comment">// Retains only the elements in this collection that are contained in the specified collection (optional operation).</span></div><div class="line">        <span class="function"><span class="keyword">void</span> <span class="title">clear</span><span class="params">()</span></span>;  </div><div class="line"></div><div class="line">        <span class="comment">// 集合转换</span></div><div class="line">        Object[] toArray();  </div><div class="line">        &lt;T&gt; T[] toArray(T[] a);  </div><div class="line"></div><div class="line">        <span class="comment">// 提供equals()和hashCode()</span></div><div class="line">        <span class="function"><span class="keyword">boolean</span> <span class="title">equals</span><span class="params">(Object o)</span></span>;  </div><div class="line">        <span class="function"><span class="keyword">int</span> <span class="title">hashCode</span><span class="params">()</span></span>;  </div><div class="line">    &#125;</div></pre></td></tr></table></figure>
+<p>Collection接口针对集合定义了一些基本的操作，所以任何一个具体的集合实现类都有含有这些方法。但是由于抽象层次较高，所以一般一个具体的集合实现类，如ArrayList、HashMap等都不会直接继承这个接口，而是继承这个接口的一些子类来实现。所以说每个集合的具体实现类都直接或间接继承了这个接口。</p>
+<p>有一类重要的方法还需要说明一下：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">boolean</span> <span class="title">add</span><span class="params">(E e)</span></span>;  </div><div class="line">   <span class="function"><span class="keyword">boolean</span> <span class="title">addAll</span><span class="params">(Collection&lt;? extends E&gt; c)</span></span>;  </div><div class="line"></div><div class="line">   <span class="function"><span class="keyword">boolean</span> <span class="title">remove</span><span class="params">(Object o)</span></span>;  </div><div class="line">   <span class="function"><span class="keyword">boolean</span> <span class="title">removeAll</span><span class="params">(Collection&lt;?&gt; c)</span></span>;</div></pre></td></tr></table></figure>
+<p>拿add(E e)方法来举例，这个方法将在集合中添加一个新的元素。方法会返回一个boolean，但是返回值不是表示添加成功与否。仔细阅读doc可以看到，Collection规定：如果一个集合拒绝添加这个元素，无论任何原因，都必须抛出异常。这个返回值表示的意义是add()方法执行后，集合的内容是否改变了（就是元素有无数量，位置等变化），这是由具体类实现的。即：如果方法出错，总会抛出异常；返回值仅仅表示该方法执行后这个Collection的内容有无变化。</p>
+<p>观察发现传入的参数有许多都是Collection&lt;?&gt;类型的，这就为各个集合的具体实现类实现相互的操作提供了便利。举个例子：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div></pre></td><td class="code"><pre><div class="line">LinkedList&lt;String&gt; list=<span class="keyword">new</span> LinkedList&lt;&gt;();  </div><div class="line"></div><div class="line">   list.add(<span class="string">"xy"</span>);  </div><div class="line">   list.add(<span class="string">"mn"</span>);  </div><div class="line"></div><div class="line">   Collection&lt;String&gt; ct=<span class="keyword">new</span> HashSet&lt;String&gt;();  </div><div class="line">   ct.add(<span class="string">"abc"</span>);  </div><div class="line">   ct.add(<span class="string">"def"</span>);  </div><div class="line">   ct.addAll(list);  </div><div class="line"></div><div class="line">   Iterator&lt;String&gt; iter=ct.iterator();  </div><div class="line">   <span class="keyword">while</span>(iter.hasNext())&#123;  </div><div class="line">   System.out.println(iter.next());  </div><div class="line">   &#125;</div></pre></td></tr></table></figure>
+<p>将LinkedList集合中的元素添加到HashSet中，只需要调用addAll()方法即可。最后结果输出如下： mn abc def xy</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;关于集合的两道面试题&quot;&gt;&lt;a href=&quot;#关于集合的两道面试题&quot; class=&quot;headerlink&quot; title=&quot;关于集合的两道面试题&quot;&gt;&lt;/a&gt;关于集合的两道面试题&lt;/h1&gt;&lt;ul&gt;
+&lt;li&gt;创建一个不可变的的集合&lt;/li&gt;
+&lt;/ul&gt;
+&lt;figure c
+    
+    </summary>
+    
+      <category term="java" scheme="http://www.pmjohnfung.com/categories/java/"/>
+    
+    
+      <category term="Collections" scheme="http://www.pmjohnfung.com/tags/Collections/"/>
+    
+      <category term="java" scheme="http://www.pmjohnfung.com/tags/java/"/>
+    
+      <category term="基础" scheme="http://www.pmjohnfung.com/tags/%E5%9F%BA%E7%A1%80/"/>
+    
+  </entry>
+  
+</feed>

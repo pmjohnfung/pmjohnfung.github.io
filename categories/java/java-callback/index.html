@@ -1,0 +1,767 @@
+<!doctype html>
+
+
+
+  
+
+
+<html class="theme-next mist use-motion" lang="zh-Hans">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+  
+  
+  
+  
+
+  
+    
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+    
+    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.0" rel="stylesheet" type="text/css" />
+
+
+  <meta name="keywords" content="java,回调," />
+
+
+
+
+
+  <link rel="alternate" href="/atom.xml" title="johnfung's Blog" type="application/atom+xml" />
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.1.0" />
+
+
+
+
+
+
+<meta name="description" content="模块之间总是存在这一定的接口，从调用方式上看，可以分为三类：同步调用、回调和异步调用。同步调用是一种阻塞式调用，也是我们在写程序中经常使用的；回调是一种双向的调用模式，也就是说，被调用的接口被调用时也会调用对方的接口，这句话可能有点绕，等文章后面举例说明；异步调用是一种类似消息或事件的机制，解决了同步阻塞的问题，举例来讲：A通知B后，他们各走各的路，互不影响，不用像同步调用那样，A通知B后，非得等">
+<meta property="og:type" content="article">
+<meta property="og:title" content="java 回调机制">
+<meta property="og:url" content="http://www.pmjohnfung.com/categories/java/java-callback/index.html">
+<meta property="og:site_name" content="johnfung's Blog">
+<meta property="og:description" content="模块之间总是存在这一定的接口，从调用方式上看，可以分为三类：同步调用、回调和异步调用。同步调用是一种阻塞式调用，也是我们在写程序中经常使用的；回调是一种双向的调用模式，也就是说，被调用的接口被调用时也会调用对方的接口，这句话可能有点绕，等文章后面举例说明；异步调用是一种类似消息或事件的机制，解决了同步阻塞的问题，举例来讲：A通知B后，他们各走各的路，互不影响，不用像同步调用那样，A通知B后，非得等">
+<meta property="og:image" content="http://www.pmjohnfung.com/img/java-callback.png">
+<meta property="og:updated_time" content="2017-01-11T05:03:02.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="java 回调机制">
+<meta name="twitter:description" content="模块之间总是存在这一定的接口，从调用方式上看，可以分为三类：同步调用、回调和异步调用。同步调用是一种阻塞式调用，也是我们在写程序中经常使用的；回调是一种双向的调用模式，也就是说，被调用的接口被调用时也会调用对方的接口，这句话可能有点绕，等文章后面举例说明；异步调用是一种类似消息或事件的机制，解决了同步阻塞的问题，举例来讲：A通知B后，他们各走各的路，互不影响，不用像同步调用那样，A通知B后，非得等">
+<meta name="twitter:image" content="http://www.pmjohnfung.com/img/java-callback.png">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Mist',
+    sidebar: {"position":"right","display":"always"},
+    fancybox: true,
+    motion: true,
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://www.pmjohnfung.com/categories/java/java-callback/"/>
+
+
+
+
+
+  <title> java 回调机制 | johnfung's Blog </title>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+
+
+
+  <script type="text/javascript">
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?1951575cf4f5362bd4c13abf92a2454a";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
+
+
+
+
+
+
+
+
+  
+  
+    
+  
+
+  <div class="container one-collumn sidebar-position-right page-post-detail ">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-meta ">
+  
+
+  <div class="custom-logo-site-title">
+    <a href="/"  class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <span class="site-title">johnfung's Blog</span>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+  </div>
+    
+      <p class="site-subtitle">从事项目管理,java开发</p>
+    
+</div>
+
+<div class="site-nav-toggle">
+  <button>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+  </button>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
+            
+            分类
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
+            
+            关于
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            标签
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+  <link itemprop="mainEntityOfPage" href="http://www.pmjohnfung.com/categories/java/java-callback/">
+
+  <span style="display:none" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <meta itemprop="name" content="johnfung">
+    <meta itemprop="description" content="">
+    <meta itemprop="image" content="/img/avatar.jpg">
+  </span>
+
+  <span style="display:none" itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+    <meta itemprop="name" content="johnfung's Blog">
+    <span style="display:none" itemprop="logo" itemscope itemtype="http://schema.org/ImageObject">
+      <img style="display:none;" itemprop="url image" alt="johnfung's Blog" src="">
+    </span>
+  </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                java 回调机制
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2015-07-22T12:58:39+08:00">
+                2015-07-22
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/java/" itemprop="url" rel="index">
+                    <span itemprop="name">java</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/categories/java/java-callback/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="categories/java/java-callback/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+
+          
+          
+
+          
+            <span class="post-meta-divider">|</span>
+            <span class="page-pv"><i class="fa fa-file-o"></i>浏览
+            <span class="busuanzi-value" id="busuanzi_value_page_pv" ></span>次
+            </span>
+          
+
+          
+	
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p>模块之间总是存在这一定的接口，从调用方式上看，可以分为三类：同步调用、回调和异步调用。同步调用是一种阻塞式调用，也是我们在写程序中经常使用的；回调是一种双向的调用模式，也就是说，被调用的接口被调用时也会调用对方的接口，这句话可能有点绕，等文章后面举例说明；异步调用是一种类似消息或事件的机制，解决了同步阻塞的问题，举例来讲：A通知B后，他们各走各的路，互不影响，不用像同步调用那样，A通知B后，非得等到B走完后，A才继续走。回调是异步的基本，因此下面着重说回调机制。</p>
+<p><img src="/img/java-callback.png" alt=""></p>
+<p>我们暂且不讨论回调的一些名词和运行机制，首先说为什么会存在回调这样一种调用？同步和异步机制的出现不必多说，大家心知肚明，那回调机制为什么会出现呢？在我们现实生活中，有如下这样场景：有一位老板很忙，他没有时间盯着员工干活，然后他告诉自己的雇员，干完当前这些事情后，告诉他干活的结果。这个例子其实是一个回调+异步的例子，再举一个例子，A程序员写了一段程序a，其中预留了回调函数接口，并封装好了该程序，程序员B让a调用自己的程序b中的一个方法，于是，他通过a中的接口回调自己b中的方法，到这里你可能似懂非懂了，后面会继续说明回调的出现原因。接下来我们把上面例子变成代码，看到网上很多人最后搞混了异步和回调，因此例子中不加入异步调用。（注意：回调可不是解决什么调用时间过长问题，那是异步！）</p>
+<p>首先创建一个回调接口，让老板得告知干完活如何找到他的方式：留下老板办公室地址：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">package</span> net.easyway.test;  </div><div class="line">  </div><div class="line"><span class="comment">/** </span></div><div class="line"> * 此接口为联系的方式，不论是电话号码还是联系地址，作为 </div><div class="line"> * 老板都必须要实现此接口 </div><div class="line"> * <span class="doctag">@author</span> Administrator </div><div class="line"> * </div><div class="line"> */  </div><div class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">interface</span> <span class="title">CallBackInterface</span> </span>&#123;  </div><div class="line">  </div><div class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">execute</span><span class="params">()</span></span>;  </div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p>创建回调对象，就是老板本人，因为员工干完活后要给他打电话，因此老板必须实现回调接口，不然员工去哪里找老板？</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">package</span> net.easyway.test;  </div><div class="line">  </div><div class="line"><span class="comment">/** </span></div><div class="line"> * 老板是作为上层应用身份出现的，下层应用（员工）是不知道 </div><div class="line"> * 有哪些方法，因此他想被下层应用（员工）调用必须实现此接口 </div><div class="line"> * <span class="doctag">@author</span> Administrator </div><div class="line"> * </div><div class="line"> */  </div><div class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Boss</span> <span class="keyword">implements</span> <span class="title">CallBackInterface</span> </span>&#123;  </div><div class="line">      </div><div class="line">    <span class="meta">@Override</span>  </div><div class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">execute</span><span class="params">()</span> </span>&#123;  </div><div class="line">        System.out.println(<span class="string">"收到了！！"</span> + System.currentTimeMillis());  </div><div class="line">          </div><div class="line">    &#125;  </div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p>创建控制类，也就是员工对象，他必须持有老板的地址（回调接口），即使老板换了一茬又一茬，办公室不变，总能找到对应的老板。</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">package</span> net.easyway.test;  </div><div class="line">  </div><div class="line"><span class="comment">/** </span></div><div class="line"> * 员工类，必须要记住，这是一个底层类，底层是不了解上层服务的 </div><div class="line"> * <span class="doctag">@author</span> Administrator </div><div class="line"> * </div><div class="line"> */  </div><div class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Employee</span> </span>&#123;  </div><div class="line">  </div><div class="line">    <span class="keyword">private</span> CallBackInterface callBack = <span class="keyword">null</span>;  </div><div class="line">      </div><div class="line">    <span class="comment">//告诉老板的联系方式，也就是注册  </span></div><div class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">setCallBack</span><span class="params">(CallBackInterface callBack)</span></span>&#123;  </div><div class="line">        <span class="keyword">this</span>.callBack = callBack;  </div><div class="line">    &#125;  </div><div class="line">      </div><div class="line">    <span class="comment">//工人干活  </span></div><div class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">doSome</span><span class="params">()</span></span>&#123;  </div><div class="line">        <span class="comment">//1.开始干活了  </span></div><div class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>;i&lt;<span class="number">10</span>;i++)&#123;  </div><div class="line">            System.out.println(<span class="string">"第【"</span> + i + <span class="string">"】事情干完了！"</span>);  </div><div class="line">        &#125;  </div><div class="line">          </div><div class="line">        <span class="comment">//2.告诉老板干完了  </span></div><div class="line">        callBack.execute();  </div><div class="line">    &#125;  </div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p>测试类代码：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">package</span> net.easyway.test;  </div><div class="line">  </div><div class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Client</span> </span>&#123;  </div><div class="line">  </div><div class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;  </div><div class="line">          </div><div class="line">          </div><div class="line">        Employee emp = <span class="keyword">new</span> Employee();  </div><div class="line">          </div><div class="line">        <span class="comment">//将回调对象（上层对象）传入，注册  </span></div><div class="line">        emp.setCallBack(<span class="keyword">new</span> Boss());  </div><div class="line">          </div><div class="line">        <span class="comment">//开启控制器对象运行  </span></div><div class="line">        emp.doSome();  </div><div class="line">    &#125;  </div><div class="line">  </div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p>上面这个例子，大家可以和程序员A和程序员B的那个例子结合对照下。</p>
+<p>看了上面的例子，有的人可能认为，这不是面向接口的编程吗？怎么会是回调，你再好好想想，咱们面向接口的编程的调用关系？在三层中，当业务层调用数据层时，是不需要把业务层自身传递到数据层的，并且这是一种上层调用下层的关系，比如我们在用框架的时候，一般直接调用框架提供的API就可以了，但回调不同，当框架不能满足需求，我们想让框架来调用自己的类方法，怎么做呢？总不至于去修改框架吧。许多优秀的框架提几乎都供了相关的接口，我们只需要实现相关接口，即可完成了注册，然后在合适的时候让框架来调用我们自己的类，还记不记得我们在使用Struts时，当我们编写Action时，就需要继承Action类，然后实现execute()方法，在execute()方法中写咱们自己的业务逻辑代码，完成对用户请求的处理。由此可以猜测，框架和容器中会提供大量的回调接口，以满足个性化的定制。</p>
+<p>不知道上面这个例子懂了没有？我们现在可以想象Filter和Interceptor的区别了，这两者其中最大的一个区别是Filter是基于回调函数，需要容器的支持，没有容器是无法回调doFilter()方法，而Interceptor是基于Java的反射机制的，和容器无关。那到此是否又将反射和回调搞混了呢？请见我讲Java动态代理的博客《以此之长，补彼之短—-AOP(代理模式)》。</p>
+<p>总之，要明确的一点是，首先要搞清回调函数出现的原因，也就是适用场景，才能搞清楚回调机制，不然事倍功半。</p>
+<p>最后，再举一例，为了使我们写的函数接近完美，就把一部分功能外包给别人，让别人个性化定制，至于别人怎么实现不管，我唯一要做的就是定义好相关接口，这一设计允许了底层代码调用高层定义的子程序，增强程序灵活性，和反射有着异曲同工之妙，我觉得这才是回调的真正原因，以上是我个人一些理解，望讨论！</p>
+<p>转自：<a href="http://blog.csdn.net/pi9nc/article/details/23169357" target="_blank" rel="external">http://blog.csdn.net/pi9nc/article/details/23169357</a></p>
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/java/" rel="tag"># java</a>
+          
+            <a href="/tags/回调/" rel="tag"># 回调</a>
+          
+        </div>
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/categories/项目管理/pm-2/" rel="next" title="优秀项目经理需具备的素质">
+                <i class="fa fa-chevron-left"></i> 优秀项目经理需具备的素质
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/categories/生活/2015-summary/" rel="prev" title="2015总结及2016年展望">
+                2015总结及2016年展望 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+  <div class="comments" id="comments">
+    
+      <div class="ds-thread" data-thread-key="categories/java/java-callback/"
+           data-title="java 回调机制" data-url="http://www.pmjohnfung.com/categories/java/java-callback/">
+      </div>
+    
+  </div>
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+
+      
+
+      <section class="site-overview sidebar-panel sidebar-panel-active">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <img class="site-author-image" itemprop="image"
+               src="/img/avatar.jpg"
+               alt="johnfung" />
+          <p class="site-author-name" itemprop="name">johnfung</p>
+          <p class="site-description motion-element" itemprop="description">志美行厉,永无止境</p>
+        </div>
+        <nav class="site-state motion-element">
+        
+          
+            <div class="site-state-item site-state-posts">
+              <a href="/archives">
+                <span class="site-state-item-count">20</span>
+                <span class="site-state-item-name">日志</span>
+              </a>
+            </div>
+          
+
+          
+            <div class="site-state-item site-state-categories">
+              <a href="/categories">
+                <span class="site-state-item-count">7</span>
+                <span class="site-state-item-name">分类</span>
+              </a>
+            </div>
+          
+
+          
+            <div class="site-state-item site-state-tags">
+              <a href="/tags">
+                <span class="site-state-item-count">23</span>
+                <span class="site-state-item-name">标签</span>
+              </a>
+            </div>
+          
+
+        </nav>
+
+        
+          <div class="feed-link motion-element">
+            <a href="/atom.xml" rel="alternate">
+              <i class="fa fa-rss"></i>
+              RSS
+            </a>
+          </div>
+        
+
+        <div class="links-of-author motion-element">
+          
+            
+              <span class="links-of-author-item">
+                <a href="https://github.com/pmjohnfung" target="_blank" title="GitHub">
+                  
+                    <i class="fa fa-fw fa-github"></i>
+                  
+                  GitHub
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="https://www.zhihu.com/people/zhiyong-feng/" target="_blank" title="Zhihu">
+                  
+                    <i class="fa fa-fw fa-globe"></i>
+                  
+                  Zhihu
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="http://weibo.com/622780789/home?wvr=5" target="_blank" title="Weibo">
+                  
+                    <i class="fa fa-fw fa-weibo"></i>
+                  
+                  Weibo
+                </a>
+              </span>
+            
+          
+        </div>
+
+        
+        
+
+        
+        
+
+        
+
+
+      </section>
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright" >
+  
+  &copy; 
+  <span itemprop="copyrightYear">2017</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">johnfung</span>
+</div>
+
+
+<div class="powered-by">
+  由 john 驱动
+</div>
+
+<div class="theme-info">
+  京ICP备15009579号
+</div>
+
+
+        
+
+<div class="busuanzi-count">
+
+  <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+  
+    <span class="site-uv"><i class="fa fa-user"></i>访问人数<span class="busuanzi-value" id="busuanzi_value_site_uv"></span></span>
+  
+
+  
+    <span class="site-pv"><i class="fa fa-eye"></i>总访问量<span class="busuanzi-value" id="busuanzi_value_site_pv"></span>次</span>
+  
+  
+</div>
+
+
+
+        
+      </div>
+    </footer>
+
+    <div class="back-to-top">
+      <i class="fa fa-arrow-up"></i>
+    </div>
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+  <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+
+  
+  <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+  
+  <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.0"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.0"></script>
+
+
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.0"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.0"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.0"></script>
+
+
+
+  
+
+  
+    
+  
+
+  <script type="text/javascript">
+    var duoshuoQuery = {short_name:"pmjohnfung"};
+    (function() {
+      var ds = document.createElement('script');
+      ds.type = 'text/javascript';ds.async = true;
+      ds.id = 'duoshuo-script';
+      ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+      ds.charset = 'UTF-8';
+      (document.getElementsByTagName('head')[0]
+      || document.getElementsByTagName('body')[0]).appendChild(ds);
+    })();
+  </script>
+
+  
+    
+    
+    <script src="/lib/ua-parser-js/dist/ua-parser.min.js?v=0.7.9"></script>
+    <script src="/js/src/hook-duoshuo.js"></script>
+  
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+
+</body>
+</html>

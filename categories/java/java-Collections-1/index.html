@@ -1,0 +1,831 @@
+<!doctype html>
+
+
+
+  
+
+
+<html class="theme-next mist use-motion" lang="zh-Hans">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+  
+  
+  
+  
+
+  
+    
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+    
+    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.0" rel="stylesheet" type="text/css" />
+
+
+  <meta name="keywords" content="Collections,java,基础," />
+
+
+
+
+
+  <link rel="alternate" href="/atom.xml" title="johnfung's Blog" type="application/atom+xml" />
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.1.0" />
+
+
+
+
+
+
+<meta name="description" content="关于集合的两道面试题
+创建一个不可变的的集合
+
+123456789public static void main(String[] args) &amp;#123;    set =new HashSet();    set.add(&quot;Java&quot;);    set.add(&quot;JEE&quot;);    set.add(&quot;Spring&quot;);    set.add(&quot;Hibernate&quot;);    set = Col">
+<meta property="og:type" content="article">
+<meta property="og:title" content="java集合框架学习1">
+<meta property="og:url" content="http://www.pmjohnfung.com/categories/java/java-Collections-1/index.html">
+<meta property="og:site_name" content="johnfung's Blog">
+<meta property="og:description" content="关于集合的两道面试题
+创建一个不可变的的集合
+
+123456789public static void main(String[] args) &amp;#123;    set =new HashSet();    set.add(&quot;Java&quot;);    set.add(&quot;JEE&quot;);    set.add(&quot;Spring&quot;);    set.add(&quot;Hibernate&quot;);    set = Col">
+<meta property="og:image" content="http://www.pmjohnfung.com/img/collections.png">
+<meta property="og:image" content="http://www.pmjohnfung.com/img/collections2.png">
+<meta property="og:updated_time" content="2017-01-11T05:03:46.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="java集合框架学习1">
+<meta name="twitter:description" content="关于集合的两道面试题
+创建一个不可变的的集合
+
+123456789public static void main(String[] args) &amp;#123;    set =new HashSet();    set.add(&quot;Java&quot;);    set.add(&quot;JEE&quot;);    set.add(&quot;Spring&quot;);    set.add(&quot;Hibernate&quot;);    set = Col">
+<meta name="twitter:image" content="http://www.pmjohnfung.com/img/collections.png">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Mist',
+    sidebar: {"position":"right","display":"always"},
+    fancybox: true,
+    motion: true,
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://www.pmjohnfung.com/categories/java/java-Collections-1/"/>
+
+
+
+
+
+  <title> java集合框架学习1 | johnfung's Blog </title>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+
+
+
+  <script type="text/javascript">
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?1951575cf4f5362bd4c13abf92a2454a";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
+
+
+
+
+
+
+
+
+  
+  
+    
+  
+
+  <div class="container one-collumn sidebar-position-right page-post-detail ">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-meta ">
+  
+
+  <div class="custom-logo-site-title">
+    <a href="/"  class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <span class="site-title">johnfung's Blog</span>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+  </div>
+    
+      <p class="site-subtitle">从事项目管理,java开发</p>
+    
+</div>
+
+<div class="site-nav-toggle">
+  <button>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+  </button>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
+            
+            分类
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
+            
+            关于
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            标签
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+  <link itemprop="mainEntityOfPage" href="http://www.pmjohnfung.com/categories/java/java-Collections-1/">
+
+  <span style="display:none" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <meta itemprop="name" content="johnfung">
+    <meta itemprop="description" content="">
+    <meta itemprop="image" content="/img/avatar.jpg">
+  </span>
+
+  <span style="display:none" itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+    <meta itemprop="name" content="johnfung's Blog">
+    <span style="display:none" itemprop="logo" itemscope itemtype="http://schema.org/ImageObject">
+      <img style="display:none;" itemprop="url image" alt="johnfung's Blog" src="">
+    </span>
+  </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                java集合框架学习1
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2015-05-16T19:33:27+08:00">
+                2015-05-16
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/java/" itemprop="url" rel="index">
+                    <span itemprop="name">java</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/categories/java/java-Collections-1/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="categories/java/java-Collections-1/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+
+          
+          
+
+          
+            <span class="post-meta-divider">|</span>
+            <span class="page-pv"><i class="fa fa-file-o"></i>浏览
+            <span class="busuanzi-value" id="busuanzi_value_page_pv" ></span>次
+            </span>
+          
+
+          
+	
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <h1 id="关于集合的两道面试题"><a href="#关于集合的两道面试题" class="headerlink" title="关于集合的两道面试题"></a>关于集合的两道面试题</h1><ul>
+<li>创建一个不可变的的集合</li>
+</ul>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</div><div class="line">    set =<span class="keyword">new</span> HashSet();</div><div class="line">    set.add(<span class="string">"Java"</span>);</div><div class="line">    set.add(<span class="string">"JEE"</span>);</div><div class="line">    set.add(<span class="string">"Spring"</span>);</div><div class="line">    set.add(<span class="string">"Hibernate"</span>);</div><div class="line">    set = Collections.unmodifiableSet(set);</div><div class="line">    set.add(<span class="string">"Ajax"</span>);<span class="comment">//not allowed.</span></div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p>可以看到，创建不可变集合主要是调用了Collections的unmodifiableSet()方法，而Collections类通过装饰模式实现了对一般集合的封装。</p>
+<ul>
+<li>去除List集合中的重复元素，且保持原有的顺序</li>
+</ul>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String args[])</span> </span>&#123; </div><div class="line">    List list=<span class="keyword">new</span> ArrayList(); </div><div class="line">    list.add(<span class="string">"A"</span>); </div><div class="line">    list.add(<span class="string">"B"</span>); </div><div class="line">    list.add(<span class="string">"C"</span>); </div><div class="line">    list.add(<span class="string">"A"</span>);<span class="comment">// List中允许元素重复 </span></div><div class="line">    <span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>;i&amp;lt;list.size();i++) </div><div class="line">        System.out.print(<span class="string">" "</span>+list.get(i));<span class="comment">// A B C A // 去除重复的元素且保持原有元素的顺序</span></div><div class="line">    List list2=<span class="keyword">new</span> testD().function(list); </div><div class="line">    <span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>;i&amp;lt;list2.size();i++)  </div><div class="line">        System.out.print(<span class="string">" "</span>+list2.get(i));<span class="comment">// A B C </span></div><div class="line">&#125; </div><div class="line"><span class="function"><span class="keyword">public</span> List <span class="title">function</span> <span class="params">(List list)</span> </span>&#123; </div><div class="line">    <span class="keyword">return</span> <span class="keyword">new</span> ArrayList(<span class="keyword">new</span> LinkedHashSet(list)); </div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p>上面的代码代码通过把原有列表传入一个LinkedHashSet来去除重复的元素。在这个情况里，LinkedHashSet可以保持元素原来的顺序。如果这个顺序是不需要的话，那么上面的LinkedHashSet可以用HashSet来替换。</p>
+<h1 id="集合框架类图及集合对比"><a href="#集合框架类图及集合对比" class="headerlink" title="集合框架类图及集合对比"></a>集合框架类图及集合对比</h1><p>其实如上的两道题目并不难，只是没有对集合了解的更深。下面就来大概的看一下集合吧。集合的继承类如下所示。</p>
+<p><img src="/img/collections.png" alt=""></p>
+<p>如上的集合可以归纳为三大类，即List、Set和Map。同时还有一些辅助的工具类，像Collections、Arrays等方便了集合的操作，各个集合的比较情况如下图。</p>
+<p><img src="/img/collections2.png" alt=""></p>
+<p>其实对于集合的操作，无外乎就是</p>
+<ul>
+<li>增加：向一个集合中添加一个元素、将一个集合中的所有元素插入到当前集合中</li>
+<li>删除：删除指定的一个元素、删除集合中所有的元素</li>
+<li>修改：修改指定的一个元素</li>
+<li>查找：查当前集合的大小、查找两个集合中的共同元素等</li>
+<li>其它：如将一个集合中的元素转换为数组表示形式、判断一个集合是否为空等</li>
+</ul>
+<h1 id="Iterable、Iterator、Collection接口"><a href="#Iterable、Iterator、Collection接口" class="headerlink" title="Iterable、Iterator、Collection接口"></a>Iterable、Iterator、Collection接口</h1><p>从Java集合框架图可以看出，所有的类都直接或间接继承了Iterable接口，源代码如下：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">package</span> java.lang; </div><div class="line"><span class="keyword">import</span> java.util.Iterator; </div><div class="line"><span class="comment">/** * </span></div><div class="line">    Implementing this interface allows an object to be </div><div class="line">    the target of * the "foreach" statement. </div><div class="line">    */ </div><div class="line">    <span class="keyword">public</span> interfacen Iterable &#123; </div><div class="line">        <span class="function">Iterator <span class="title">iterator</span><span class="params">()</span></span>; <span class="comment">// 返回一个在一组 T 类型的元</span></div><div class="line">                             <span class="comment">//素上进行迭代的迭代器 </span></div><div class="line">    &#125;</div></pre></td></tr></table></figure>
+<p>Iterable接口在java.lang包下，其中定义了一个获取Iterator的实例方法。</p>
+<p>Iterator类的源代码如下：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">interface</span> <span class="title">Iterator</span> </span>&#123; </div><div class="line">        <span class="function"><span class="keyword">boolean</span> <span class="title">hasNext</span><span class="params">()</span></span>; <span class="comment">// 是否含有下一个元素 </span></div><div class="line">        <span class="function">E <span class="title">next</span><span class="params">()</span></span>; <span class="comment">// 获取集合的下一个元素 </span></div><div class="line">        <span class="function"><span class="keyword">void</span> <span class="title">remove</span><span class="params">()</span></span>; <span class="comment">// 从集合中移除当前元素 </span></div><div class="line">    &#125;</div></pre></td></tr></table></figure>
+<p>Iterator模式是用于遍历集合类的标准访问方法。它可以把访问逻辑从不同类型的集合类中抽象出来，从而避免向客户端暴露出集合的内部结构。例如，如果没有使用Iterator，遍历一个数组的方法是使用索引：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>; i&lt;集合的大小;i++)</div><div class="line">    &#123; <span class="comment">// 省略操作代码</span></div><div class="line">    &#125;</div></pre></td></tr></table></figure>
+<p>当访问一个链表（LinkedList）时又必须使用while循环：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">while</span>((e=e.next())!=<span class="keyword">null</span>) &#123; <span class="comment">// 省略操作代码</span></div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p>以上两种方法遍历办法都必须事先知道集合的内部存储结构，访问代码和集合本身是紧耦合，无法将访问逻辑从集合类中分离出来，每一种集合对应一种遍历方法，客户端代码无法复用。 而且如果以后需要把ArrayList更换为LinkedList，则原来的客户端代码必须要进行重写。 为解决以上问题，Iterator模式总是用同一种逻辑来遍历集合：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">for</span>(Iterator it = c.iterater();it.hasNext(); ) </div><div class="line">    &#123; </div><div class="line">        <span class="comment">// ... </span></div><div class="line">    &#125;</div></pre></td></tr></table></figure>
+<p>设计的巧妙之处在于客户端自身不维护遍历集合的”指针”,所有的内部状态（如当前元素位置，是否有下一个元素）都由Iterator来维护，而这个Iterator由集合类通过工厂方法生成，因此，它知道如何遍历整个集合。值得提醒的是，这个工厂方法就是我们前面提到的iterator()方法，因为所有的类都继承了Iterable接口，所以他的实现类必须要实现iterator()方法。</p>
+<p>以后如果要访问集合时，就可以通过控制Iterator，向它发送”向前”，”向后”，”取当前元素”的命令，来间接遍历整个集合。</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">testSet</span> </span>&#123;  </div><div class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String args[])</span> </span>&#123;  </div><div class="line">        <span class="comment">// HashSet&lt;String&gt; ct = new HashSet&lt;&gt;();</span></div><div class="line">        <span class="comment">// Set&lt;String&gt; ct=new HashSet&lt;&gt;();</span></div><div class="line">        <span class="comment">// List&lt;String&gt; ct=new ArrayList&lt;&gt;();</span></div><div class="line">        List&lt;String&gt; ct=<span class="keyword">new</span> LinkedList&lt;&gt;();  </div><div class="line">        ct.add(<span class="string">"abc"</span>);  </div><div class="line">        ct.add(<span class="string">"def"</span>);  </div><div class="line"></div><div class="line">        <span class="keyword">for</span>(Iterator&lt;String&gt; myitr = ct.iterator();myitr.hasNext();)&#123;  </div><div class="line">            System.out.println(myitr.next());  </div><div class="line">        &#125;  </div><div class="line"></div><div class="line">        Iterator&lt;String&gt; iter = ct.iterator();  </div><div class="line">        <span class="keyword">while</span> (iter.hasNext()) &#123;  </div><div class="line">            System.out.println(iter.next());  </div><div class="line">        &#125;  </div><div class="line"></div><div class="line">        <span class="keyword">for</span> (String str : ct) &#123;  </div><div class="line">            System.out.println(str);  </div><div class="line">        &#125;  </div><div class="line">    &#125;  </div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p>使用了3种方法进行集合的遍历，输出的结果都是一致的，如下：</p>
+<p>abc def abc def abc def</p>
+<p>每一种集合类返回的Iterator具体类型可能不同，Array可能返回ArrayIterator，Set可能返回SetIterator，Tree可能返回TreeIterator，但是它们都实现了Iterator接口，因此，客户端不关心到底是哪种Iterator，它只需要获得这个Iterator接口即可，这就是面向对象所带来的好处。</p>
+<p>继续看Collection接口，源代码如下：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">interface</span> <span class="title">Collection</span>&lt;<span class="title">E</span>&gt; <span class="keyword">extends</span> <span class="title">Iterable</span>&lt;<span class="title">E</span>&gt; </span>&#123;  </div><div class="line">        <span class="comment">// 查找操作</span></div><div class="line">        <span class="function"><span class="keyword">int</span> <span class="title">size</span><span class="params">()</span>    </span>;  </div><div class="line">        <span class="function">Iterator&lt;E&gt; <span class="title">iterator</span><span class="params">()</span></span>;  </div><div class="line"></div><div class="line">        <span class="comment">// 判断</span></div><div class="line">        <span class="function"><span class="keyword">boolean</span> <span class="title">isEmpty</span><span class="params">()</span></span>;  </div><div class="line">        <span class="function"><span class="keyword">boolean</span> <span class="title">contains</span><span class="params">(Object o)</span></span>;  </div><div class="line">        <span class="function"><span class="keyword">boolean</span> <span class="title">containsAll</span><span class="params">(Collection&lt;?&gt; c)</span></span>;  </div><div class="line"></div><div class="line">        <span class="comment">// 增加操作</span></div><div class="line">        <span class="function"><span class="keyword">boolean</span> <span class="title">add</span><span class="params">(E e)</span></span>;  </div><div class="line">        <span class="function"><span class="keyword">boolean</span> <span class="title">addAll</span><span class="params">(Collection&lt;? extends E&gt; c)</span></span>;  </div><div class="line"></div><div class="line">        <span class="comment">// 删除操作</span></div><div class="line">        <span class="function"><span class="keyword">boolean</span> <span class="title">remove</span><span class="params">(Object o)</span></span>;  </div><div class="line">        <span class="function"><span class="keyword">boolean</span> <span class="title">removeAll</span><span class="params">(Collection&lt;?&gt; c)</span></span>;<span class="comment">// Removes all of this collection's elements that                 are also contained in the specified collection (optional operation).</span></div><div class="line">        <span class="function"><span class="keyword">boolean</span> <span class="title">retainAll</span><span class="params">(Collection&lt;?&gt; c)</span></span>;<span class="comment">// Retains only the elements in this collection that are contained in the specified collection (optional operation).</span></div><div class="line">        <span class="function"><span class="keyword">void</span> <span class="title">clear</span><span class="params">()</span></span>;  </div><div class="line"></div><div class="line">        <span class="comment">// 集合转换</span></div><div class="line">        Object[] toArray();  </div><div class="line">        &lt;T&gt; T[] toArray(T[] a);  </div><div class="line"></div><div class="line">        <span class="comment">// 提供equals()和hashCode()</span></div><div class="line">        <span class="function"><span class="keyword">boolean</span> <span class="title">equals</span><span class="params">(Object o)</span></span>;  </div><div class="line">        <span class="function"><span class="keyword">int</span> <span class="title">hashCode</span><span class="params">()</span></span>;  </div><div class="line">    &#125;</div></pre></td></tr></table></figure>
+<p>Collection接口针对集合定义了一些基本的操作，所以任何一个具体的集合实现类都有含有这些方法。但是由于抽象层次较高，所以一般一个具体的集合实现类，如ArrayList、HashMap等都不会直接继承这个接口，而是继承这个接口的一些子类来实现。所以说每个集合的具体实现类都直接或间接继承了这个接口。</p>
+<p>有一类重要的方法还需要说明一下：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">boolean</span> <span class="title">add</span><span class="params">(E e)</span></span>;  </div><div class="line">   <span class="function"><span class="keyword">boolean</span> <span class="title">addAll</span><span class="params">(Collection&lt;? extends E&gt; c)</span></span>;  </div><div class="line"></div><div class="line">   <span class="function"><span class="keyword">boolean</span> <span class="title">remove</span><span class="params">(Object o)</span></span>;  </div><div class="line">   <span class="function"><span class="keyword">boolean</span> <span class="title">removeAll</span><span class="params">(Collection&lt;?&gt; c)</span></span>;</div></pre></td></tr></table></figure>
+<p>拿add(E e)方法来举例，这个方法将在集合中添加一个新的元素。方法会返回一个boolean，但是返回值不是表示添加成功与否。仔细阅读doc可以看到，Collection规定：如果一个集合拒绝添加这个元素，无论任何原因，都必须抛出异常。这个返回值表示的意义是add()方法执行后，集合的内容是否改变了（就是元素有无数量，位置等变化），这是由具体类实现的。即：如果方法出错，总会抛出异常；返回值仅仅表示该方法执行后这个Collection的内容有无变化。</p>
+<p>观察发现传入的参数有许多都是Collection&lt;?&gt;类型的，这就为各个集合的具体实现类实现相互的操作提供了便利。举个例子：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div></pre></td><td class="code"><pre><div class="line">LinkedList&lt;String&gt; list=<span class="keyword">new</span> LinkedList&lt;&gt;();  </div><div class="line"></div><div class="line">   list.add(<span class="string">"xy"</span>);  </div><div class="line">   list.add(<span class="string">"mn"</span>);  </div><div class="line"></div><div class="line">   Collection&lt;String&gt; ct=<span class="keyword">new</span> HashSet&lt;String&gt;();  </div><div class="line">   ct.add(<span class="string">"abc"</span>);  </div><div class="line">   ct.add(<span class="string">"def"</span>);  </div><div class="line">   ct.addAll(list);  </div><div class="line"></div><div class="line">   Iterator&lt;String&gt; iter=ct.iterator();  </div><div class="line">   <span class="keyword">while</span>(iter.hasNext())&#123;  </div><div class="line">   System.out.println(iter.next());  </div><div class="line">   &#125;</div></pre></td></tr></table></figure>
+<p>将LinkedList集合中的元素添加到HashSet中，只需要调用addAll()方法即可。最后结果输出如下： mn abc def xy</p>
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/Collections/" rel="tag"># Collections</a>
+          
+            <a href="/tags/java/" rel="tag"># java</a>
+          
+            <a href="/tags/基础/" rel="tag"># 基础</a>
+          
+        </div>
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/categories/项目管理/cmmi/" rel="prev" title="cmmi 介绍">
+                cmmi 介绍 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+  <div class="comments" id="comments">
+    
+      <div class="ds-thread" data-thread-key="categories/java/java-Collections-1/"
+           data-title="java集合框架学习1" data-url="http://www.pmjohnfung.com/categories/java/java-Collections-1/">
+      </div>
+    
+  </div>
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <img class="site-author-image" itemprop="image"
+               src="/img/avatar.jpg"
+               alt="johnfung" />
+          <p class="site-author-name" itemprop="name">johnfung</p>
+          <p class="site-description motion-element" itemprop="description">志美行厉,永无止境</p>
+        </div>
+        <nav class="site-state motion-element">
+        
+          
+            <div class="site-state-item site-state-posts">
+              <a href="/archives">
+                <span class="site-state-item-count">20</span>
+                <span class="site-state-item-name">日志</span>
+              </a>
+            </div>
+          
+
+          
+            <div class="site-state-item site-state-categories">
+              <a href="/categories">
+                <span class="site-state-item-count">7</span>
+                <span class="site-state-item-name">分类</span>
+              </a>
+            </div>
+          
+
+          
+            <div class="site-state-item site-state-tags">
+              <a href="/tags">
+                <span class="site-state-item-count">23</span>
+                <span class="site-state-item-name">标签</span>
+              </a>
+            </div>
+          
+
+        </nav>
+
+        
+          <div class="feed-link motion-element">
+            <a href="/atom.xml" rel="alternate">
+              <i class="fa fa-rss"></i>
+              RSS
+            </a>
+          </div>
+        
+
+        <div class="links-of-author motion-element">
+          
+            
+              <span class="links-of-author-item">
+                <a href="https://github.com/pmjohnfung" target="_blank" title="GitHub">
+                  
+                    <i class="fa fa-fw fa-github"></i>
+                  
+                  GitHub
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="https://www.zhihu.com/people/zhiyong-feng/" target="_blank" title="Zhihu">
+                  
+                    <i class="fa fa-fw fa-globe"></i>
+                  
+                  Zhihu
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="http://weibo.com/622780789/home?wvr=5" target="_blank" title="Weibo">
+                  
+                    <i class="fa fa-fw fa-weibo"></i>
+                  
+                  Weibo
+                </a>
+              </span>
+            
+          
+        </div>
+
+        
+        
+
+        
+        
+
+        
+
+
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#关于集合的两道面试题"><span class="nav-number">1.</span> <span class="nav-text">关于集合的两道面试题</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#集合框架类图及集合对比"><span class="nav-number">2.</span> <span class="nav-text">集合框架类图及集合对比</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Iterable、Iterator、Collection接口"><span class="nav-number">3.</span> <span class="nav-text">Iterable、Iterator、Collection接口</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright" >
+  
+  &copy; 
+  <span itemprop="copyrightYear">2017</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">johnfung</span>
+</div>
+
+
+<div class="powered-by">
+  由 john 驱动
+</div>
+
+<div class="theme-info">
+  京ICP备15009579号
+</div>
+
+
+        
+
+<div class="busuanzi-count">
+
+  <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+  
+    <span class="site-uv"><i class="fa fa-user"></i>访问人数<span class="busuanzi-value" id="busuanzi_value_site_uv"></span></span>
+  
+
+  
+    <span class="site-pv"><i class="fa fa-eye"></i>总访问量<span class="busuanzi-value" id="busuanzi_value_site_pv"></span>次</span>
+  
+  
+</div>
+
+
+
+        
+      </div>
+    </footer>
+
+    <div class="back-to-top">
+      <i class="fa fa-arrow-up"></i>
+    </div>
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+  <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+
+  
+  <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+  
+  <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.0"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.0"></script>
+
+
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.0"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.0"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.0"></script>
+
+
+
+  
+
+  
+    
+  
+
+  <script type="text/javascript">
+    var duoshuoQuery = {short_name:"pmjohnfung"};
+    (function() {
+      var ds = document.createElement('script');
+      ds.type = 'text/javascript';ds.async = true;
+      ds.id = 'duoshuo-script';
+      ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+      ds.charset = 'UTF-8';
+      (document.getElementsByTagName('head')[0]
+      || document.getElementsByTagName('body')[0]).appendChild(ds);
+    })();
+  </script>
+
+  
+    
+    
+    <script src="/lib/ua-parser-js/dist/ua-parser.min.js?v=0.7.9"></script>
+    <script src="/js/src/hook-duoshuo.js"></script>
+  
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+
+</body>
+</html>

@@ -1,0 +1,877 @@
+<!doctype html>
+
+
+
+  
+
+
+<html class="theme-next mist use-motion" lang="zh-Hans">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+  
+  
+  
+  
+
+  
+    
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+    
+    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.0" rel="stylesheet" type="text/css" />
+
+
+  <meta name="keywords" content="PMP 互联网金融 项目管理 技术" />
+
+
+
+
+
+  <link rel="alternate" href="/atom.xml" title="johnfung's Blog" type="application/atom+xml" />
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.1.0" />
+
+
+
+
+
+
+<meta name="description" content="CMM是指“能力成熟度模型”，其英文全称为Capability Maturity Model for Software，英文缩写为SW-CMM，简称CMM。它是对于软件组织在定义、实施、度量、控制和改善其软件过程的实践中各个发展阶段的描述。CMM的核心是把软件开发视为一个过程，并根据这一原则对软件开发和维护进行过程监控和研究，以使其更加科学化、标准化、使企业能够更好地实现商业目标。
+CMM是一种用">
+<meta property="og:type" content="article">
+<meta property="og:title" content="cmmi 介绍">
+<meta property="og:url" content="http://www.pmjohnfung.com/categories/项目管理/cmmi/index.html">
+<meta property="og:site_name" content="johnfung's Blog">
+<meta property="og:description" content="CMM是指“能力成熟度模型”，其英文全称为Capability Maturity Model for Software，英文缩写为SW-CMM，简称CMM。它是对于软件组织在定义、实施、度量、控制和改善其软件过程的实践中各个发展阶段的描述。CMM的核心是把软件开发视为一个过程，并根据这一原则对软件开发和维护进行过程监控和研究，以使其更加科学化、标准化、使企业能够更好地实现商业目标。
+CMM是一种用">
+<meta property="og:updated_time" content="2017-01-11T04:34:39.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="cmmi 介绍">
+<meta name="twitter:description" content="CMM是指“能力成熟度模型”，其英文全称为Capability Maturity Model for Software，英文缩写为SW-CMM，简称CMM。它是对于软件组织在定义、实施、度量、控制和改善其软件过程的实践中各个发展阶段的描述。CMM的核心是把软件开发视为一个过程，并根据这一原则对软件开发和维护进行过程监控和研究，以使其更加科学化、标准化、使企业能够更好地实现商业目标。
+CMM是一种用">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Mist',
+    sidebar: {"position":"right","display":"always"},
+    fancybox: true,
+    motion: true,
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://www.pmjohnfung.com/categories/项目管理/cmmi/"/>
+
+
+
+
+
+  <title> cmmi 介绍 | johnfung's Blog </title>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+
+
+
+  <script type="text/javascript">
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?1951575cf4f5362bd4c13abf92a2454a";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
+
+
+
+
+
+
+
+
+  
+  
+    
+  
+
+  <div class="container one-collumn sidebar-position-right page-post-detail ">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-meta ">
+  
+
+  <div class="custom-logo-site-title">
+    <a href="/"  class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <span class="site-title">johnfung's Blog</span>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+  </div>
+    
+      <p class="site-subtitle">从事项目管理,java开发</p>
+    
+</div>
+
+<div class="site-nav-toggle">
+  <button>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+  </button>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
+            
+            分类
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
+            
+            关于
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            标签
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+  <link itemprop="mainEntityOfPage" href="http://www.pmjohnfung.com/categories/项目管理/cmmi/">
+
+  <span style="display:none" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <meta itemprop="name" content="johnfung">
+    <meta itemprop="description" content="">
+    <meta itemprop="image" content="/img/avatar.jpg">
+  </span>
+
+  <span style="display:none" itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+    <meta itemprop="name" content="johnfung's Blog">
+    <span style="display:none" itemprop="logo" itemscope itemtype="http://schema.org/ImageObject">
+      <img style="display:none;" itemprop="url image" alt="johnfung's Blog" src="">
+    </span>
+  </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                cmmi 介绍
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2015-07-11T12:16:13+08:00">
+                2015-07-11
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/项目管理/" itemprop="url" rel="index">
+                    <span itemprop="name">项目管理</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/categories/项目管理/cmmi/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="categories/项目管理/cmmi/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+
+          
+          
+
+          
+            <span class="post-meta-divider">|</span>
+            <span class="page-pv"><i class="fa fa-file-o"></i>浏览
+            <span class="busuanzi-value" id="busuanzi_value_page_pv" ></span>次
+            </span>
+          
+
+          
+	
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p>CMM是指“能力成熟度模型”，其英文全称为Capability Maturity Model for Software，英文缩写为SW-CMM，简称CMM。它是对于软件组织在定义、实施、度量、控制和改善其软件过程的实践中各个发展阶段的描述。CMM的核心是把软件开发视为一个过程，并根据这一原则对软件开发和维护进行过程监控和研究，以使其更加科学化、标准化、使企业能够更好地实现商业目标。</p>
+<p>CMM是一种用于评价软件承包能力并帮助其改善软件质量的方法，侧重于软件开发过程的管理及工程能力的提高与评估。CMM分为五个等级：一级为初始级，二级为可重复级，三级为已定义级，四级为已管理级，五级为优化级。</p>
+<p>CMM是由美国卡内基梅隆大学软件工程研究所1987年研制成功的，是目前国际上最流行最实用的软件生产过程标准和软件企业成熟度等级认证标准。目前，我国已有软件企业通过了CMM标准认证 。</p>
+<p>SW-CMM(Capability Maturity Model For Software 软件生产能力成熟度模型,以下简称”CMM”),是87年由美国卡内基梅隆大学软件工程研究所（CMU SEI）研究出的一种一种用于评价软件承包商能力并帮助改善软件质量的方法，其目的是帮助软件企业对软件工程过程进行管理和改进，增强开发与改进能力，从而能按时地、不超预算地开发出高质量的软件。</p>
+<p>其所依据的想法是：只要集中精力持续努力去建立有效的软件工程过程的基础结构，不断进行管理的实践和过程的改进，就可以克服软件生产中的困难。CMM它是目前国际上最流行、最实用的一种软件生产过程标准，已经得到了众多国家以及国际软件产业界的认可，成为当今企业从事规模软件生产不可缺少的一项内容。</p>
+<p>　　CMM目前通用流行的版本是1．1（Version1．1）。《按照软件工程研究所（SEI）的原来计划，CMM的改进版版本2．0（V2．0）是要在1997年的11月完成的。但是，美国国防部办公室要求软件工程研究所（SEI）延迟发放公布CMM版本2．0，直至他们完成另一个更为紧迫的项目-CMMI。</p>
+<p>CMMI(Capability Maturity Model Integration能力成熟度模型集成)，是美国国防部的一个设想。他们希望把所有现存的与将被发展出来的各种能力成熟度模型，集成到一个框架中去。这个框架用于解决两个问题：第一，软件获取办法的改革；第二，从集成产品与过程发展的角度出发,建立一种包含健全的系统开发原则的过程改进。</p>
+<p>　　CMM为 软件企业的过程能力提供了一个阶梯式的改进框架，它基于过去所有软件工程过程改进的成果，吸取了以往软件工程的经验教训，提供了一个基于过程改进的框架； 它指明了一个软件组织在软件开发方面需要管理哪些主要工作、这些工作之间的关系、以及以怎样的先后次序，一步一步的做好这些工作而使软件组织走向成熟。</p>
+<h1 id="CMM的诞生"><a href="#CMM的诞生" class="headerlink" title="CMM的诞生"></a>CMM的诞生</h1><p>　　信息时代，软件质量的重要性越来越为人们所认识。软件是产品、是装备、是工具，其质量使得顾客满意，是产品市场开拓、事业得以发展的关键。而软件工程领域在1992年至1997年取得了前所未有的进展,其成果超过软件工程领域过去15年来的成就总和。<br>　　<br>    软件管理工 程引起广泛注意源于20世纪70年代中期。当时美国国防部曾立题专门研究软件项目做不好的原因，发现70%的项目是因为管理不善而引起，而并不是因为技术 实力不够，进而得出一个结论，即管理是影响软件研发项目全局的因素，而技术只影响局部。到了20世纪90年代中期，软件管理工程不善的问题仍然存在，大约 只有10%的项目能够在预定的费用和进度下交付。软件项目失败的主要原因有：需求定义不明确；缺乏一个好的软件开发过程；没有一个统一领导的产品研发小组；子合同管理不严格；没有经常注意改善软件过程；对软件构架很不重视；软件界面定义不善且缺乏合适的控制；软件升级暴露了硬件的缺点；关心创新而不关心费用和风险；军用标准太少且不够完善等等。在关系到软件项目成功与否的众多因素中，软件度量、工作量估计、项目规划、进展控制、需求变化和风险管理等都是与工程管理直接相关的因素。由此可见，软件管理工程的意义至关重要。<br>　　<br>　　软件管理工程和其它工程管理相比有其特殊性。首先，软件是知识产品，进度和质量都难以度量，生产效率也难以保证。其次，软件系统复杂程度也是超乎想象的。因为软件复杂和难以度量，软件管理工程的发展还很不成熟。<br>　　<br>　　软件管理工程的发展，在经历了从70年代开始以结构化分析与设计、结构化评审、结构化程序设计以及结构化测试为特征的结构化生产时代，到90年代中期，以CMM模型的成熟模型和日益为市场接受为标志，已经进入以过程成熟模型CMM、个体软件过程PSP和群组软件过程TSP为标志的以过程为中心的时代，而软件发展第三个时代，及软件工业化生产时代，从90年代中期软件过程技术的成熟和面向对象技术、构件技术的发展为基础，已经渐露端倪，估计到2005年，可以实现真正的软件工业化生产，这个趋势应该引起软件企业界和有关部门的高度重视，及早采取措施，跟上世界软件发展的脚步。软件生产转向以改善软件过程为中心，是世界各国软件产业或迟或早都要走的道路。<br>　　<br>　　软件过程改善是当前软件管理工程的核心问题。50多年来计算事业的发展使人们认识到要高效率、高质量和低成本地开发软件，必须改善软件生产过程。软件管理工程走过了一条从70年代开始以结构化分析与设计、结构化评审、结构化程序设计以及结构化测试到90年代中期以过程成熟模型CMM、个体软件过程PSP和群组软件过程TSP为标志的以过程为中心向着软件过程技术的成熟和面向对象技术、构件技术的发展为基础的真正软件工业化生产的道路。软件生产转向以改善软件过程为中心，是世界各国软件产业或迟或早都要走的道路。软件工业已经或正在经历着”软件过程的成熟化”，并向”软件的工业化”渐进过渡。规范的软件过程是软件工业化的必要条件。<br>　　<br>　　软件过程研究的是如何将人员、技术和工具等组织起来，通过有效的管理手段，提高软件生产的效率，保证软件产品的质量。由此诞生了软件过程的三个流派：CMU-SEI的CMM/PSP/TSP；ISO 9000质量标准体系；ISO/IEC 15504（SPICE）。<br>　　<br>　　CMM/PSP/TSP 即软件能力成熟度模型/ 个体软件过程/群组软件过程，是1987年美国 Carnegie Mellon 大学软件工程研究所(CMU/SEI)以W.S.Humphrey为首的研究组发表的研究成果”承制方软件工程能力的评估方法”；SO 9000质量标准体系是在70年代由欧洲首先采用的，其后在美国和世界其他地区也迅速地发展起来。目前，欧洲联合会积极促进软件质量的制度化，提出了如下 ISO9000软件标准系列：ISO9001、ISO9000-3、ISO9004-2、ISO9004-4、ISO9002；ISO/IEC 15504（SPICE）是1991年国际标准化组织采纳了一项动议，开展调查研究，按照CMU-SEI的基本思路，产生的技术报告ISO/IEC 15504–信息技术软件过程评估<br>　　<br>　　目前，学术界和工业界公认美国 Carnegie Mellon 大学软件工程研究所(CMU/SEI) 以W.S.Humphrey为首主持研究与开发的软件能力成熟度模型CMM是当前最好的软件过程，已成为业界事实上的软件过程的工业标准。</p>
+<h1 id="CMM的发展"><a href="#CMM的发展" class="headerlink" title="CMM的发展"></a>CMM的发展</h1><p>　　<br>　　1987年美国 Carnegie Mellon 大学软件工程研究所(CMU/SEI)以W.S.Humphrey为首的研究组发表了CMM/PSP/TSP 技术，为软件管理工程开辟了一条新的途经。<br>　　<br>　　CMM框 架用5个不断进化的层次来评定软件生产的历史与现状：其中初始层是混沌的过程，可重复层是经过训练的软件过程，定义层是标准一致的软件过程，管理层是可预 测的软件过程，优化层是能持续改善的软件过程。任何单位所实施的软件过程，都可能在某一方面比较成熟，在另一方面不够成熟，但总体上必然属于这5个层次中 的某一个层次。而在某个层次内部，也有成熟程度的区别。在CMM框 架的不同层次中，需要解决带有不同层次特征的软件过程问题。因此，一个软件开发单位首先需要了解自己正处于哪一个层次，然后才能够对症下药地针对该层次的 特殊要求解决相关问题，这样才能收到事半功倍的软件过程改善效果。任何软件开发单位在致力于软件过程改善时，只能由所处的层次向紧邻的上一层次进化。而且 在由某一成熟层次向上一更成熟层次进化时，在原有层次中的那些已经具备的能力还必须得到保持与发扬。<br>　　<br>　　软件产品质量在很大程度上取决于构筑软件时所使用的软件开发和维护过程的质量。软件过程是人员密集和设计密集的作业过程：若缺乏有素训练，就难以建立起支持实现成功是软件过程的基础，改进工作亦将难以取得成效。CMM描述的这个框架正是勾列出从无定规的混沌过程向训练有素的成熟过程演进的途径。<br>　　<br>　　CMM包 括两部分”软件能力成熟度模型”和”能力成熟度模型的关键惯例”。”软件能力成熟度模型”主要是描述此模型的结构，并且给出该模型的基本构件的定义。”能力成熟度模型的关键惯例”详细描述了每个”关键过程方面”涉及的”关键惯例”。这里”关键过程方面”是指一组相关联的活动；每个软件能力成熟度等级包含若 干个对该成熟度等级至关重要的过程方面，它们的实施对达到该成熟度等级的目标起到保证作用。这些过程域就称为该成熟度等级的关键过程域， 反之有非关键过程域是指对达到相应软件成熟度等级的目标不起关键作用。归纳为：互相关联的若干软件实践活动和有关基础设施的一个集合。而”关键惯例”是指 使关键过程方面得以有效实现和制度化的作用最大的基础设施和活动,对关键过程的实践起关键作用的方针、规程、措施、活动以及相关基础设施的建立。关键实践 一般只描述”做什么”而不强制规定”如何做”。各个关键惯例按每个关键过程方面的5个”公共特性”（对执行该过程的承诺，执行该过程的能力，该过程中要执 行的活动，对该过程执行情况的度量和分析，及证实所执行的活动符合该过程）归类，逐一详细描述。当作到了某个关键过程的的全部关键惯例就认为实现了该关键过程，实现了某成熟度级及其以低级所含的全部关键过程就认为达到到了了该级。<br>　　<br>　　上面提到了CMM把软件开发组织的能力成熟度分为5个的等级。除了第1级外，其他每一级由几个关键过程方面组成。每一个关键过程方面都由上述5种公共特性予以表征。CMM给 每个关键过程了一些具体目标。按每个公共特性归类的关键惯例是按该关键过程的具体目标选择和确定的。如果恰当地处理了某个关键过程涉及的全部关键惯例，这 个关键过程的各项目标就达到了，也就表明该关键过程实现了。这种成熟度分级的优点在于，这些级别明确而清楚地反映了过程改进活动的轻重缓急和先后顺序。</p>
+<table>
+<thead>
+<tr>
+<th>能力等级</th>
+<th>特点</th>
+<th>关键过程</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>第一级</td>
+<td>基本级</td>
+<td>软件过程是混乱无序的,对过程几乎没有定义,成功依靠的是个人的才能和经验,管理方式属于反应式</td>
+</tr>
+<tr>
+<td>第二级</td>
+<td>重复级</td>
+<td>建立了基本的项目管理来跟踪进度.费用和功能特征,制定了必要的项目管理,能够利用以前类似的项目应用取得成功    需求管理,项目计划,项目跟踪和监控,软件子合同管理,软件配置管理,软件质量保障</td>
+</tr>
+<tr>
+<td>第三级</td>
+<td>确定级</td>
+<td>已经将软件管理和过程文档化,标准化,同时综合成该组织的标准软件过程,所有的软件开发都使用该标准软件过程组织过程定义,组织过程焦点,培训大纲,软机集成管理,软件产品工程,组织协调,专家审评</td>
+</tr>
+<tr>
+<td>第四级</td>
+<td>管理级</td>
+<td>收集软件过程和产品质量的详细度量,对软件过程和产品质量有定量的理解和控制定量的软件过程管理和产品质量管理</td>
+</tr>
+<tr>
+<td>第五级</td>
+<td>优化级</td>
+<td>软件过程的量化反馈和新的思想和技术促进过程的不断改进缺陷预防,过程变更管理和技术变更管理</td>
+</tr>
+</tbody>
+</table>
+<p>　　<br>对于CMM的作用归纳两个主要方面: 科学地评价软件开发单位的软件能力成熟等级; 帮助软件开发单位进行自检，了解自己的强项和弱项，从而不断完善和改进单位的软件开发过程，确保软件质量，提高软件开发能效率。</p>
+<p>由于CMM并未提供有关实现CMM关键过程域所需的具体知识和技能，因此，美国 Carnegie Mellon 大学软件工程研究所(CMU/SEI) 以W.S.Humphrey为首主持研究与开发了个体软件过程PSP（Personal software process）和群组软件过程TSP(Team Software Process)，形成CMM/PSP/TSP体系。</p>
+<p>PSP 个体软件过程（Personal Software Process）是由美国Carnegie Mellon大学软件工程研究所(CMU/SEI)的Watts s. Humphrey领导开发的，于1995年它的推出，在软件工程界引起了极大的轰动，可以说是由定向软件工程走向定量软件工程的一个标志。PSP是一种可 用于控制、管理和改进个人工作方式的自我改善过程，是一个包括软件开发表格、指南和规程的结构化框架。 PSP为基于个体和小型群组软件过程的优化提供了具体而有效的途径，例如如何制订计划，如何控制质量，如何与其他人相互协作等等。在软件设计阶段， PSP的着眼点在于软件缺陷的预防，其具体办法是强化设计结束准则，而不是设计方法的选择。PSP保障软件产品质量的一个重要途径是提高设计质量。</p>
+<p>　　PSP能够说明个体软件过程的原则；帮助软件工程师作出准确的计划；确定软件工程师为改善产品质量要采取的步骤；建立度量个体软件过程改善的基准；确定过程的改变对软件工程师能力的影响。</p>
+<p>　　TSP　 群组软件过程TSP(Team Software Process)指导项目组中的成员如何有效地规划和管理所面临的项目开发任务，并且告诉管理人员如何指导软件开发队伍。始终以最佳状态来完成工作。 TSP实施集体管理与自己管理自己相结合的原则，最终目的在于指导开发人员如何在最少的时间内，以预定的费用生产出高质量的软件产品，所采用的方法是对群 组开发过程的定义、度量和改进。</p>
+<p>　　TSP致力于开发高质量的产品，建立、管理和授权项目小组，并且指导他们如何在满足计划费用的前提下，在承诺的期限范围内，不断生产并交付高质量的产品。</p>
+<p>　　CMM是过程改善的第一步，它提供了评价组织的能力、识别优先改善需求和追踪改善进展的管理方式。企业只有开始CMM改善后，才能接受需要规划的事实，认识到质量的重要性，才能注重对员工经常进行培训,合理分配项目人员,并且建立起有效的项目小组。然而，它实现的成功与否与组织内部有关人员的积极参加和创造性活动密不可分。</p>
+<p>　　PSP能够指导软件工程师如何保证自己的工作质量，估计和规划自身的工作，度量和追踪个人的表现，管理自身的软件过程和产品质量。经过PSP学习和实践的正规训练，软件工程师们能够在他们参与的项目工作之中充分运用PSP，从而有助于CMM目标的实现。</p>
+<p>　　TSP结合了CMM的管理方法和PSP的工程技能，通过告诉软件工程师如何将个体过程结合进小组软件过程，并将后者与　组织进而整个管理系统相联系；通过告诉管理层如何支持和授权项目小组，坚持高质量的工作，并且依据数据进行项　目的管理，向组织展示如何应用CMM的原则和PSP的技能去生产高质量的产品。</p>
+<p>　　总之，单纯实施CMM，永远不能真正做到能力成熟度的升级，只有将实施CMM与实施PSP和TSP有机地结合起来，才能发挥最大的效力。因此，软件过程框架应该是CMM/PSP/TSP的有机集成。</p>
+<h1 id="实施CMM的必要性"><a href="#实施CMM的必要性" class="headerlink" title="实施CMM的必要性"></a>实施CMM的必要性</h1><p>　 　<br>　 　软件开发的风险之所以大，是由于软件过程能力低，其中最关键的问题在于软件开发组织不能很好地管理其软件过程，从而使一些好的开发方法和技术起不到预期 的作用。而且项目的成功也是通过工作组的杰出努力，所以仅仅建立在可得到特定人员上的成功不能为全组织的生产和质量的长期提高打下基础，必须在建立有效的 软件如管理工程实践和管理实践的基础设施方面，坚持不懈地努力，才能不断改进，才能持续地成功。</p>
+<p>　 　软件质量是一模糊的、捉摸不定的概念。我们常常听说：某某软件好用, 某某软件不好用；某某某软件功能全、结构合理, 某某某软件功能单一、操作困难……这些模模糊糊的语言不能算作是软件质量评价，更不能算作是软件质量科学的定量的评价。软件质量，乃至于任何产品质量，都 是一个很复杂的事物性质和行为。产品质量，包括软件质量，是人们实践产物的属性和行为，是可以认识，可以科学地描述的。可以通过一些方法和人类活动，来改 进质量。</p>
+<p>　　实施CMM是改进软件质量的有效方法:控制软件生产过程、提高软件生产者组织性和软件生产者个人能力的有效合理的方法软件工程和很多研究领域及实际问题有关，主要相关领域和因素有：需求工程(RE：REQUIREMENTS ENGINEERING)。理论上，需求工程是应用已被证明的原理、技术和工具，帮助系统分析人员理解问题或描述产品的外在行为。软件复用(SR：SOFTWARE REUSE)。定义为利用工程知识或方法，由一已存在的系统，来建造一新系统。这种技术，可改进软件产品质量和生产率。还有软件检查、软件计量、软件可靠性、软件可维修性、软件工具评估和选择等。</p>
+<h1 id="CMM在中国的现状"><a href="#CMM在中国的现状" class="headerlink" title="CMM在中国的现状"></a>CMM在中国的现状</h1><p>　 　中国生产力促进协会、北航SEI、中科院研究SEI等科研机构已于近几年在北京、上海、广州和深圳等地先后举办过多次报告会和研讨会，组织过课程学习和 应用实验，开展了软件过程方面的研究与开发工作，并发表了多篇的研究成果和学术论文，在软件质量保障平台支撑环境也取得了一定的成果。</p>
+<p>　　近两年来，CMM在我国获得了各界越来越多关注，业界有过多次关于CMM的讨论，2000年6月国务院颁发的《鼓励软件产业和集成电路产业发展的若干政策》对中国软件企业申请CMM认证给予了积极的支持和推动作用,第17条规定”对软件出口型企业CMM认证费用予以适当支持。”2000年中国村电脑节上还有CMM专题论坛，吸引了众多业内人士。鼎新、东大阿尔派、联想、方正、金蝶、用友、浪潮、创智、华为、东大阿尔派等大型集团或企业等都从1997—2000年起批企业都在进行研究、实验或实施预评估。其中鼎新公司从1997年着手进行CMM认证工作。1999年7月通过第三方认证机构的CMM2认证。东大阿尔派公司于2000年10月通过第三方认证机构的CMM2认证。2001年1月，联想软件经过英国路透集团的严格评估，顺利通过CMM2认证。2001年6月26日，沈阳东软软件股份有限公司（原沈阳东大阿尔派软件股份有限公司）正式通过了CMM3级认证，成为中国首家通过CMM3级的软件企业。</p>
+<p>　　总体上讲，国内对软件过程理论的讨论与实践正在展开，目标是使软件的质量管理和控制达到国际先进水平，中国的软件产业获得可持续发展的能力。专家分析，在未来两三年内，国内软件业势必将出现实施CMM的高潮。从这一趋势看，中国的软件企业已经开始走上标准化、规范化、国际化的发展道路，中国软件业已经面临一个整体突破的时代。</p>
+<p>　　但是我们应该看到目前国内对软件管理工程存在的最大问题是认识不足。管理实际上是一把手工程，需要高层管理人员的足够重视。而且软件过程的重大修改也必须由高层管理部门启动，这是软件过程改善能否进行到底的关键。此外，软件过程的改善还有待于全体有关人员的积极参与。</p>
+<p>　 　除了要认识到过程改善工作是一把手工程这个关键因素外，还应认识到软件过程成熟度的升级本身就是一个过程，且有一个生命周期。过程改善工作需要循序渐 进，不能一蹴而就，需要持续改善，不能停滞不前；需要联系实际，不能照本宣科；需要适应变革，不能凝固不变。一个有效的途径是自顶向下的课程培训，即从高 层主管依次普及到下面的工程师。</p>
+<h1 id="CMM体系结构"><a href="#CMM体系结构" class="headerlink" title="CMM体系结构"></a>CMM体系结构</h1><p>一个企业软件能力类似于一个人在一个特定领域的能力，是逐步获得和增长的。如果一个人在其领域的发展过程中能得到一个很好的指南，那么他或她就会不断达到 一个个设定的目标，并变得成熟起来，否则可能会盲目发展，离自己的目标越来越远，甚至南辕北辙。一个企业的软件能力发展也同样需要一个良好的指南，SW-CMM正是这样一个指南，它以几十年产品质量概念和软件工业的经验及教训为基础，为企业软件能力不断走向成熟提供了有效的步骤和框架。</p>
+<h2 id="框架"><a href="#框架" class="headerlink" title="框架"></a>框架</h2><p>SW-CMM为软件企业的过程能力提供了一个阶梯式的进化框架，阶梯共有五级。第一级实际上是一个起点，任何准备按CMM体系进化的企业都自然处于这个起点上，并通过这个起点向第二级迈进。除第一级外，每一级都设定了一组目标，如果达到了这组目标，则表明达到了这个成熟级别，可以向下一个级别迈进。CMM体系不主张跨越级别的进化，因为从第二级起，每一个低的级别实现均是高的级别实现的基础。</p>
+<ol>
+<li>初始级</li>
+</ol>
+<p>初始级的软件过程是未加定义的随意过程，项目的执行是随意甚至是混乱的。也许，有些企业制定了一些软件工程规范，但若这些规范未能覆盖基本的关键过程要求，且执行没有政策、资源等方面的保证时，那么它仍然被视为初始级。</p>
+<ol>
+<li>可重复级</li>
+</ol>
+<p>根据多年的经验和教训，人们总结出软件开发的首要问题不是技术问题而是管理问题。因此，第二级的焦点集中在软件管理过程上。一个可管理的过程则是一个可重复的过程，一个可重复的过程则能逐渐进化和成熟。第二级的管理过程包括了需求管理、项目管理、质量管理、配置管理和子合同管理五个方面。其中项目管理分为计划过程和跟踪与监控过程两个过程。通过实施这些过程，从管理角度可以看到一个按计划执行的且阶段可控的软件开发过程。</p>
+<ol>
+<li>定义级</li>
+</ol>
+<p>在第二级仅定义了管理的基本过程，而没有定义执行的步骤标准。在第三级则要求制定企业范围的工程化标准，而且无论是管理还是工程开发都需要一套文档化的标 准，并将这些标准集成到企业软件开发标准过程中去。所有开发的项目需根据这个标准过程，剪裁出与项目适宜的过程，并执行这些过程。过程的剪裁不是随意的， 在使用前需经过企业有关人员的批准。</p>
+<ol>
+<li>管理级</li>
+</ol>
+<p>第四级的管理是量化的管理。所有过程需建立相应的度量方式，所有产品的质量(包括工作产品和提交给用户的产品)需有明确的度量指标。这些度量应是详尽的，且可用于理解和控制软件过程和产品。量化控制将使软件开发真正变成为一种工业生产活动。</p>
+<ol>
+<li>优化级</li>
+</ol>
+<p>第五级的目标是达到一个持续改善的境界。所谓持续改善是指可根据过程执行的反馈信息来改善下一步的执行过程，即优化执行步骤。如果一个企业达到了这一级，那么表明该企业能够根据实际的项目性质、技术等因素，不断调整软件生产过程以求达到最佳。</p>
+<h2 id="结构"><a href="#结构" class="headerlink" title="结构"></a>结构</h2><p>除第一级外，SW-CMM的每一级是按完全相同的结构构成的。每一级包含了实现这一级目标的若干关键过程域(KPA)，每个KPA进一步包含若干关键实施活动(KP)，无论哪个KPA，它们的实施活动都统一按五个公共属性进行组织，即每一个KPA都包含五类KP。</p>
+<ul>
+<li>目标</li>
+</ul>
+<p>每一个KPA都确定了一组目标。若这组目标在每一个项目都能实现，则说明企业满足了该KPA的要求。若满足了一个级别的所有KPA要求，则表明达到了这个级别所要求的能力。</p>
+<ul>
+<li><p>实施保证<br>实施保证是企业为了建立和实施相应KPA所必须采取的活动，这些活动主要包括制定企业范围的政策和高层管理的责任。</p>
+</li>
+<li><p>实施能力<br>实施能力是企业实施KPA的前提条件。企业必须采取措施，在满足了这些条件后，才有可能执行KPA的执行活动。实施能力一般包括资源保证、人员培训等内容。</p>
+</li>
+<li><p>执行活动<br>执行过程描述了执行KPA所需求的必要角色和步骤。在五个公共属性中，执行活动是唯一与项目执行相关的属性，其余四个属性则涉及企业CMM能力基础设施的建立。执行活动一般包括计划、执行的任务、任务执行的跟踪等。</p>
+</li>
+<li><p>度量分析<br>度量分析描述了过程的度量和度量分析要求。典型的度量和度量分析的要求是确定执行活动的状态和执行活动的有效性。</p>
+</li>
+<li><p>实施验证<br>实施验证是验证执行活动是否与所建立的过程一致。实施验证涉及到管理方面的评审和审计以及质量保证活动。</p>
+</li>
+</ul>
+<p>在实施CMM时，可以根据企业软件过程存在问题的不同程度确定实现KPA的次序，然后按所确定次序逐步建立、实施相应过程。在执行某一个KPA时，对其目标组也可采用逐步满足的方式。过程进化和逐步走向成熟是CMM体系的宗旨。</p>
+<h1 id="CMM实施的思考"><a href="#CMM实施的思考" class="headerlink" title="CMM实施的思考"></a>CMM实施的思考</h1><p>　　<br>　　上面重点介绍了CMM,但是提醒注意的是，并不是实施了CMM，软件项目的质量就能有所保障。CMM是一种资质认证，它可以证明一个软件企业对整个软件开发过程的控制能力。按照CMM的思想进行管理与通过CMM认证并不能划等号。CMM认证并不仅仅是在评估软件企业的生产能力，整个评估过程同时还在帮助企业完善已经按照CMM建立的科学工作流程，发现企业在软件质量、生产进度以及成本控制等方面可能存在的问题，并且及时予以纠正。认证的过程是纠正企业偏差的过程，一定不能把CMM认证当作一种考试、一种文凭，而是要看成一项有利于企业今后发展的投资，借此来改变中国软件业长久以来形成的积弊。<br>　　<br>　　实施CMM对软件企业的发展起着至关重要的作用，CMM过程本身就是对软件企业发展历程的一个完整而准确的描述，企业通过实施CMM，可以更好地规范软件生产和管理流程，使企业组织规范化。企业通过CMM不是为了满足其他公司的要求，而是为了让企业更好地发展，为企业进一步扩大规模打下坚实的基础。如果企业只是为了获得一纸证书而通过CMM，那么就已经本末倒置了，对企业的长久发展反而有害。试想如果企业的态度不够端正，即使通过CMM认证，企业又怎么能够保证它在以后的操作过程当中继续坚持CMM规范呢？CMM只是一个让企业更好发展的规范，不应该成为企业炒作自己的工具，企业需要的是优化自己的管理、提高产品的质量，而非一张CMM证书。<br>　　<br>　　CMM不是万能的，它的成功与否，与一个组织内部有关人员的积极参与和创造性活动是密不可分的，而且CMM并未提供实现有关子过程域所需要的具体知识和技能。在国内要想取得过程改进成功，必须做好以下的几点:软件过程改进必须有高级主管的支持与委托，并积极地管理过程改进的进展;中层管理的积极支持;责任分明，过程改进小组的威望高;基层的支持与参与极端重要;利用定量的可观察数据，尽快使过程改进成果可见，从而激励参与者的兴趣;将实施CMM与实施PSP和TSP有机地结合起来;为企业的商业利益服务，并要求同时相符的企业文化变革。<br>　　<br>　　应该看到,过程改善工作必然具有一切过程所具有的固有特征，即需要循序渐进，不能一蹴而就需要持续改善，不能停滞不前；需要联系实际，不能照本宣读需要适应变革，不能凝固不变。将CMM／PSP／TSP引人软件企业最有效的途径首先要对单位主管和主要开发人员进行系统的培训。另外一个有效的途径是自顶向下的课程培训，即从高层主管依次普及到下面的工程师。培训包括最基本的软件工程和CMM培训知识；专业领域知识等方面的培训；软件过程方面的培训。不过强调一点，我们必须根据自身的实际制定可行的方案。不深入研究就照搬别的企业的模式是很难起到提高软件产品质量水平的真正目的的。<br>　　<br>　　CMM模型划分为5个级别，共计18个关键过程域，52个目标，300多个关键实践。每一个CMM等级的评估周期（从准备到完成）约需12-30个月。此期间应抽调企业中有管理能力、组织能力和软件开发能力的骨干人员,成立专门的CMM实施领导小组或专门的机构。同时设立软件工程过程组、软件工程组、系统工程组、系统测试组、需求管理组、软件项目计划组、软件项目跟踪与监督、软件配置管理组、软件质量保证组、培训组。各个小组完成自己的任务同时协调其他小组的工作。然后制定和完善软件过程, 按照CMM规范评估这个过程。CMM正式评估由CMU/SEI授权的主任评估师领导一个评审小组进行，评估过程包括员工培训、问卷调查和统计、文档审查、数据分析、与企业的高层领导讨论和撰写评估报告等，评估结束时由主任评估师签字生效。此后最关键的就是根据评估结果改进软件过程,使CMM评估对于软件过程改进所应具有的作用得到最好的发挥。<br>　　<br>　　现在国内软件产业的发展可以说已经具有一定规模了，但除了北大方正、东大阿尔派、用友等大企业外，做软件工程项目更多的是一些规模在数十人左右的中小企业, 目前处于CMM的初级阶段，没有基础和经验。也许有人会问，像这样一些人力物力资源匮乏的企业，如何进行软件开发项目的管理呢？我建议这些中小企业可以以CMM为框架，先从PSP做起，然后在些基础上逐渐过渡到TSP，以保证CMM/PSP/TSP确实在企业中生根开花。总之，我们必须从软件过程、过程工程的角度来看待CMM的发展，从经济学的观点来分析这个过程的价值。我相信在实施CMM/PSP/TSP的过程中，只要坚持改善软件工程的管理，并在实践中注意总结适合自身的经验，一定能取得很好的效果。</p>
+<h1 id="CMM认证标准"><a href="#CMM认证标准" class="headerlink" title="ＣＭＭ认证标准"></a>ＣＭＭ认证标准</h1><p>　　</p>
+<h2 id="CMM-简介"><a href="#CMM-简介" class="headerlink" title="CMM 简介"></a>CMM 简介</h2><p>　　<br>　　CMM是什么？<br>　　<br>　　CMM是由美国卡内基－梅隆大学的软件工程研究所（SEI）开发的软件成熟度模型，共分为5级（5级为最高级别）<br>　　<br>　　CMM是一个动态的过程，组织可根据不同级别的要求，循序渐进，不断改进。<br>　　<br>　　CMM是能力成熟度模型（Capability Maturity Model）的缩写，是一种用于评价软件承包能力并帮助其改善软件质量的方法，也就是评估软件能力与成熟度的一套标准，它侧重于软件开发过程的管理及工程能力的提高与评估。<br>　　<br>　　CMM标准共分五个等级，从第一级到第五级分别为：初始级、可重复级、定义级、管理级和优化级，从低到高，软件开发生产的计划精度越来越高，每单位工程的生产周期越来越短，每单位工程的成本也越来越低。<br>　　<br>　　CMM证书主要用于出口美国的软件组织。<br>　　<br>　　CMM是一种管理方法<br>　　<br>　　CMM是一组公众可用的描述成熟软件组织特征的准则。组织能运用这些准则去改进开发和维护软件的过程，以及政府或商业组织用于评价与某具体公司签订软件项目合同时的风险。CMM将软件开发视为一个过程，提供了一种以有条不紊的和一致的方法改进软件产品的管理和开发的概念性结构。组织软件开发过程是由初始到成熟的一个渐进的过程，CMM分为5级，由低到高分别是：初始级、可重复级、妥善定义级、定量管理级、和持续优化级。软件组织在执行CMM的过程中，软件过程能力将持续改进，组织将由几乎无管理、完全依赖个人努力的取得成功，逐渐走向规范化管理，能利用来自过程的以及来自先导性创新思想和新技术的定量和反馈信息，持续改进的过程取得成功。<br>　　<br>　　美国软件业发达很重要的一个原因就是：无论规模大小，绝大多数组织都按照规范化的工作方法管理软件循环过程，始终把最终用户放在软件产品供应优化和质量控制的中心，把达到认证标准放在很重要的位置上。</p>
+<h2 id="软件组织为什么要做CMM"><a href="#软件组织为什么要做CMM" class="headerlink" title="软件组织为什么要做CMM"></a>软件组织为什么要做CMM</h2><p>　　<br>　　WTO入世在即，中国软件组织何去何从？如何面对挑战？是在国内固步自封，还是勇敢的创出去，进军国际市场。中国的软件组织大多数仍然处于一种手工作坊式运营阶段，质量和效率观念都不强，在技术和产品本身与国际市场接轨方面更是一片空白。这些对软件组织而言，是一个致命的弱点。软件产业的规则就是技术及其标准，全球软件产业处于一个非常开放的价值链中，因此如果你落后了这些技术和标准，就可能被抛出游戏中。另外，软件组织是一个技术密集型组织，获取竞争力的关键就在于提高开发应用效率，降低成本，同时提高产品的质量，这方面是CMM的强项。</p>
+<h2 id="CMM与ISO9000的关系"><a href="#CMM与ISO9000的关系" class="headerlink" title="CMM与ISO9000的关系"></a>CMM与ISO9000的关系</h2><p>　　<br>　　ISO9000和CMM既有区别又相互联系。<br>　　<br>　　ISO9000和CMM是国际上通用的软件质量评估和管理方法。二者有很多相似之处，它们的实施可以改变软件组织开发不规范、文档不齐、维护跟不上、质量漏洞多等弊病。尽管ISO 9001标准的一些要求在CMM中不存在，而CMM的一些要求在ISO 9001标准中也不存在，两者之间的关系非常密切。<br>　　<br>　　两者的最大相似之处在于两者都强调对每一个重要的过程应形成文件，包括指导书和说明，并检查交货质量水平，同时也都强调强调持续改进。取得ISO 9001认证对于取得CMM的等级证书是有益的，反之，取得CMM等级证书，对于取得ISO 9001认证也是有帮助的。</p>
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+
+    <footer class="post-footer">
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/categories/java/java-Collections-1/" rel="next" title="java集合框架学习1">
+                <i class="fa fa-chevron-left"></i> java集合框架学习1
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/categories/项目管理/pm-import/" rel="prev" title="软件开发需要重点关注">
+                软件开发需要重点关注 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+  <div class="comments" id="comments">
+    
+      <div class="ds-thread" data-thread-key="categories/项目管理/cmmi/"
+           data-title="cmmi 介绍" data-url="http://www.pmjohnfung.com/categories/项目管理/cmmi/">
+      </div>
+    
+  </div>
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <img class="site-author-image" itemprop="image"
+               src="/img/avatar.jpg"
+               alt="johnfung" />
+          <p class="site-author-name" itemprop="name">johnfung</p>
+          <p class="site-description motion-element" itemprop="description">志美行厉,永无止境</p>
+        </div>
+        <nav class="site-state motion-element">
+        
+          
+            <div class="site-state-item site-state-posts">
+              <a href="/archives">
+                <span class="site-state-item-count">20</span>
+                <span class="site-state-item-name">日志</span>
+              </a>
+            </div>
+          
+
+          
+            <div class="site-state-item site-state-categories">
+              <a href="/categories">
+                <span class="site-state-item-count">7</span>
+                <span class="site-state-item-name">分类</span>
+              </a>
+            </div>
+          
+
+          
+            <div class="site-state-item site-state-tags">
+              <a href="/tags">
+                <span class="site-state-item-count">23</span>
+                <span class="site-state-item-name">标签</span>
+              </a>
+            </div>
+          
+
+        </nav>
+
+        
+          <div class="feed-link motion-element">
+            <a href="/atom.xml" rel="alternate">
+              <i class="fa fa-rss"></i>
+              RSS
+            </a>
+          </div>
+        
+
+        <div class="links-of-author motion-element">
+          
+            
+              <span class="links-of-author-item">
+                <a href="https://github.com/pmjohnfung" target="_blank" title="GitHub">
+                  
+                    <i class="fa fa-fw fa-github"></i>
+                  
+                  GitHub
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="https://www.zhihu.com/people/zhiyong-feng/" target="_blank" title="Zhihu">
+                  
+                    <i class="fa fa-fw fa-globe"></i>
+                  
+                  Zhihu
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="http://weibo.com/622780789/home?wvr=5" target="_blank" title="Weibo">
+                  
+                    <i class="fa fa-fw fa-weibo"></i>
+                  
+                  Weibo
+                </a>
+              </span>
+            
+          
+        </div>
+
+        
+        
+
+        
+        
+
+        
+
+
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#CMM的诞生"><span class="nav-number">1.</span> <span class="nav-text">CMM的诞生</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#CMM的发展"><span class="nav-number">2.</span> <span class="nav-text">CMM的发展</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#实施CMM的必要性"><span class="nav-number">3.</span> <span class="nav-text">实施CMM的必要性</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#CMM在中国的现状"><span class="nav-number">4.</span> <span class="nav-text">CMM在中国的现状</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#CMM体系结构"><span class="nav-number">5.</span> <span class="nav-text">CMM体系结构</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#框架"><span class="nav-number">5.1.</span> <span class="nav-text">框架</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#结构"><span class="nav-number">5.2.</span> <span class="nav-text">结构</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#CMM实施的思考"><span class="nav-number">6.</span> <span class="nav-text">CMM实施的思考</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#CMM认证标准"><span class="nav-number">7.</span> <span class="nav-text">ＣＭＭ认证标准</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#CMM-简介"><span class="nav-number">7.1.</span> <span class="nav-text">CMM 简介</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#软件组织为什么要做CMM"><span class="nav-number">7.2.</span> <span class="nav-text">软件组织为什么要做CMM</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#CMM与ISO9000的关系"><span class="nav-number">7.3.</span> <span class="nav-text">CMM与ISO9000的关系</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright" >
+  
+  &copy; 
+  <span itemprop="copyrightYear">2017</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">johnfung</span>
+</div>
+
+
+<div class="powered-by">
+  由 john 驱动
+</div>
+
+<div class="theme-info">
+  京ICP备15009579号
+</div>
+
+
+        
+
+<div class="busuanzi-count">
+
+  <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+  
+    <span class="site-uv"><i class="fa fa-user"></i>访问人数<span class="busuanzi-value" id="busuanzi_value_site_uv"></span></span>
+  
+
+  
+    <span class="site-pv"><i class="fa fa-eye"></i>总访问量<span class="busuanzi-value" id="busuanzi_value_site_pv"></span>次</span>
+  
+  
+</div>
+
+
+
+        
+      </div>
+    </footer>
+
+    <div class="back-to-top">
+      <i class="fa fa-arrow-up"></i>
+    </div>
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+  <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+
+  
+  <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+  
+  <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.0"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.0"></script>
+
+
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.0"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.0"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.0"></script>
+
+
+
+  
+
+  
+    
+  
+
+  <script type="text/javascript">
+    var duoshuoQuery = {short_name:"pmjohnfung"};
+    (function() {
+      var ds = document.createElement('script');
+      ds.type = 'text/javascript';ds.async = true;
+      ds.id = 'duoshuo-script';
+      ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+      ds.charset = 'UTF-8';
+      (document.getElementsByTagName('head')[0]
+      || document.getElementsByTagName('body')[0]).appendChild(ds);
+    })();
+  </script>
+
+  
+    
+    
+    <script src="/lib/ua-parser-js/dist/ua-parser.min.js?v=0.7.9"></script>
+    <script src="/js/src/hook-duoshuo.js"></script>
+  
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+
+</body>
+</html>
