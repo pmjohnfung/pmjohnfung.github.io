@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://www.pmjohnfung.com/"/>
-  <updated>2017-02-22T13:49:24.000Z</updated>
+  <updated>2017-04-14T05:19:11.000Z</updated>
   <id>http://www.pmjohnfung.com/</id>
   
   <author>
@@ -14,6 +14,51 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>工作历程总结</title>
+    <link href="http://www.pmjohnfung.com/categories/%E7%94%9F%E6%B4%BB/my-company-summary/"/>
+    <id>http://www.pmjohnfung.com/categories/生活/my-company-summary/</id>
+    <published>2017-04-14T03:18:45.000Z</published>
+    <updated>2017-04-14T05:19:11.000Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="工作历程总结"><a href="#工作历程总结" class="headerlink" title="工作历程总结"></a>工作历程总结</h1><h2 id="第一份工作"><a href="#第一份工作" class="headerlink" title="第一份工作"></a>第一份工作</h2><p><strong>总结：</strong> 开始接触项目管理，传统项目、单项目长周期的项目的管理，按照标准CMMI 3级标准执行；</p>
+<h3 id="挑战"><a href="#挑战" class="headerlink" title="挑战"></a>挑战</h3><ol>
+<li>开始工作，一切都需要学习；</li>
+<li>JAVA开发3年后转项目经理；</li>
+<li>与政府工作人员的沟通，提高他们的满意度；</li>
+<li>撰写多类投标文件、可行性方案（无经验情况下）；</li>
+<li>多分包单位的沟通协调、进度把控；</li>
+</ol>
+<h3 id="行动"><a href="#行动" class="headerlink" title="行动"></a>行动</h3><ol>
+<li>多与入职早的同事沟通学习；</li>
+<li>参加项目管理培训、考取PMP、高级软考项目经理证书，增强理论基础；</li>
+<li>针对于政府工作人员的沟通，从业务角度、技术知识等方面入手，做到专业性，实质能够快速响应与解决提出的问题，或提出好的解决方案；</li>
+<li>多去运用理论知识去指导实践，以及多在实践中发现问题后进行总结；</li>
+</ol>
+<h3 id="收获"><a href="#收获" class="headerlink" title="收获"></a>收获</h3><ol>
+<li>工作的启蒙阶段，认识自己的工作岗位，锻炼了JAVA开发经验、初期项目管理经验；</li>
+<li>参与了公司CMMI 3级体系的建设工作，并且按照此体系做项目管理；</li>
+<li>接触并实践了可行性方案、技术方案的编写工作；</li>
+</ol>
+<h2 id="第二份工作"><a href="#第二份工作" class="headerlink" title="第二份工作"></a>第二份工作</h2><p><strong>总结：</strong> 开启互联网项目、多项目、高强度高压力项目、周期短、团队规模大的项目的管理工作；</p>
+<h3 id="收获-1"><a href="#收获-1" class="headerlink" title="收获"></a>收获</h3><ol>
+<li>时间的管理方法；</li>
+<li>压力的处理；</li>
+</ol>
+<h2 id="第三份工作"><a href="#第三份工作" class="headerlink" title="第三份工作"></a>第三份工作</h2><p><strong>总结：</strong> 开始从0到1建立项目管理体系，思考更多，管理范围更广；</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;工作历程总结&quot;&gt;&lt;a href=&quot;#工作历程总结&quot; class=&quot;headerlink&quot; title=&quot;工作历程总结&quot;&gt;&lt;/a&gt;工作历程总结&lt;/h1&gt;&lt;h2 id=&quot;第一份工作&quot;&gt;&lt;a href=&quot;#第一份工作&quot; class=&quot;headerlink&quot; title=
+    
+    </summary>
+    
+      <category term="生活" scheme="http://www.pmjohnfung.com/categories/%E7%94%9F%E6%B4%BB/"/>
+    
+    
+  </entry>
   
   <entry>
     <title>互联网项目管理体会（一）</title>
@@ -890,83 +935,6 @@
     
       <category term="项目管理" scheme="http://www.pmjohnfung.com/categories/%E9%A1%B9%E7%9B%AE%E7%AE%A1%E7%90%86/"/>
     
-    
-  </entry>
-  
-  <entry>
-    <title>java集合框架学习1</title>
-    <link href="http://www.pmjohnfung.com/categories/java/java-Collections-1/"/>
-    <id>http://www.pmjohnfung.com/categories/java/java-Collections-1/</id>
-    <published>2015-05-16T11:33:27.000Z</published>
-    <updated>2017-01-11T05:03:46.000Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="关于集合的两道面试题"><a href="#关于集合的两道面试题" class="headerlink" title="关于集合的两道面试题"></a>关于集合的两道面试题</h1><ul>
-<li>创建一个不可变的的集合</li>
-</ul>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</div><div class="line">    set =<span class="keyword">new</span> HashSet();</div><div class="line">    set.add(<span class="string">"Java"</span>);</div><div class="line">    set.add(<span class="string">"JEE"</span>);</div><div class="line">    set.add(<span class="string">"Spring"</span>);</div><div class="line">    set.add(<span class="string">"Hibernate"</span>);</div><div class="line">    set = Collections.unmodifiableSet(set);</div><div class="line">    set.add(<span class="string">"Ajax"</span>);<span class="comment">//not allowed.</span></div><div class="line">&#125;</div></pre></td></tr></table></figure>
-<p>可以看到，创建不可变集合主要是调用了Collections的unmodifiableSet()方法，而Collections类通过装饰模式实现了对一般集合的封装。</p>
-<ul>
-<li>去除List集合中的重复元素，且保持原有的顺序</li>
-</ul>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String args[])</span> </span>&#123; </div><div class="line">    List list=<span class="keyword">new</span> ArrayList(); </div><div class="line">    list.add(<span class="string">"A"</span>); </div><div class="line">    list.add(<span class="string">"B"</span>); </div><div class="line">    list.add(<span class="string">"C"</span>); </div><div class="line">    list.add(<span class="string">"A"</span>);<span class="comment">// List中允许元素重复 </span></div><div class="line">    <span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>;i&amp;lt;list.size();i++) </div><div class="line">        System.out.print(<span class="string">" "</span>+list.get(i));<span class="comment">// A B C A // 去除重复的元素且保持原有元素的顺序</span></div><div class="line">    List list2=<span class="keyword">new</span> testD().function(list); </div><div class="line">    <span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>;i&amp;lt;list2.size();i++)  </div><div class="line">        System.out.print(<span class="string">" "</span>+list2.get(i));<span class="comment">// A B C </span></div><div class="line">&#125; </div><div class="line"><span class="function"><span class="keyword">public</span> List <span class="title">function</span> <span class="params">(List list)</span> </span>&#123; </div><div class="line">    <span class="keyword">return</span> <span class="keyword">new</span> ArrayList(<span class="keyword">new</span> LinkedHashSet(list)); </div><div class="line">&#125;</div></pre></td></tr></table></figure>
-<p>上面的代码代码通过把原有列表传入一个LinkedHashSet来去除重复的元素。在这个情况里，LinkedHashSet可以保持元素原来的顺序。如果这个顺序是不需要的话，那么上面的LinkedHashSet可以用HashSet来替换。</p>
-<h1 id="集合框架类图及集合对比"><a href="#集合框架类图及集合对比" class="headerlink" title="集合框架类图及集合对比"></a>集合框架类图及集合对比</h1><p>其实如上的两道题目并不难，只是没有对集合了解的更深。下面就来大概的看一下集合吧。集合的继承类如下所示。</p>
-<p><img src="/img/collections.png" alt=""></p>
-<p>如上的集合可以归纳为三大类，即List、Set和Map。同时还有一些辅助的工具类，像Collections、Arrays等方便了集合的操作，各个集合的比较情况如下图。</p>
-<p><img src="/img/collections2.png" alt=""></p>
-<p>其实对于集合的操作，无外乎就是</p>
-<ul>
-<li>增加：向一个集合中添加一个元素、将一个集合中的所有元素插入到当前集合中</li>
-<li>删除：删除指定的一个元素、删除集合中所有的元素</li>
-<li>修改：修改指定的一个元素</li>
-<li>查找：查当前集合的大小、查找两个集合中的共同元素等</li>
-<li>其它：如将一个集合中的元素转换为数组表示形式、判断一个集合是否为空等</li>
-</ul>
-<h1 id="Iterable、Iterator、Collection接口"><a href="#Iterable、Iterator、Collection接口" class="headerlink" title="Iterable、Iterator、Collection接口"></a>Iterable、Iterator、Collection接口</h1><p>从Java集合框架图可以看出，所有的类都直接或间接继承了Iterable接口，源代码如下：</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">package</span> java.lang; </div><div class="line"><span class="keyword">import</span> java.util.Iterator; </div><div class="line"><span class="comment">/** * </span></div><div class="line">    Implementing this interface allows an object to be </div><div class="line">    the target of * the "foreach" statement. </div><div class="line">    */ </div><div class="line">    <span class="keyword">public</span> interfacen Iterable &#123; </div><div class="line">        <span class="function">Iterator <span class="title">iterator</span><span class="params">()</span></span>; <span class="comment">// 返回一个在一组 T 类型的元</span></div><div class="line">                             <span class="comment">//素上进行迭代的迭代器 </span></div><div class="line">    &#125;</div></pre></td></tr></table></figure>
-<p>Iterable接口在java.lang包下，其中定义了一个获取Iterator的实例方法。</p>
-<p>Iterator类的源代码如下：</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">interface</span> <span class="title">Iterator</span> </span>&#123; </div><div class="line">        <span class="function"><span class="keyword">boolean</span> <span class="title">hasNext</span><span class="params">()</span></span>; <span class="comment">// 是否含有下一个元素 </span></div><div class="line">        <span class="function">E <span class="title">next</span><span class="params">()</span></span>; <span class="comment">// 获取集合的下一个元素 </span></div><div class="line">        <span class="function"><span class="keyword">void</span> <span class="title">remove</span><span class="params">()</span></span>; <span class="comment">// 从集合中移除当前元素 </span></div><div class="line">    &#125;</div></pre></td></tr></table></figure>
-<p>Iterator模式是用于遍历集合类的标准访问方法。它可以把访问逻辑从不同类型的集合类中抽象出来，从而避免向客户端暴露出集合的内部结构。例如，如果没有使用Iterator，遍历一个数组的方法是使用索引：</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>; i&lt;集合的大小;i++)</div><div class="line">    &#123; <span class="comment">// 省略操作代码</span></div><div class="line">    &#125;</div></pre></td></tr></table></figure>
-<p>当访问一个链表（LinkedList）时又必须使用while循环：</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">while</span>((e=e.next())!=<span class="keyword">null</span>) &#123; <span class="comment">// 省略操作代码</span></div><div class="line">&#125;</div></pre></td></tr></table></figure>
-<p>以上两种方法遍历办法都必须事先知道集合的内部存储结构，访问代码和集合本身是紧耦合，无法将访问逻辑从集合类中分离出来，每一种集合对应一种遍历方法，客户端代码无法复用。 而且如果以后需要把ArrayList更换为LinkedList，则原来的客户端代码必须要进行重写。 为解决以上问题，Iterator模式总是用同一种逻辑来遍历集合：</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">for</span>(Iterator it = c.iterater();it.hasNext(); ) </div><div class="line">    &#123; </div><div class="line">        <span class="comment">// ... </span></div><div class="line">    &#125;</div></pre></td></tr></table></figure>
-<p>设计的巧妙之处在于客户端自身不维护遍历集合的”指针”,所有的内部状态（如当前元素位置，是否有下一个元素）都由Iterator来维护，而这个Iterator由集合类通过工厂方法生成，因此，它知道如何遍历整个集合。值得提醒的是，这个工厂方法就是我们前面提到的iterator()方法，因为所有的类都继承了Iterable接口，所以他的实现类必须要实现iterator()方法。</p>
-<p>以后如果要访问集合时，就可以通过控制Iterator，向它发送”向前”，”向后”，”取当前元素”的命令，来间接遍历整个集合。</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">testSet</span> </span>&#123;  </div><div class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String args[])</span> </span>&#123;  </div><div class="line">        <span class="comment">// HashSet&lt;String&gt; ct = new HashSet&lt;&gt;();</span></div><div class="line">        <span class="comment">// Set&lt;String&gt; ct=new HashSet&lt;&gt;();</span></div><div class="line">        <span class="comment">// List&lt;String&gt; ct=new ArrayList&lt;&gt;();</span></div><div class="line">        List&lt;String&gt; ct=<span class="keyword">new</span> LinkedList&lt;&gt;();  </div><div class="line">        ct.add(<span class="string">"abc"</span>);  </div><div class="line">        ct.add(<span class="string">"def"</span>);  </div><div class="line"></div><div class="line">        <span class="keyword">for</span>(Iterator&lt;String&gt; myitr = ct.iterator();myitr.hasNext();)&#123;  </div><div class="line">            System.out.println(myitr.next());  </div><div class="line">        &#125;  </div><div class="line"></div><div class="line">        Iterator&lt;String&gt; iter = ct.iterator();  </div><div class="line">        <span class="keyword">while</span> (iter.hasNext()) &#123;  </div><div class="line">            System.out.println(iter.next());  </div><div class="line">        &#125;  </div><div class="line"></div><div class="line">        <span class="keyword">for</span> (String str : ct) &#123;  </div><div class="line">            System.out.println(str);  </div><div class="line">        &#125;  </div><div class="line">    &#125;  </div><div class="line">&#125;</div></pre></td></tr></table></figure>
-<p>使用了3种方法进行集合的遍历，输出的结果都是一致的，如下：</p>
-<p>abc def abc def abc def</p>
-<p>每一种集合类返回的Iterator具体类型可能不同，Array可能返回ArrayIterator，Set可能返回SetIterator，Tree可能返回TreeIterator，但是它们都实现了Iterator接口，因此，客户端不关心到底是哪种Iterator，它只需要获得这个Iterator接口即可，这就是面向对象所带来的好处。</p>
-<p>继续看Collection接口，源代码如下：</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">interface</span> <span class="title">Collection</span>&lt;<span class="title">E</span>&gt; <span class="keyword">extends</span> <span class="title">Iterable</span>&lt;<span class="title">E</span>&gt; </span>&#123;  </div><div class="line">        <span class="comment">// 查找操作</span></div><div class="line">        <span class="function"><span class="keyword">int</span> <span class="title">size</span><span class="params">()</span>    </span>;  </div><div class="line">        <span class="function">Iterator&lt;E&gt; <span class="title">iterator</span><span class="params">()</span></span>;  </div><div class="line"></div><div class="line">        <span class="comment">// 判断</span></div><div class="line">        <span class="function"><span class="keyword">boolean</span> <span class="title">isEmpty</span><span class="params">()</span></span>;  </div><div class="line">        <span class="function"><span class="keyword">boolean</span> <span class="title">contains</span><span class="params">(Object o)</span></span>;  </div><div class="line">        <span class="function"><span class="keyword">boolean</span> <span class="title">containsAll</span><span class="params">(Collection&lt;?&gt; c)</span></span>;  </div><div class="line"></div><div class="line">        <span class="comment">// 增加操作</span></div><div class="line">        <span class="function"><span class="keyword">boolean</span> <span class="title">add</span><span class="params">(E e)</span></span>;  </div><div class="line">        <span class="function"><span class="keyword">boolean</span> <span class="title">addAll</span><span class="params">(Collection&lt;? extends E&gt; c)</span></span>;  </div><div class="line"></div><div class="line">        <span class="comment">// 删除操作</span></div><div class="line">        <span class="function"><span class="keyword">boolean</span> <span class="title">remove</span><span class="params">(Object o)</span></span>;  </div><div class="line">        <span class="function"><span class="keyword">boolean</span> <span class="title">removeAll</span><span class="params">(Collection&lt;?&gt; c)</span></span>;<span class="comment">// Removes all of this collection's elements that                 are also contained in the specified collection (optional operation).</span></div><div class="line">        <span class="function"><span class="keyword">boolean</span> <span class="title">retainAll</span><span class="params">(Collection&lt;?&gt; c)</span></span>;<span class="comment">// Retains only the elements in this collection that are contained in the specified collection (optional operation).</span></div><div class="line">        <span class="function"><span class="keyword">void</span> <span class="title">clear</span><span class="params">()</span></span>;  </div><div class="line"></div><div class="line">        <span class="comment">// 集合转换</span></div><div class="line">        Object[] toArray();  </div><div class="line">        &lt;T&gt; T[] toArray(T[] a);  </div><div class="line"></div><div class="line">        <span class="comment">// 提供equals()和hashCode()</span></div><div class="line">        <span class="function"><span class="keyword">boolean</span> <span class="title">equals</span><span class="params">(Object o)</span></span>;  </div><div class="line">        <span class="function"><span class="keyword">int</span> <span class="title">hashCode</span><span class="params">()</span></span>;  </div><div class="line">    &#125;</div></pre></td></tr></table></figure>
-<p>Collection接口针对集合定义了一些基本的操作，所以任何一个具体的集合实现类都有含有这些方法。但是由于抽象层次较高，所以一般一个具体的集合实现类，如ArrayList、HashMap等都不会直接继承这个接口，而是继承这个接口的一些子类来实现。所以说每个集合的具体实现类都直接或间接继承了这个接口。</p>
-<p>有一类重要的方法还需要说明一下：</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">boolean</span> <span class="title">add</span><span class="params">(E e)</span></span>;  </div><div class="line">   <span class="function"><span class="keyword">boolean</span> <span class="title">addAll</span><span class="params">(Collection&lt;? extends E&gt; c)</span></span>;  </div><div class="line"></div><div class="line">   <span class="function"><span class="keyword">boolean</span> <span class="title">remove</span><span class="params">(Object o)</span></span>;  </div><div class="line">   <span class="function"><span class="keyword">boolean</span> <span class="title">removeAll</span><span class="params">(Collection&lt;?&gt; c)</span></span>;</div></pre></td></tr></table></figure>
-<p>拿add(E e)方法来举例，这个方法将在集合中添加一个新的元素。方法会返回一个boolean，但是返回值不是表示添加成功与否。仔细阅读doc可以看到，Collection规定：如果一个集合拒绝添加这个元素，无论任何原因，都必须抛出异常。这个返回值表示的意义是add()方法执行后，集合的内容是否改变了（就是元素有无数量，位置等变化），这是由具体类实现的。即：如果方法出错，总会抛出异常；返回值仅仅表示该方法执行后这个Collection的内容有无变化。</p>
-<p>观察发现传入的参数有许多都是Collection&lt;?&gt;类型的，这就为各个集合的具体实现类实现相互的操作提供了便利。举个例子：</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div></pre></td><td class="code"><pre><div class="line">LinkedList&lt;String&gt; list=<span class="keyword">new</span> LinkedList&lt;&gt;();  </div><div class="line"></div><div class="line">   list.add(<span class="string">"xy"</span>);  </div><div class="line">   list.add(<span class="string">"mn"</span>);  </div><div class="line"></div><div class="line">   Collection&lt;String&gt; ct=<span class="keyword">new</span> HashSet&lt;String&gt;();  </div><div class="line">   ct.add(<span class="string">"abc"</span>);  </div><div class="line">   ct.add(<span class="string">"def"</span>);  </div><div class="line">   ct.addAll(list);  </div><div class="line"></div><div class="line">   Iterator&lt;String&gt; iter=ct.iterator();  </div><div class="line">   <span class="keyword">while</span>(iter.hasNext())&#123;  </div><div class="line">   System.out.println(iter.next());  </div><div class="line">   &#125;</div></pre></td></tr></table></figure>
-<p>将LinkedList集合中的元素添加到HashSet中，只需要调用addAll()方法即可。最后结果输出如下： mn abc def xy</p>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;h1 id=&quot;关于集合的两道面试题&quot;&gt;&lt;a href=&quot;#关于集合的两道面试题&quot; class=&quot;headerlink&quot; title=&quot;关于集合的两道面试题&quot;&gt;&lt;/a&gt;关于集合的两道面试题&lt;/h1&gt;&lt;ul&gt;
-&lt;li&gt;创建一个不可变的的集合&lt;/li&gt;
-&lt;/ul&gt;
-&lt;figure c
-    
-    </summary>
-    
-      <category term="java" scheme="http://www.pmjohnfung.com/categories/java/"/>
-    
-    
-      <category term="Collections" scheme="http://www.pmjohnfung.com/tags/Collections/"/>
-    
-      <category term="java" scheme="http://www.pmjohnfung.com/tags/java/"/>
-    
-      <category term="基础" scheme="http://www.pmjohnfung.com/tags/%E5%9F%BA%E7%A1%80/"/>
     
   </entry>
   
