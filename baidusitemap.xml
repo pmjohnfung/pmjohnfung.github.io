@@ -4,6 +4,42 @@
 
     
   <url>
+    <loc>http://www.pmjohnfung.com/categories/%E7%94%9F%E6%B4%BB/read-book-list/</loc>
+    <lastmod>2017-06-26T02:48:51.000Z</lastmod>
+    <data>
+        <display>
+        <title>读书清单</title>
+        <pubTime>2017-06-26T02:43:32.000Z</pubTime>
+        
+         
+           
+             
+              <breadCrumb title="生活" url="http://www.pmjohnfung.com/categories/%E7%94%9F%E6%B4%BB/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://www.pmjohnfung.com/categories/%E5%B7%A5%E5%85%B7%E4%BD%BF%E7%94%A8/mac-option/</loc>
+    <lastmod>2017-06-14T02:43:44.000Z</lastmod>
+    <data>
+        <display>
+        <title>mac 操作</title>
+        <pubTime>2017-06-14T02:40:08.000Z</pubTime>
+        
+         
+           
+             
+              <breadCrumb title="工具使用" url="http://www.pmjohnfung.com/categories/%E5%B7%A5%E5%85%B7%E4%BD%BF%E7%94%A8/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://www.pmjohnfung.com/categories/%E7%94%9F%E6%B4%BB/my-company-summary/</loc>
     <lastmod>2017-04-14T05:19:11.000Z</lastmod>
     <data>
@@ -201,11 +237,11 @@
         
         <tag>java</tag>
          
-        <tag>基础</tag>
-         
         <tag>String</tag>
          
         <tag>final</tag>
+         
+        <tag>基础</tag>
          
          
            
@@ -249,11 +285,11 @@
         <title>java集合框架学习1</title>
         <pubTime>2015-05-16T11:33:27.000Z</pubTime>
         
-        <tag>Collections</tag>
-         
         <tag>java</tag>
          
         <tag>基础</tag>
+         
+        <tag>Collections</tag>
          
          
            
