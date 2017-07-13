@@ -4,6 +4,24 @@
 
     
   <url>
+    <loc>http://www.pmjohnfung.com/categories/%E7%94%9F%E6%B4%BB/scrum-and-kanban-diff/</loc>
+    <lastmod>2017-06-27T02:47:15.000Z</lastmod>
+    <data>
+        <display>
+        <title>scrum and kanban diff</title>
+        <pubTime>2017-06-27T02:27:50.000Z</pubTime>
+        
+         
+           
+             
+              <breadCrumb title="生活" url="http://www.pmjohnfung.com/categories/%E7%94%9F%E6%B4%BB/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://www.pmjohnfung.com/categories/%E7%94%9F%E6%B4%BB/read-book-list/</loc>
     <lastmod>2017-06-26T02:48:51.000Z</lastmod>
     <data>
@@ -83,9 +101,9 @@
         <title>互联网项目管理体会（一）</title>
         <pubTime>2017-02-22T09:17:30.000Z</pubTime>
         
-        <tag>项目管理</tag>
-         
         <tag>互联网</tag>
+         
+        <tag>项目管理</tag>
          
         <tag>经验</tag>
          
@@ -107,9 +125,9 @@
         <title>优秀项目经理需具备的素质</title>
         <pubTime>2015-07-15T04:55:44.000Z</pubTime>
         
-        <tag>优秀</tag>
-         
         <tag>项目管理</tag>
+         
+        <tag>优秀</tag>
          
         <tag>素质</tag>
          
@@ -237,11 +255,11 @@
         
         <tag>java</tag>
          
+        <tag>基础</tag>
+         
         <tag>String</tag>
          
         <tag>final</tag>
-         
-        <tag>基础</tag>
          
          
            
@@ -285,11 +303,11 @@
         <title>java集合框架学习1</title>
         <pubTime>2015-05-16T11:33:27.000Z</pubTime>
         
+        <tag>Collections</tag>
+         
         <tag>java</tag>
          
         <tag>基础</tag>
-         
-        <tag>Collections</tag>
          
          
            

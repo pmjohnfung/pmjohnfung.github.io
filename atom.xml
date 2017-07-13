@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://www.pmjohnfung.com/"/>
-  <updated>2017-06-26T02:48:51.000Z</updated>
+  <updated>2017-06-27T02:47:15.000Z</updated>
   <id>http://www.pmjohnfung.com/</id>
   
   <author>
@@ -14,6 +14,50 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>scrum and kanban diff</title>
+    <link href="http://www.pmjohnfung.com/categories/%E7%94%9F%E6%B4%BB/scrum-and-kanban-diff/"/>
+    <id>http://www.pmjohnfung.com/categories/生活/scrum-and-kanban-diff/</id>
+    <published>2017-06-27T02:27:50.000Z</published>
+    <updated>2017-06-27T02:47:15.000Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="scrume-和-kanban-解析"><a href="#scrume-和-kanban-解析" class="headerlink" title="scrume 和 kanban 解析"></a>scrume 和 kanban 解析</h1><h2 id="起源"><a href="#起源" class="headerlink" title="起源"></a>起源</h2><h3 id="scrum"><a href="#scrum" class="headerlink" title="scrum"></a>scrum</h3><blockquote>
+<p>橄榄球式的竞争方式；现在是敏捷软件开发；</p>
+</blockquote>
+<h3 id="kanban"><a href="#kanban" class="headerlink" title="kanban"></a>kanban</h3><blockquote>
+<p>丰田的JIT“JUST IN TIME”;</p>
+</blockquote>
+<h2 id="区别"><a href="#区别" class="headerlink" title="区别"></a>区别</h2><h3 id="scrum-1"><a href="#scrum-1" class="headerlink" title="scrum"></a>scrum</h3><ul>
+<li>scrum 核心是“化繁为简”；</li>
+<li>团队角色划分为三个：scrum master,product owner,scrum team</li>
+<li>产品需求拆成story，优先级排定；</li>
+<li>时间拆，将项目周期拆成固定的迭代周期，每个迭代周期内的交付成果可验证；</li>
+<li>变更：当前迭代过程中不允许增加需求，新增加的可放到下一个sprint backlog里；</li>
+</ul>
+<h3 id="kanban-1"><a href="#kanban-1" class="headerlink" title="kanban"></a>kanban</h3><ul>
+<li>kanban 核心是“可视化的任务流转”</li>
+<li>限制WIP（work in process），限定状态下的工作任务量；减少同一状态任务或价值的堆积；</li>
+<li>直观的反应当前任务情况，反应流动过程中的瓶颈和问题，为团队改善提供依据；</li>
+<li>变更：生产力允许的情况下就可以增加；</li>
+</ul>
+<h2 id="共同点"><a href="#共同点" class="headerlink" title="共同点"></a>共同点</h2><ul>
+<li>都是敏捷和精益的思想；</li>
+<li>都是尽早交付价值；</li>
+<li>持续改进，显化问题；</li>
+</ul>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;scrume-和-kanban-解析&quot;&gt;&lt;a href=&quot;#scrume-和-kanban-解析&quot; class=&quot;headerlink&quot; title=&quot;scrume 和 kanban 解析&quot;&gt;&lt;/a&gt;scrume 和 kanban 解析&lt;/h1&gt;&lt;h2 id=&quot;起
+    
+    </summary>
+    
+      <category term="生活" scheme="http://www.pmjohnfung.com/categories/%E7%94%9F%E6%B4%BB/"/>
+    
+    
+  </entry>
   
   <entry>
     <title>读书清单</title>
@@ -157,9 +201,9 @@
       <category term="项目管理" scheme="http://www.pmjohnfung.com/categories/%E9%A1%B9%E7%9B%AE%E7%AE%A1%E7%90%86/"/>
     
     
-      <category term="项目管理" scheme="http://www.pmjohnfung.com/tags/%E9%A1%B9%E7%9B%AE%E7%AE%A1%E7%90%86/"/>
-    
       <category term="互联网" scheme="http://www.pmjohnfung.com/tags/%E4%BA%92%E8%81%94%E7%BD%91/"/>
+    
+      <category term="项目管理" scheme="http://www.pmjohnfung.com/tags/%E9%A1%B9%E7%9B%AE%E7%AE%A1%E7%90%86/"/>
     
       <category term="经验" scheme="http://www.pmjohnfung.com/tags/%E7%BB%8F%E9%AA%8C/"/>
     
@@ -626,11 +670,11 @@
     
       <category term="java" scheme="http://www.pmjohnfung.com/tags/java/"/>
     
+      <category term="基础" scheme="http://www.pmjohnfung.com/tags/%E5%9F%BA%E7%A1%80/"/>
+    
       <category term="String" scheme="http://www.pmjohnfung.com/tags/String/"/>
     
       <category term="final" scheme="http://www.pmjohnfung.com/tags/final/"/>
-    
-      <category term="基础" scheme="http://www.pmjohnfung.com/tags/%E5%9F%BA%E7%A1%80/"/>
     
   </entry>
   
@@ -797,9 +841,9 @@
       <category term="项目管理" scheme="http://www.pmjohnfung.com/categories/%E9%A1%B9%E7%9B%AE%E7%AE%A1%E7%90%86/"/>
     
     
-      <category term="优秀" scheme="http://www.pmjohnfung.com/tags/%E4%BC%98%E7%A7%80/"/>
-    
       <category term="项目管理" scheme="http://www.pmjohnfung.com/tags/%E9%A1%B9%E7%9B%AE%E7%AE%A1%E7%90%86/"/>
+    
+      <category term="优秀" scheme="http://www.pmjohnfung.com/tags/%E4%BC%98%E7%A7%80/"/>
     
       <category term="素质" scheme="http://www.pmjohnfung.com/tags/%E7%B4%A0%E8%B4%A8/"/>
     
@@ -819,28 +863,6 @@
     <summary type="html">
     
       &lt;h1 id=&quot;系统化思维&quot;&gt;&lt;a href=&quot;#系统化思维&quot; class=&quot;headerlink&quot; title=&quot;系统化思维&quot;&gt;&lt;/a&gt;系统化思维&lt;/h1&gt;&lt;p&gt;项目开始前需要将项目的整个过程思考以便，包括我们要做什么，打算怎么做，分几个步骤或阶段来做，一共涉及多少的工作，工作
-    
-    </summary>
-    
-      <category term="项目管理" scheme="http://www.pmjohnfung.com/categories/%E9%A1%B9%E7%9B%AE%E7%AE%A1%E7%90%86/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>pmbok 知识框架</title>
-    <link href="http://www.pmjohnfung.com/categories/%E9%A1%B9%E7%9B%AE%E7%AE%A1%E7%90%86/pmbok/"/>
-    <id>http://www.pmjohnfung.com/categories/项目管理/pmbok/</id>
-    <published>2015-07-13T04:35:25.000Z</published>
-    <updated>2017-01-11T04:53:00.000Z</updated>
-    
-    <content type="html"><![CDATA[<p><img src="/img/pmbok.jpeg" alt=""></p>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;&lt;img src=&quot;/img/pmbok.jpeg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
-
     
     </summary>
     
